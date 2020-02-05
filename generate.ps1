@@ -3,6 +3,7 @@ $files = dir .\resultater
 function Get-Winner([string]$file) {
     Write-verbose "Getting winner for $file" -Verbose
     $content = Get-Content -Raw $file -Encoding Default
+    
     $html = New-Object -ComObject HTMLFile
     $html.IHTMLDocument2_write($content)
     $tsTabell = $html.body.getElementsByClassName("ts_tabell")
@@ -40,7 +41,6 @@ $objects = $files | foreach {
         $obj.Winner = Get-Winner $obj.File
     }
 
-    $obj.Winner = $null 
     [PSCustomObject] $obj
 } | sort Date, Group
 
@@ -63,7 +63,7 @@ $text += $objects | Group Type | Foreach {
     "|[Alle]({0}.md)|||" -f $_.Name
 }
 
-$text | Set-Content "index.md"
+$text | Set-Content "index.md" -Encoding UTF8
 
 # Generate per type files
 $objects | Group Type | Foreach {
@@ -78,5 +78,5 @@ $objects | Group Type | Foreach {
         "|[{0}]({1})|{2}|{3}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Winner
     }
 
-    $text | Set-Content "$($_.Name).md"
+    $text | Set-Content "$($_.Name).md" -Encoding UTF8
 }
