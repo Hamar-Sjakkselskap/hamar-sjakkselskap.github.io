@@ -1,20 +1,29 @@
 $files = dir .\resultater
 
-function Get-Winner([string]$file) {
+function Get-Stats([string]$file) {
     Write-verbose "Getting winner for $file" -Verbose
     $content = Get-Content -Raw $file -Encoding Default
     
+    $stats = @{
+        Winner = $null
+        Participants = 0
+    }
+
     $html = New-Object -ComObject HTMLFile
     $html.IHTMLDocument2_write($content)
     $tsTabell = $html.body.getElementsByClassName("ts_tabell")
     if($tsTabell.length -gt 0) {
-        return $tsTabell[0].childNodes[1].innerText
+        $stats.Participants = $tsTabell.length
+        $stats.Winner = $tsTabell[0].childNodes[1].innerText
     } 
 
     $xl45 = $html.body.getElementsByClassName("xl45")
     if($xl45.length -gt 0) {
-        return $xl45[0].innerText
+        $stats.Winner = $xl45[0].innerText
+        $stats.Participants = $xl45.length
     }
+
+    return $stats
 }
 
 $objects = $files | foreach {
@@ -23,7 +32,7 @@ $objects = $files | foreach {
         File = "resultater/$($_.Name)"
         Date = [Datetime]::ParseExact(([Regex]::Matches($_.BaseName, "[0-9]{6}") | Select -First 1 | Select -exp Value),"yyMMdd", $null)
         Group = $null
-        Winner = $null
+        Stats = $null
     }
 
     if($_.BaseName -like "*-*") {
@@ -32,13 +41,13 @@ $objects = $files | foreach {
 
     if($_.Name -match "Hu[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Hurtigsjakk"
-        $obj.Winner = Get-Winner $obj.File
+        $obj.Stats = Get-Stats $obj.File
     } elseif($_.Name -match "Ly[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Lynsjakk"
-        $obj.Winner = Get-Winner $obj.File
+        $obj.Stats = Get-Stats $obj.File
     } elseif($_.Name -match "Hc[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Hamarcup"
-        $obj.Winner = Get-Winner $obj.File
+        $obj.Stats = Get-Stats $obj.File
     }
 
     [PSCustomObject] $obj
@@ -53,14 +62,14 @@ $text += $objects | Group Type | Foreach {
     ""
     "## $($_.Name)"
     ""
-    "| Dato | Gruppe | Vinner |"
-    "|-|-|-|"
+    "| Dato | Gruppe | Deltagere | Vinner |"
+    "|-|-|-|-|"
 
     $_.Group | Sort @{Expression = {$_.Date}; Ascending = $false}, Group | Select -First 5 | Foreach {
-        "|[{0}]({1})|{2}|{3}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Winner
+        "|[{0}]({1})|{2}|{3}|{4}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner
     }
 
-    "|[Alle]({0}.md)|||" -f $_.Name
+    "|[Alle]({0}.md)||||" -f $_.Name
 }
 
 $text | Set-Content "index.md" -Encoding UTF8
@@ -70,12 +79,12 @@ $objects | Group Type | Foreach {
     $text = @(
         "# $($_.Name)"
         ""
-        "| Dato | Gruppe | Vinner |"
-        "|-|-|-|"
+        "| Dato | Gruppe | Deltakere | Vinner |"
+        "|-|-|-|-|"
     )
 
     $text += $_.Group | sort @{Expression = {$_.Date}; Ascending = $false}, Group | Foreach {
-        "|[{0}]({1})|{2}|{3}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Winner
+        "|[{0}]({1})|{2}|{3}|{4}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner
     }
 
     $text | Set-Content "$($_.Name).md" -Encoding UTF8
