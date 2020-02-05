@@ -40,6 +40,7 @@ $objects = $files | foreach {
         $obj.Winner = Get-Winner $obj.File
     }
 
+    $obj.Winner = $null 
     [PSCustomObject] $obj
 } | sort Date, Group
 
