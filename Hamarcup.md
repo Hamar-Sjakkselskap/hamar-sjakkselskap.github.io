@@ -1,4 +1,5 @@
 # Hamarcup
+
 | Dato | Gruppe | Vinner |
 |-|-|-|
 |[2005-04-14](resultater/Hc050414.htm)|||

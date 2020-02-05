@@ -52,6 +52,7 @@ $text = @("# Resultater")
 $text += $objects | Group Type | Foreach {
     ""
     "## $($_.Name)"
+    ""
     "| Dato | Gruppe | Vinner |"
     "|-|-|-|"
 
@@ -68,6 +69,7 @@ $text | Set-Content "index.md"
 $objects | Group Type | Foreach {
     $text = @(
         "# $($_.Name)"
+        ""
         "| Dato | Gruppe | Vinner |"
         "|-|-|-|"
     )

@@ -1,4 +1,5 @@
 # Lynsjakk
+
 | Dato | Gruppe | Vinner |
 |-|-|-|
 |[2020-01-30](resultater/Ly200130.htm)|||

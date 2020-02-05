@@ -1,4 +1,5 @@
 # Hurtigsjakk
+
 | Dato | Gruppe | Vinner |
 |-|-|-|
 |[2020-01-23](resultater/Hu200123.htm)|||

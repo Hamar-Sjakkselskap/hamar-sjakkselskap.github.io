@@ -1,6 +1,7 @@
 # Resultater
 
 ## Lynsjakk
+
 | Dato | Gruppe | Vinner |
 |-|-|-|
 |[2020-01-30](resultater/Ly200130.htm)|||
@@ -11,6 +12,7 @@
 |[Alle](Lynsjakk.md)|||
 
 ## Hurtigsjakk
+
 | Dato | Gruppe | Vinner |
 |-|-|-|
 |[2020-01-23](resultater/Hu200123.htm)|||
@@ -21,6 +23,7 @@
 |[Alle](Hurtigsjakk.md)|||
 
 ## Hamarcup
+
 | Dato | Gruppe | Vinner |
 |-|-|-|
 |[2005-04-14](resultater/Hc050414.htm)|||
