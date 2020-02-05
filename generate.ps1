@@ -20,7 +20,7 @@ $objects = $files | foreach {
     }
 
     [PSCustomObject] $obj
-}
+} | sort Date, Group
 
 $text = @("# Resultater")
 
@@ -29,7 +29,7 @@ $text += $objects | Group Type | Foreach {
     ""
     "## $($_.Name)"
 
-    $_.Group | Sort Date -Descending | Select -First 3 | Foreach {
+    $_.Group | Sort @{Expression = {$_.Date}; Ascending = $false}, Group | Select -First 5 | Foreach {
         $Group = ""
         if($_.Group) {
             $Group = " - Gruppe $($_.Group)"
@@ -46,7 +46,7 @@ $text | Set-Content "index.md"
 $objects | Group Type | Foreach {
     $text = @("# $($_.Name)")
 
-    $text += $_.Group | Sort Date -Descending | Foreach {
+    $text += $_.Group | sort @{Expression = {$_.Date}; Ascending = $false}, Group | Foreach {
         $Group = ""
         if($_.Group) {
             $Group = " - Gruppe $($_.Group)"
