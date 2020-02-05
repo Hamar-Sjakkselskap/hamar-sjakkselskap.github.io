@@ -1,0 +1,331 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.5">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Lynsjakk-1<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu,  04.08.2016<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">i-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH><FONT COLOR="#FFFFFF">6</FONT></TH><TH><FONT COLOR="#FFFFFF">7</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)"><FONT COLOR="#FFFFFF">Berger</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Ragnar Holm</td><td><div align="right"><a href="javascript:nsfChart('Holm%20Ragnar', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">2055</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1505858" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 21.00</DIV></TD><TD><TT>&nbsp;1824&nbsp;(+20)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Lars Pil&oslash;</td><td><div align="right"><a href="javascript:nsfChart('Pil%F8%20Lars', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1877</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518151" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 15.00</DIV></TD><TD><TT>&nbsp;1759&nbsp;( +4)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Geir Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20Geir', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1688</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1511270" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 10.00</DIV></TD><TD><TT>&nbsp;1635&nbsp;(+12)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Thomas Nilsen</td><td><div align="right"><a href="javascript:nsfChart('Nilsen%20Thomas', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1538</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515632" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Tapte  mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;-6 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  5.00</DIV></TD><TD><TT>&nbsp;1448&nbsp;(-11)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>Anders S&oslash;berg</td><td><div align="right"><a href="javascript:nsfChart('S%F8berg%20Anders', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1512</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519352" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Remis mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;=7 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD ><DIV align="right"><b>2.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  3.75</DIV></TD><TD><TT>&nbsp;1404&nbsp;(-17)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Erik Feragen</td><td><div align="right"><a href="javascript:nsfChart('Feragen%20Erik', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1403</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1523104" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-8 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  4.50</DIV></TD><TD><TT>&nbsp;1359&nbsp;(-15)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Lars Christian Nyg&aring;rd</td><td><div align="right"><a href="javascript:nsfChart('Nyg%E5rd%20Lars%20Christian', 'Elverum')" title="Klikk for å  se nasjonal elo utvikling"> 907</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1535595" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Elverum">Elverum</a></TD><TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Remis mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;=5 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;-6 </TT></TD>
+<TD ><DIV align="right"><b>1.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.25</DIV></TD><TD><TT>&nbsp;1358&nbsp;(+28)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Odd N T&oslash;stibakken</td><td><div align="right"><a href="javascript:nsfChart('T%F8stibakken%20Odd%20N', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1074</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515691" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;-7 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;1255&nbsp;( +0)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Berger:&nbsp;</td><td>Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)</td></tr>
+</tbody></table>
+Beste ratingframgang, Lars Chr Nygård, +28</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>22. aug kl.19:31&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.5</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>
+
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Lynsjakk-2<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu,  04.08.2016<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">i-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH><FONT COLOR="#FFFFFF">6</FONT></TH><TH><FONT COLOR="#FFFFFF">7</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)"><FONT COLOR="#FFFFFF">Berger</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Anders S&oslash;berg</td><td><div align="right"><a href="javascript:nsfChart('S%F8berg%20Anders', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1495</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519352" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+W </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 16.00</DIV></TD><TD><TT>&nbsp;1701&nbsp;(+84)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Thomas Nilsen</td><td><div align="right"><a href="javascript:nsfChart('Nilsen%20Thomas', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1527</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515632" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+1 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 15.50</DIV></TD><TD><TT>&nbsp;1591&nbsp;(+27)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Geir Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20Geir', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1700</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1511270" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+W </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 11.00</DIV></TD><TD><TT>&nbsp;1537&nbsp;(+13)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Lars Pil&oslash;</td><td><div align="right"><a href="javascript:nsfChart('Pil%F8%20Lars', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1881</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518151" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  9.50</DIV></TD><TD><TT>&nbsp;1432&nbsp;(-47)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>Markus Slettmoen</td><td><div align="right"><a href="javascript:nsfChart('Slettmoen%20Markus', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1456</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519344" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;-8 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Remis mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;=7 </TT></TD>
+<TD ><DIV align="right"><b>3.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 11.75</DIV></TD><TD><TT>&nbsp;1428&nbsp;( -2)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Lars Christian Nyg&aring;rd</td><td><div align="right"><a href="javascript:nsfChart('Nyg%E5rd%20Lars%20Christian', 'Elverum')" title="Klikk for å  se nasjonal elo utvikling"> 935</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1535595" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Elverum">Elverum</a></TD><TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+W </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  1.50</DIV></TD><TD><TT>&nbsp;1266&nbsp;(+12)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Odd N T&oslash;stibakken</td><td><div align="right"><a href="javascript:nsfChart('T%F8stibakken%20Odd%20N', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1074</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515691" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;-6 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+W </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Remis mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;=5 </TT></TD>
+<TD ><DIV align="right"><b>1.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  1.75</DIV></TD><TD><TT>&nbsp;1115&nbsp;( -9)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Erik Feragen</td><td><div align="right"><a href="javascript:nsfChart('Feragen%20Erik', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1388</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1523104" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  3.50</DIV></TD><TD><TT>&nbsp;1495&nbsp;( +7)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Berger:&nbsp;</td><td>Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)</td></tr>
+</tbody></table>
+Beste ratingframgang, Anders Søberg +84</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>22. aug kl.20:12&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.5</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>
+
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Lynsjakk-3<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu,  04.08.2016<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">i-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)"><FONT COLOR="#FFFFFF">Berger</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Thomas Nilsen</td><td><div align="right"><a href="javascript:nsfChart('Nilsen%20Thomas', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1554</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515632" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Jad Mouawad." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 10.00</DIV></TD><TD><TT>&nbsp;1730&nbsp;(+50)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Geir Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20Geir', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1714</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1511270" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Vant mot Jad Mouawad." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  6.00</DIV></TD><TD><TT>&nbsp;1538&nbsp;( -3)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Jad Mouawad</td><td><div align="right"><a href="javascript:nsfChart('Mouawad%20Jad', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1028</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1528920" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;1364&nbsp;(+34)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Anders S&oslash;berg</td><td><div align="right"><a href="javascript:nsfChart('S%F8berg%20Anders', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1578</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519352" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte  mot Jad Mouawad." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;1267&nbsp;(-29)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Markus Slettmoen</td><td><div align="right"><a href="javascript:nsfChart('Slettmoen%20Markus', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1454</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519344" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Jad Mouawad." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Vant mot Lars Christian Nyg&aring;rd." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;1292&nbsp;(-16)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Lars Christian Nyg&aring;rd</td><td><div align="right"><a href="javascript:nsfChart('Nyg%E5rd%20Lars%20Christian', 'Elverum')" title="Klikk for å  se nasjonal elo utvikling"> 948</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1535595" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Elverum">Elverum</a></TD><TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte  mot Jad Mouawad." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD ><DIV align="right"><b>0.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  0.00</DIV></TD><TD><TT>&nbsp;1052&nbsp;(-13)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Berger:&nbsp;</td><td>Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)</td></tr>
+</tbody></table>
+Beste ratingfrem, Thomas Nilsen +50</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>22. aug kl.20:35&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.5</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>

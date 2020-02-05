@@ -1,0 +1,220 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.5">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Klubbmesterskap Lynsjakk 2010<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu,  28.01.2010<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Rtg</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH><FONT COLOR="#FFFFFF">6</FONT></TH><TH><FONT COLOR="#FFFFFF">7</FONT></TH><TH><FONT COLOR="#FFFFFF">8</FONT></TH><TH><FONT COLOR="#FFFFFF">9</FONT></TH><TH><FONT COLOR="#FFFFFF">10</FONT></TH><TH><FONT COLOR="#FFFFFF">11</FONT></TH><TH><FONT COLOR="#FFFFFF">12</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Monradkvalitet, to d&aring;rligste str&oslash;ket"><FONT COLOR="#FFFFFF">Monrad-2</FONT></TH><TH style="font-size:xx-Small;" title="Monradkvalitet, d&aring;rligste str&oslash;ket"><FONT COLOR="#FFFFFF">Monrad-1</FONT></TH><TH style="font-size:xx-Small;" title="Monradkvalitet, ingen strykninger (=LP monrad i lagturneringer)"><FONT COLOR="#FFFFFF">Monrad</FONT></TH><TH style="font-size:xx-Small;" title="Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)"><FONT COLOR="#FFFFFF">Berger</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Lars Pil&oslash;</td><td><div align="right"><a href="javascript:nsfChart('Pil%F8%20Lars', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1735</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Remis mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;=5 </TT></TD>
+<TD title="Vant mot Trym Woldstad." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Vant mot Ole J Kristiansen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Tapte  mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD ><DIV align="right"><b>9.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">51.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">53.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">56.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 42.00</DIV></TD><TD><TT>&nbsp;1715&nbsp;(+29)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Nikolai Hoff</td><td><div align="right"><a href="javascript:nsfChart('Hoff%20Nikolai', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1612</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Remis mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;=3 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Trym Woldstad." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Ole J Kristiansen." style="font-size:Small;"><TT>&nbsp;-6 </TT></TD>
+<TD title="Remis mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;=7 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+1 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">56.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">59.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">59.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 33.25</DIV></TD><TD><TT>&nbsp;1617&nbsp;( -2)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Stein Nordstr&oslash;m</td><td><div align="right"><a href="javascript:nsfChart('Nordstr%F8m%20Stein', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1287</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Remis mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;=2 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+1 </TT></TD>
+<TD title="Remis mot Trym Woldstad." style="font-size:Small;"><TT>&nbsp;=8 </TT></TD>
+<TD title="Vant mot Ole J Kristiansen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;-7 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  med Sort mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Tapte  mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">55.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">58.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">58.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 25.75</DIV></TD><TD><TT>&nbsp;1519&nbsp;(+86)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Steinar Orm&aring;sen</td><td><div align="right"><a href="javascript:nsfChart('Orm%E5sen%20Steinar', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1527</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Trym Woldstad." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Ole J Kristiansen." style="font-size:Small;"><TT>&nbsp;-6 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Remis mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;=5 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD ><DIV align="right"><b>4.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">52.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">52.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">52.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 16.00</DIV></TD><TD><TT>&nbsp;1465&nbsp;(-24)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>Geir Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20Geir', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1679</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant mot Ole J Kristiansen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Remis mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;=1 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  mot Trym Woldstad." style="font-size:Small;"><TT>&nbsp;-8 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Tapte  mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Remis mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;=4 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">57.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">60.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">60.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 17.50</DIV></TD><TD><TT>&nbsp;1382&nbsp;(-79)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Ole J Kristiansen</td><td><div align="right"><a href="javascript:nsfChart('Kristiansen%20Ole%20J', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1575</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Trym Woldstad." style="font-size:Small;"><TT>&nbsp;-8 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Vant mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 14.00</DIV></TD><TD><TT>&nbsp;1416&nbsp;(-28)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Erik Feragen</td><td><div align="right"><a href="javascript:nsfChart('Feragen%20Erik', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1292</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Trym Woldstad." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  mot Ole J Kristiansen." style="font-size:Small;"><TT>&nbsp;-6 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Remis mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;=2 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD ><DIV align="right"><b>2.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 11.00</DIV></TD><TD><TT>&nbsp;1405&nbsp;(+44)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Trym Woldstad</td><td><div align="right"><a href="javascript:nsfChart('Woldstad%20Trym', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1135</a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar">Hamar</a></TD><TD title="Vant mot Ole J Kristiansen." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  mot Erik Feragen." style="font-size:Small;"><TT>&nbsp;-7 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Remis mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;=3 </TT></TD>
+<TD title="Tapte  mot Nikolai Hoff." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD ><DIV align="right"><b>2.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">35.5</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  9.50</DIV></TD><TD><TT>&nbsp;1427&nbsp;(+24)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Monrad-2:&nbsp;</td><td>Monradkvalitet, to d&aring;rligste str&oslash;ket</td></tr>
+<tr><td>3&nbsp;</td><td>Monrad-1:&nbsp;</td><td>Monradkvalitet, d&aring;rligste str&oslash;ket</td></tr>
+<tr><td>4&nbsp;</td><td>Monrad:&nbsp;</td><td>Monradkvalitet, ingen strykninger (=LP monrad i lagturneringer)</td></tr>
+<tr><td>5&nbsp;</td><td>Berger:&nbsp;</td><td>Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)</td></tr>
+</tbody></table>
+Hvite partier st&aring;r med <B>fet skrift.</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>23. sep kl.20:29&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.5</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>

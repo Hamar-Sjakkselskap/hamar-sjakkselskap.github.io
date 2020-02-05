@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.0">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Lynsjakk<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu,  27.08.2009<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">i-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF"></FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)"><FONT COLOR="#FFFFFF">Berger</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Geir Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken Geir', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1603</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1511270" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Remis mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;=3 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD ><DIV align="right"><b>2.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.75</DIV></TD><TD><TT>&nbsp;1701&nbsp;( +5)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Steinar Orm&aring;sen</td><td><div align="right"><a href="javascript:nsfChart('Orm&aring;sen Steinar', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1567</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  1.50</DIV></TD><TD><TT>&nbsp;1565&nbsp;( -2)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Trym Daniel R&oslash;dvik</td><td><div align="right"><a href="javascript:nsfChart('R&oslash;dvik Trym Daniel', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1292</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1510568" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Remis mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;=1 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD ><DIV align="right"><b>1.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  1.25</DIV></TD><TD><TT>&nbsp;1515&nbsp;(+26)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Frode Storli</td><td><div align="right"><a href="javascript:nsfChart('Storli Frode', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1377</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD ><DIV align="right"><b>0.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  0.00</DIV></TD><TD><TT>&nbsp;1104&nbsp;(-21)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://www.fide.com/info/handbook?id=127&view=article">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Berger:&nbsp;</td><td>Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)</td></tr>
+</tbody></table>
+Hvite partier st&aring;r med <B>fet skrift.</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>27. nov kl.22:54&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.0</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>

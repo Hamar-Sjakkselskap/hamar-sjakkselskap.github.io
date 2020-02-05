@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.6">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER><BR></H1>
+<H2 ALIGN=CENTER>
+,  08.11 - 08.11.2019<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH><FONT COLOR="#FFFFFF">6</FONT></TH><TH><FONT COLOR="#FFFFFF">7</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)"><FONT COLOR="#FFFFFF">Berger</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">i-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Jan Jotun</td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+2 </TT></TD>
+<TD title="Vant med Hvit mot Thomas Nilsen." style="font-size:Small;"><TT><B>&nbsp;+3 </B></TT></TD>
+<TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant med Hvit mot Frank Juliussen." style="font-size:Small;"><TT><B>&nbsp;+5 </B></TT></TD>
+<TD title="Vant med Sort mot Ruben Stikkholmen." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Vant med Sort mot Marius Gr&aelig;sby." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Hanssen." style="font-size:Small;"><TT><B>&nbsp;+4 </B></TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 21.00</DIV></TD><TD><TT>&nbsp;2181&nbsp;(+27.80)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Geir Brobakken</td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;-1 </B></TT></TD>
+<TD title="Vant med Sort mot Lasse Hanssen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant med Hvit mot Marius Gr&aelig;sby." style="font-size:Small;"><TT><B>&nbsp;+6 </B></TT></TD>
+<TD title="Vant med Hvit mot Thomas Nilsen." style="font-size:Small;"><TT><B>&nbsp;+3 </B></TT></TD>
+<TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant p&aring; wo med Hvit mot Frank Juliussen." style="font-size:Small;"><TT><B>&nbsp;W5 </B></TT></TD>
+<TD title="Vant med Sort mot Ruben Stikkholmen." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 15.00</DIV></TD><TD><TT>&nbsp;1741&nbsp;(-1.80)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Thomas Nilsen</td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Hvit mot Ruben Stikkholmen." style="font-size:Small;"><TT><B>&nbsp;+8 </B></TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Hanssen." style="font-size:Small;"><TT><B>&nbsp;+4 </B></TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant med Hvit mot Marius Gr&aelig;sby." style="font-size:Small;"><TT><B>&nbsp;+6 </B></TT></TD>
+<TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+7 </B></TT></TD>
+<TD title="Vant p&aring; wo med Sort mot Frank Juliussen." style="font-size:Small;"><TT>&nbsp;W5 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 10.00</DIV></TD><TD><TT>&nbsp;1538&nbsp;(-4.60)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Lasse Hanssen</td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Marius Gr&aelig;sby." style="font-size:Small;"><TT><B>&nbsp;-6 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;-2 </B></TT></TD>
+<TD title="Tapte  med Sort mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+7 </B></TT></TD>
+<TD title="Vant p&aring; wo med Sort mot Frank Juliussen." style="font-size:Small;"><TT>&nbsp;W5 </TT></TD>
+<TD title="Vant med Hvit mot Ruben Stikkholmen." style="font-size:Small;"><TT><B>&nbsp;+8 </B></TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  5.00</DIV></TD><TD><TT>&nbsp;1250&nbsp;(-13.60)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>Frank Juliussen</td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Vant med Sort mot Marius Gr&aelig;sby." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Vant med Hvit mot Ruben Stikkholmen." style="font-size:Small;"><TT><B>&nbsp;+8 </B></TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Tapte p&aring; wo med Hvit mot Lasse Hanssen." style="font-size:Small;"><TT><B>&nbsp;w4 </B></TT></TD>
+<TD title="Tapte p&aring; wo med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;w2 </TT></TD>
+<TD title="Tapte p&aring; wo med Hvit mot Thomas Nilsen." style="font-size:Small;"><TT><B>&nbsp;w3 </B></TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  4.00</DIV></TD><TD><TT>&nbsp;1533&nbsp;(+6.80)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Marius Gr&aelig;sby</td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Lasse Hanssen." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Tapte  med Hvit mot Frank Juliussen." style="font-size:Small;"><TT><B>&nbsp;-5 </B></TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant med Hvit mot Ruben Stikkholmen." style="font-size:Small;"><TT><B>&nbsp;+8 </B></TT></TD>
+<TD title="Tapte  med Sort mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;-1 </B></TT></TD>
+<TD title="Tapte p&aring; wo med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;w7 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  3.00</DIV></TD><TD><TT>&nbsp;1328&nbsp;(-3.60)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Christer Tungard</td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Frank Juliussen." style="font-size:Small;"><TT><B>&nbsp;-5 </B></TT></TD>
+<TD title="Vant med Sort mot Ruben Stikkholmen." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Tapte  med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;-1 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lasse Hanssen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;-2 </B></TT></TD>
+<TD title="Tapte  med Sort mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant p&aring; wo med Hvit mot Marius Gr&aelig;sby." style="font-size:Small;"><TT><B>&nbsp;W6 </B></TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;0795&nbsp;(-14.40)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Ruben Stikkholmen</td><TD ><a href="standings.aspx?TID=&group=&club="></a></TD><TD title="Tapte  med Sort mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Tapte  med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;-7 </B></TT></TD>
+<TD title="Tapte  med Sort mot Frank Juliussen." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Tapte  med Sort mot Marius Gr&aelig;sby." style="font-size:Small;"><TT>&nbsp;-6 </TT></TD>
+<TD title="Tapte  med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;-1 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lasse Hanssen." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;-2 </B></TT></TD>
+<TD ><DIV align="right"><b>0.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  0.00</DIV></TD><TD><TT>&nbsp;0000&nbsp;(+0.00)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Berger:&nbsp;</td><td>Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)</td></tr>
+</tbody></table>
+Hvite partier st&aring;r med <B>fet skrift.</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>11. nov kl.20:20&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.6</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>

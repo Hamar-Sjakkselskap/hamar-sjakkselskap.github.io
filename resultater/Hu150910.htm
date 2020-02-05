@@ -1,0 +1,283 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.1">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Klubbmesterskapet i hurtigsjakk-5<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu,  10.09.2015<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">Kl</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">i-Elo</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Monradkvalitet, d&aring;rligste str&oslash;ket"><FONT COLOR="#FFFFFF">Monrad-1</FONT></TH><TH style="font-size:xx-Small;" title="Monradkvalitet (Buchholz), ingen strykninger (=LP monrad i lagturneringer)"><FONT COLOR="#FFFFFF">Monrad</FONT></TH><TH style="font-size:xx-Small;" title="Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)"><FONT COLOR="#FFFFFF">Berger</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Ragnar Holm</td><TD >1</TD><td><div align="right"><a href="javascript:nsfChart('Holm Ragnar', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">2121</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1505858" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Sort mot Jan Bergan." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Vant med Hvit mot Markus Slettmoen." style="font-size:Small;"><TT><B>&nbsp;+04 </B></TT></TD>
+<TD title="Vant med Hvit mot Trond Nerland." style="font-size:Small;"><TT><B>&nbsp;+06 </B></TT></TD>
+<TD title="Vant med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Vant med Hvit mot Steinar Orm&aring;sen." style="font-size:Small;"><TT><B>&nbsp;+02 </B></TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">16.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 16.00</DIV></TD><TD><TT>&nbsp;1627&nbsp;(+23)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Steinar Orm&aring;sen</td><TD >2</TD><td><div align="right"><a href="javascript:nsfChart('Orm&aring;sen Steinar', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1639</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515640" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Hvit mot Arnt Kristian Roksvold." style="font-size:Small;"><TT><B>&nbsp;+07 </B></TT></TD>
+<TD title="Vant med Sort mot Oliver Opseth." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Vant med Hvit mot Anders S&oslash;berg." style="font-size:Small;"><TT><B>&nbsp;+09 </B></TT></TD>
+<TD title="Vant med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+03 </TT></TD>
+<TD title="Tapte  med Sort mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">15.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">17.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 12.00</DIV></TD><TD><TT>&nbsp;1549&nbsp;( +9)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Stein Nordstr&oslash;m</td><TD >3</TD><td><div align="right"><a href="javascript:nsfChart('Nordstr&oslash;m Stein', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1308</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+18 </B></TT></TD>
+<TD title="Vant med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Vant med Hvit mot Odd Frydendal." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Steinar Orm&aring;sen." style="font-size:Small;"><TT><B>&nbsp;-02 </B></TT></TD>
+<TD title="Vant med Sort mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 10.00</DIV></TD><TD><TT>&nbsp;1399&nbsp;(+40)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Markus Slettmoen</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('Slettmoen Markus', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1109</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Hvit mot Eirik Nerli." style="font-size:Small;"><TT><B>&nbsp;+20 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant med Hvit mot Frank Kvernvolden." style="font-size:Small;"><TT><B>&nbsp;+17 </B></TT></TD>
+<TD title="Vant med Sort mot Oliver Opseth." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Vant med Sort mot Trond Nerland." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  9.00</DIV></TD><TD><TT>&nbsp;1501&nbsp;(+68)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>Ola Morten L&oslash;mo</td><TD >3</TD><td><div align="right"><a href="javascript:nsfChart('L&oslash;mo Ola Morten', 'Elverum')" title="Klikk for å  se nasjonal elo utvikling"> 995</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Elverum</TD><TD title="Vant med Hvit mot P&aring;l Gjersvik." style="font-size:Small;"><TT><B>&nbsp;+28 </B></TT></TD>
+<TD title="Tapte  med Sort mot Odd Frydendal." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+18 </B></TT></TD>
+<TD title="Vant med Sort mot Arnt Kristian Roksvold." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Vant med Hvit mot Erlend Reigstad." style="font-size:Small;"><TT><B>&nbsp;+12 </B></TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">10.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">10.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  8.00</DIV></TD><TD><TT>&nbsp;1092&nbsp;(+34)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Trond Nerland</td><TD >2</TD><td><div align="right"><a href="javascript:nsfChart('Nerland Trond', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1653</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Hvit mot Frank Kvernvolden." style="font-size:Small;"><TT><B>&nbsp;+17 </B></TT></TD>
+<TD title="Vant med Hvit mot Elias Skoglund." style="font-size:Small;"><TT><B>&nbsp;+25 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant med Sort mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Tapte  med Hvit mot Markus Slettmoen." style="font-size:Small;"><TT><B>&nbsp;-04 </B></TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">15.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  6.00</DIV></TD><TD><TT>&nbsp;1122&nbsp;( -9)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Arnt Kristian Roksvold</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Roksvold Arnt Kristian', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 799</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531328" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Sort mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant med Hvit mot Tobias B. Nerland." style="font-size:Small;"><TT><B>&nbsp;+26 </B></TT></TD>
+<TD title="Vant med Sort mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Tapte  med Hvit mot Ola Morten L&oslash;mo." style="font-size:Small;"><TT><B>&nbsp;-05 </B></TT></TD>
+<TD title="Vant med Sort mot Frank Kvernvolden." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  6.00</DIV></TD><TD><TT>&nbsp;1062&nbsp;(+49)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Sivert Nikolai &Oslash;rsleie</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('&Oslash;rsleie Sivert Nikolai', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1046</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518267" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Sort mot Erik Opseth." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Tapte  med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;-03 </B></TT></TD>
+<TD title="Vant med Sort mot Toni André Helleberg." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  med Hvit mot Ragnar Holm." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Vant med Sort mot Sigurd Rognerud." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  5.00</DIV></TD><TD><TT>&nbsp;1164&nbsp;(+10)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  9&nbsp;</DIV></TD><td>Anders S&oslash;berg</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('S&oslash;berg Anders', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1191</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Sort mot Toni André Helleberg." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Vant med Hvit mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT><B>&nbsp;+13 </B></TT></TD>
+<TD title="Tapte  med Sort mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Tapte  med Hvit mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT><B>&nbsp;-10 </B></TT></TD>
+<TD title="Vant med Sort mot Jan Bergan." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  6.00</DIV></TD><TD><TT>&nbsp;1080&nbsp;( -4)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 10&nbsp;</DIV></TD><td>J&oslash;rgen Brobakken</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('Brobakken J&oslash;rgen', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 991</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516124" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Hvit mot Odd Frydendal." style="font-size:Small;"><TT><B>&nbsp;-19 </B></TT></TD>
+<TD title="Vant med Sort mot P&aring;l Gjersvik." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Vant med Hvit mot Erlend Reigstad." style="font-size:Small;"><TT><B>&nbsp;+12 </B></TT></TD>
+<TD title="Vant med Sort mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Tapte  med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;-03 </B></TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  6.00</DIV></TD><TD><TT>&nbsp;1131&nbsp;(+48)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 11&nbsp;</DIV></TD><td>Sigurd Rognerud</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('Rognerud Sigurd', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 973</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1524801" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Hvit mot Elias Haukenes." style="font-size:Small;"><TT><B>&nbsp;+14 </B></TT></TD>
+<TD title="Tapte  med Sort mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Vant med Hvit mot P&aring;l Gjersvik." style="font-size:Small;"><TT><B>&nbsp;+28 </B></TT></TD>
+<TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Tapte  med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;-08 </B></TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  5.00</DIV></TD><TD><TT>&nbsp;0850&nbsp;( -5)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 12&nbsp;</DIV></TD><td>Erlend Reigstad</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('Reigstad Erlend', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 989</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519328" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Vant med Hvit mot Sigurd Rognerud." style="font-size:Small;"><TT><B>&nbsp;+11 </B></TT></TD>
+<TD title="Tapte  med Sort mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Vant med Hvit mot Toni André Helleberg." style="font-size:Small;"><TT><B>&nbsp;+24 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ola Morten L&oslash;mo." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  4.00</DIV></TD><TD><TT>&nbsp;0903&nbsp;( -5)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 13&nbsp;</DIV></TD><td>Odd N T&oslash;stibakken</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('T&oslash;stibakken Odd N', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1064</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515691" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Tapte  med Sort mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  med Hvit mot Arnt Kristian Roksvold." style="font-size:Small;"><TT><B>&nbsp;-07 </B></TT></TD>
+<TD title="Vant med Sort mot Eirik Nerli." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant med Hvit mot Oliver Opseth." style="font-size:Small;"><TT><B>&nbsp;+15 </B></TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">10.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  6.00</DIV></TD><TD><TT>&nbsp;0931&nbsp;( -5)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 14&nbsp;</DIV></TD><td>Elias Haukenes</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Haukenes Elias', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 801</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516132" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Sort mot Sigurd Rognerud." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+23 </B></TT></TD>
+<TD title="Vant med Sort mot Elias Skoglund." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Tapte  med Hvit mot Trond Nerland." style="font-size:Small;"><TT><B>&nbsp;-06 </B></TT></TD>
+<TD title="Vant med Hvit mot J&oslash;rgen R&oslash;hne." style="font-size:Small;"><TT><B>&nbsp;+21 </B></TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">10.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  5.00</DIV></TD><TD><TT>&nbsp;1004&nbsp;(+28)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 15&nbsp;</DIV></TD><td>Oliver Opseth</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Opseth Oliver', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1128</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Sort mot Tobias B. Nerland." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Tapte  med Hvit mot Steinar Orm&aring;sen." style="font-size:Small;"><TT><B>&nbsp;-02 </B></TT></TD>
+<TD title="Vant med Sort mot Jan Bergan." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Tapte  med Hvit mot Markus Slettmoen." style="font-size:Small;"><TT><B>&nbsp;-04 </B></TT></TD>
+<TD title="Tapte  med Sort mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  3.00</DIV></TD><TD><TT>&nbsp;0942&nbsp;(-11)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 16&nbsp;</DIV></TD><td>Jan Bergan</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Bergan Jan', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 691</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Hvit mot Ragnar Holm." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Vant med Sort mot Eirik Nerli." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Tapte  med Hvit mot Oliver Opseth." style="font-size:Small;"><TT><B>&nbsp;-15 </B></TT></TD>
+<TD title="Vant med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Tapte  med Hvit mot Anders S&oslash;berg." style="font-size:Small;"><TT><B>&nbsp;-09 </B></TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">14.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  4.00</DIV></TD><TD><TT>&nbsp;1051&nbsp;(+12)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 17&nbsp;</DIV></TD><td>Frank Kvernvolden</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Kvernvolden Frank', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 687</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Sort mot Trond Nerland." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Vant med Hvit mot J&oslash;rgen R&oslash;hne." style="font-size:Small;"><TT><B>&nbsp;+21 </B></TT></TD>
+<TD title="Tapte  med Sort mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant med Hvit mot Elias Skoglund." style="font-size:Small;"><TT><B>&nbsp;+25 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Arnt Kristian Roksvold." style="font-size:Small;"><TT><B>&nbsp;-07 </B></TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  3.00</DIV></TD><TD><TT>&nbsp;0957&nbsp;(+30)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 18&nbsp;</DIV></TD><td>Christer Tungard</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Tungard Christer', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 662</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Vant med Hvit mot Erik Opseth." style="font-size:Small;"><TT><B>&nbsp;+27 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ola Morten L&oslash;mo." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  med Hvit mot Sigurd Rognerud." style="font-size:Small;"><TT><B>&nbsp;-11 </B></TT></TD>
+<TD title="Vant med Sort mot Toni André Helleberg." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;0795&nbsp;(+20)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 19&nbsp;</DIV></TD><td>Odd Frydendal</td><TD >3</TD><td><div align="right"><a href="javascript:nsfChart('Frydendal Odd', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling">1460</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518143" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Sort mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Vant med Hvit mot Ola Morten L&oslash;mo." style="font-size:Small;"><TT><B>&nbsp;+05 </B></TT></TD>
+<TD title="Tapte  med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  7.00</DIV></TD><TD><TT>&nbsp;1223&nbsp;( -5)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 20&nbsp;</DIV></TD><td>Eirik Nerli</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Nerli Eirik', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 720</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531301" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Sort mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Tapte  med Hvit mot Jan Bergan." style="font-size:Small;"><TT><B>&nbsp;-16 </B></TT></TD>
+<TD title="Vant med Sort mot Tobias B. Nerland." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Tapte  med Hvit mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT><B>&nbsp;-13 </B></TT></TD>
+<TD title="Vant med Sort mot Elias Skoglund." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">10.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;0713&nbsp;( -8)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 21&nbsp;</DIV></TD><td>J&oslash;rgen R&oslash;hne</td><TD >4</TD><td><div align="right"><a href="javascript:nsfChart('R&oslash;hne J&oslash;rgen', 'L&oslash;ten')" title="Klikk for å  se nasjonal elo utvikling">1092</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1520776" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >L&oslash;ten</TD><TD title="Tapte  med Sort mot Elias Skoglund." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD title="Tapte  med Sort mot Frank Kvernvolden." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+23 </B></TT></TD>
+<TD title="Vant med Hvit mot Erik Opseth." style="font-size:Small;"><TT><B>&nbsp;+27 </B></TT></TD>
+<TD title="Tapte  med Sort mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 8.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 9.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  3.00</DIV></TD><TD><TT>&nbsp;0503&nbsp;(-24)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 22&nbsp;</DIV></TD><td>Arijanit Berisha</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Berisha Arijanit', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 458</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Sort mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Tapte  med Hvit mot Toni André Helleberg." style="font-size:Small;"><TT><B>&nbsp;-24 </B></TT></TD>
+<TD title="Vant med Sort mot Erik Opseth." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Tapte  med Hvit mot Jan Bergan." style="font-size:Small;"><TT><B>&nbsp;-16 </B></TT></TD>
+<TD title="Vant med Sort mot Tobias B. Nerland." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 7.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 8.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;0604&nbsp;(+26)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 23&nbsp;</DIV></TD><td>Ledion Berisha</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Berisha Ledion', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 450</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Tapte  med Sort mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  med Sort mot J&oslash;rgen R&oslash;hne." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Vant p&aring; wo med Hvit." style="font-size:Small;"><TT><B>&nbsp;+WO </B></TT></TD>
+<TD title="Vant med Hvit mot P&aring;l Gjersvik." style="font-size:Small;"><TT><B>&nbsp;+28 </B></TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 5.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 5.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  0.00</DIV></TD><TD><TT>&nbsp;0641&nbsp;( -9)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 24&nbsp;</DIV></TD><td>Toni André Helleberg</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Helleberg Toni André', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 656</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Hvit mot Anders S&oslash;berg." style="font-size:Small;"><TT><B>&nbsp;-09 </B></TT></TD>
+<TD title="Vant med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Tapte  med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;-08 </B></TT></TD>
+<TD title="Tapte  med Sort mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Tapte  med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;-18 </B></TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">11.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;0626&nbsp;( -4)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 25&nbsp;</DIV></TD><td>Elias Skoglund</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Skoglund Elias', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 493</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Vant med Hvit mot J&oslash;rgen R&oslash;hne." style="font-size:Small;"><TT><B>&nbsp;+21 </B></TT></TD>
+<TD title="Tapte  med Sort mot Trond Nerland." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  med Hvit mot Elias Haukenes." style="font-size:Small;"><TT><B>&nbsp;-14 </B></TT></TD>
+<TD title="Tapte  med Sort mot Frank Kvernvolden." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Tapte  med Hvit mot Eirik Nerli." style="font-size:Small;"><TT><B>&nbsp;-20 </B></TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">10.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  2.00</DIV></TD><TD><TT>&nbsp;0759&nbsp;( +2)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 26&nbsp;</DIV></TD><td>Tobias B. Nerland</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Nerland Tobias B.', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 602</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Hvit mot Oliver Opseth." style="font-size:Small;"><TT><B>&nbsp;-15 </B></TT></TD>
+<TD title="Tapte  med Sort mot Arnt Kristian Roksvold." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Tapte  med Hvit mot Eirik Nerli." style="font-size:Small;"><TT><B>&nbsp;-20 </B></TT></TD>
+<TD title="Vant med Sort mot P&aring;l Gjersvik." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Tapte  med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;-22 </B></TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 9.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 9.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  0.00</DIV></TD><TD><TT>&nbsp;0454&nbsp;(-14)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 26&nbsp;</DIV></TD><td>Erik Opseth</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Opseth Erik', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 403</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;-08 </B></TT></TD>
+<TD title="Tapte  med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Tapte  med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;-22 </B></TT></TD>
+<TD title="Tapte  med Sort mot J&oslash;rgen R&oslash;hne." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Vant p&aring; wo med Hvit." style="font-size:Small;"><TT><B>&nbsp;+WO </B></TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 9.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right"> 9.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  0.00</DIV></TD><TD><TT>&nbsp;0414&nbsp;( -7)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 28&nbsp;</DIV></TD><td>P&aring;l Gjersvik</td><TD >5</TD><td><div align="right"><a href="javascript:nsfChart('Gjersvik P&aring;l', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 365</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for å  se FIDE-elo utvikling">    </a></div></td><TD >Hamar</TD><TD title="Tapte  med Sort mot Ola Morten L&oslash;mo." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  med Hvit mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT><B>&nbsp;-10 </B></TT></TD>
+<TD title="Tapte  med Sort mot Sigurd Rognerud." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  med Hvit mot Tobias B. Nerland." style="font-size:Small;"><TT><B>&nbsp;-26 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ledion Berisha." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD ><DIV align="right"><b>0.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">12.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">13.0</DIV></TD><TD style="font-size:x-Small;"><DIV align="right">  0.00</DIV></TD><TD><TT>&nbsp;0395&nbsp;(-13)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://www.fide.com/fide/handbook?id=127&view=article">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Monrad-1:&nbsp;</td><td>Monradkvalitet, d&aring;rligste str&oslash;ket</td></tr>
+<tr><td>3&nbsp;</td><td>Monrad:&nbsp;</td><td>Monradkvalitet (Buchholz), ingen strykninger (=LP monrad i lagturneringer)</td></tr>
+<tr><td>4&nbsp;</td><td>Berger:&nbsp;</td><td>Sonnenborn-Berger kvalitet (=LP berger i lagturneringer)</td></tr>
+</tbody></table>
+Hvite partier st&aring;r med <B>fet skrift.</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>16. sep kl.22:15&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.1</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>

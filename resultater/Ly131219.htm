@@ -1,0 +1,802 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.5">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Julelynsjakk<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu,  19.12.2013<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Rtg</FONT></TH><TH><FONT COLOR="#FFFFFF">i-Rtg</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH><FONT COLOR="#FFFFFF">6</FONT></TH><TH><FONT COLOR="#FFFFFF">7</FONT></TH><TH><FONT COLOR="#FFFFFF">8</FONT></TH><TH><FONT COLOR="#FFFFFF">9</FONT></TH><TH><FONT COLOR="#FFFFFF">10</FONT></TH><TH><FONT COLOR="#FFFFFF">11</FONT></TH><TH><FONT COLOR="#FFFFFF">12</FONT></TH><TH><FONT COLOR="#FFFFFF">13</FONT></TH><TH><FONT COLOR="#FFFFFF">14</FONT></TH><TH><FONT COLOR="#FFFFFF">15</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Egendefinert 1"><FONT COLOR="#FFFFFF"># 1</FONT></TH><TH style="font-size:xx-Small;" title="Resultat i innbyrdes oppgj&oslash;r"><FONT COLOR="#FFFFFF">Innb.</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Kristian Stuvik Holm</td><td><div align="right"><a href="javascript:nsfChart('Holm%20Kristian%20Stuvik', 'V%E5lerenga')" title="Klikk for å  se nasjonal elo utvikling">1935</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1508083" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=V%E5lerenga">V&aring;lerenga</a></TD><TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+02 </TT></TD>
+<TD title="Vant mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Vant mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;+05 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Vant mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Remis mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;=06 </TT></TD>
+<TD title="Vant mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Vant mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;+03 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+04 </TT></TD>
+<TD title="Vant mot Knut Engli." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Remis mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;=06 </TT></TD>
+<TD ><DIV align="right"><b>14.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">0</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1969&nbsp;(+63)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Geir Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20Geir', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1752</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1511270" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Tapte  mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-39 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Vant mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD title="Vant mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Remis mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;=04 </TT></TD>
+<TD title="Vant mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Vant mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Vant mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD ><DIV align="right"><b>11.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">0</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1533&nbsp;(-15)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Ragnar Holm</td><td><div align="right"><a href="javascript:nsfChart('Holm%20Ragnar', 'V%E4xj%F6')" title="Klikk for å  se nasjonal elo utvikling">1906</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1505858" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=V%E4xj%F6">Växjö</a></TD><TD title="Vant mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Vant mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;+42 </TT></TD>
+<TD title="Vant mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+04 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Remis mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;=10 </TT></TD>
+<TD title="Vant mot Knut Engli." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Vant mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Remis mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;=10 </TT></TD>
+<TD title="Remis mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;=10 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Vant mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD ><DIV align="right"><b>10.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-7</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1743&nbsp;(-10)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Lars Pil&oslash;</td><td><div align="right"><a href="javascript:nsfChart('Pil%F8%20Lars', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1802</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518151" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Vant mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Vant mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Vant mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Vant mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Remis mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;=02 </TT></TD>
+<TD title="Vant mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD title="Vant mot Knut Engli." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD ><DIV align="right"><b>10.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-8</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1677&nbsp;( +6)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>J&oslash;rn Anton Utst&oslash;l</td><td><div align="right"><a href="javascript:nsfChart('Utst%F8l%20J%F8rn%20Anton', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1235</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519352" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Vant mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Tapte  mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Remis mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;=13 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Remis mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;=17 </TT></TD>
+<TD title="Tapte  mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Vant mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Remis mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;=21 </TT></TD>
+<TD title="Vant mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Vant mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Vant mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD ><DIV align="right"><b>10.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-13</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1437&nbsp;(+117)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Nikoai Hoff</td><td><div align="right"><a href="javascript:nsfChart('Hoff%20Nikoai', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1852</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Vant mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Vant mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Vant mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Remis mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;=01 </TT></TD>
+<TD title="Vant mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;+03 </TT></TD>
+<TD title="Vant mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Remis mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;=01 </TT></TD>
+<TD ><DIV align="right"><b>10.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-3</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1725&nbsp;(-15)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Knut Engli</td><td><div align="right"><a href="javascript:nsfChart('Engli%20Knut', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1671</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518151" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Vant mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Vant mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Vant mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;+03 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+04 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Vant mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Vant mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Vant mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Vant mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD ><DIV align="right"><b>10.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-7</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1732&nbsp;(+79)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Frode Kaveldiget</td><td><div align="right"><a href="javascript:nsfChart('Kaveldiget%20Frode', 'Elverum%20SK')" title="Klikk for å  se nasjonal elo utvikling">1439</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1537970" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Elverum%20SK">Elverum SK</a></TD><TD title="Tapte  mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;-42 </TT></TD>
+<TD title="Vant mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD title="Vant mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD title="Vant mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Vant mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Vant mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Vant mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD ><DIV align="right"><b>10.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-8</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1397&nbsp;( -2)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  9&nbsp;</DIV></TD><td>Jon K&aring;re Myrene</td><td><div align="right"><a href="javascript:nsfChart('Myrene%20Jon%20K%E5re', 'Elverum%20SK')" title="Klikk for å  se nasjonal elo utvikling">1691</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1510258" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Elverum%20SK">Elverum SK</a></TD><TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Vant mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Vant mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;+04 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD title="Vant mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD ><DIV align="right"><b>10.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-12</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1471&nbsp;(-31)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 10&nbsp;</DIV></TD><td>Anders W&aring;g&oslash;</td><td><div align="right"><a href="javascript:nsfChart('W%E5g%F8%20Anders', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1908</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1538322" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Vant mot Knut Engli." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Remis mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;=03 </TT></TD>
+<TD title="Vant mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Vant mot Knut Engli." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Remis mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;=03 </TT></TD>
+<TD title="Remis mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;=03 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD ><DIV align="right"><b>9.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-7</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1699&nbsp;(-30)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 11&nbsp;</DIV></TD><td>Steinar Orm&aring;sen</td><td><div align="right"><a href="javascript:nsfChart('Orm%E5sen%20Steinar', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1551</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515640" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Vant mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Vant mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Vant mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD ><DIV align="right"><b>9.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-7</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1583&nbsp;(+48)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 12&nbsp;</DIV></TD><td>Trym Daniel R&oslash;dvik</td><td><div align="right"><a href="javascript:nsfChart('R%F8dvik%20Trym%20Daniel', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1717</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1510568" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD title="Vant mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Vant mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD title="Vant mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Vant mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Vant mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Vant mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD ><DIV align="right"><b>9.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-10</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1490&nbsp;(-38)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 13&nbsp;</DIV></TD><td>Henning Pettersen</td><td><div align="right"><a href="javascript:nsfChart('Pettersen%20Henning', 'Lillehammer')" title="Klikk for å  se nasjonal elo utvikling">1504</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1504541" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Lillehammer">Lillehammer</a></TD><TD title="Vant mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Remis mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;=05 </TT></TD>
+<TD title="Remis mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;=22 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Vant mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD ><DIV align="right"><b>9.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-11</DIV></TD><TD style="font-size:x-Small;">+</TD><TD><TT>&nbsp;1516&nbsp;(+21)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 14&nbsp;</DIV></TD><td>Jan Jotun</td><td><div align="right"><a href="javascript:nsfChart('Jotun%20Jan', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1657</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516680" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Vant mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Tapte  mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;-24 </TT></TD>
+<TD title="Vant mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Vant mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Vant mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD ><DIV align="right"><b>9.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-11</DIV></TD><TD style="font-size:x-Small;">-</TD><TD><TT>&nbsp;1486&nbsp;(-45)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 15&nbsp;</DIV></TD><td>Sigurd Kittilsen</td><td><div align="right"><a href="javascript:nsfChart('Kittilsen%20Sigurd', 'Everum%20Sk')" title="Klikk for å  se nasjonal elo utvikling">1411</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515624" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Everum%20Sk">Everum Sk</a></TD><TD title="Vant mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Vant mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Vant mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Tapte  mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD ><DIV align="right"><b>9.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-18</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1331&nbsp;(-22)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 16&nbsp;</DIV></TD><td>J&oslash;rgen Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20J%F8rgen', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1153</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516124" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;-24 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Vant mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;+42 </TT></TD>
+<TD title="Vant mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+02 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Vant mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Remis mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;=27 </TT></TD>
+<TD ><DIV align="right"><b>8.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-13</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1352&nbsp;(+80)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 17&nbsp;</DIV></TD><td>Stein Nordstr&oslash;m</td><td><div align="right"><a href="javascript:nsfChart('Nordstr%F8m%20Stein', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1441</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1545221" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Vant mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Remis mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;=24 </TT></TD>
+<TD title="Remis mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;=05 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Vant mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD ><DIV align="right"><b>8.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-10</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1334&nbsp;(-22)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 18&nbsp;</DIV></TD><td>Thomas Nilsen</td><td><div align="right"><a href="javascript:nsfChart('Nilsen%20Thomas', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1337</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515632" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD title="Vant mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD ><DIV align="right"><b>8.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-11</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1517&nbsp;(+76)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 19&nbsp;</DIV></TD><td>Petter Skjerve</td><td><div align="right"><a href="javascript:nsfChart('Skjerve%20Petter', 'Everum%20SK')" title="Klikk for å  se nasjonal elo utvikling"> 889</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515659" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Everum%20SK">Everum SK</a></TD><TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;+42 </TT></TD>
+<TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Vant mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;+42 </TT></TD>
+<TD title="Tapte  mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;-36 </TT></TD>
+<TD title="Vant mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;+34 </TT></TD>
+<TD title="Vant mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Tapte  mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD ><DIV align="right"><b>8.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-20</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1115&nbsp;(+99)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 19&nbsp;</DIV></TD><td>Anders S&oslash;berg</td><td><div align="right"><a href="javascript:nsfChart('S%F8berg%20Anders', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1158</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519352" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-30 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Tapte  mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;-29 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Frode Storli." style="font-size:Small;"><TT>&nbsp;-26 </TT></TD>
+<TD title="Vant mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;+34 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD ><DIV align="right"><b>8.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-20</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1182&nbsp;(+30)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 21&nbsp;</DIV></TD><td>Hogne Orm&aring;sen</td><td><div align="right"><a href="javascript:nsfChart('Orm%E5sen%20Hogne', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1053</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516698" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;+34 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Vant mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Remis mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;=05 </TT></TD>
+<TD title="Vant mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD ><DIV align="right"><b>7.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-14</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1152&nbsp;(+51)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 21&nbsp;</DIV></TD><td>Sindre Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20Sindre', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1452</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1510568" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Vant mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;+05 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Remis mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;=13 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Vant mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;+05 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Vant mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Vant mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;+29 </TT></TD>
+<TD ><DIV align="right"><b>7.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-14</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1371&nbsp;(-19)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 23&nbsp;</DIV></TD><td>Tobias Frisvold Ruud</td><td><div align="right"><a href="javascript:nsfChart('Ruud%20Tobias%20Frisvold', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1309</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519336" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Remis mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;=24 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD title="Vant mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;+42 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Vant mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD ><DIV align="right"><b>7.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-19</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1245&nbsp;(-16)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 24&nbsp;</DIV></TD><td>Einar Elfinn Glas&oslash;</td><td><div align="right"><a href="javascript:nsfChart('Glas%F8%20Einar%20Elfinn', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1468</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1523775" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Remis mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;=23 </TT></TD>
+<TD title="Vant mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Remis mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;=17 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;-32 </TT></TD>
+<TD title="Remis mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;=31 </TT></TD>
+<TD title="Remis mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;=29 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD title="Remis mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;=25 </TT></TD>
+<TD title="Vant mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;+34 </TT></TD>
+<TD ><DIV align="right"><b>7.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-20</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1268&nbsp;(-50)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 25&nbsp;</DIV></TD><td>Odd N T&oslash;stibakken</td><td><div align="right"><a href="javascript:nsfChart('T%F8stibakken%20Odd%20N', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1036</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515691" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Tapte  mot Frode Storli." style="font-size:Small;"><TT>&nbsp;-26 </TT></TD>
+<TD title="Tapte  mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;-29 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Tapte  mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;-37 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Tapte  mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-28 </TT></TD>
+<TD title="Vant mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;+34 </TT></TD>
+<TD title="Remis mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;=24 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD ><DIV align="right"><b>7.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-27</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1056&nbsp;( +1)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 26&nbsp;</DIV></TD><td>Frode Storli</td><td><div align="right"><a href="javascript:nsfChart('Storli%20Frode', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1445</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531204" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;-29 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Tapte  mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;-29 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Tapte  mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-27 </TT></TD>
+<TD title="Vant mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;+34 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-20</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1096&nbsp;(-95)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 27&nbsp;</DIV></TD><td>Elias Haukenes</td><td><div align="right"><a href="javascript:nsfChart('Haukenes%20Elias', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 976</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516132" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;-37 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Remis mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;=39 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Tapte  mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Remis mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;=16 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-22</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1192&nbsp;(+68)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 28&nbsp;</DIV></TD><td>Sivert Nikolai &Oslash;rsleie</td><td><div align="right"><a href="javascript:nsfChart('%D8rsleie%20Sivert%20Nikolai', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 952</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518267" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Tapte  mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;-42 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Tapte  mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;-32 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Vant mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;+30 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-25</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1018&nbsp;( +3)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 29&nbsp;</DIV></TD><td>Erling Bj&oslash;rtomt</td><td><div align="right"><a href="javascript:nsfChart('Bj%F8rtomt%20Erling', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1155</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519298" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Vant mot Frode Storli." style="font-size:Small;"><TT>&nbsp;+26 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;+31 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Remis mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;=24 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD ><DIV align="right"><b>6.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-16</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1334&nbsp;(+71)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 30&nbsp;</DIV></TD><td>Erlend Reigstad</td><td><div align="right"><a href="javascript:nsfChart('Reigstad%20Erlend', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1113</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519328" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Vant mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;+35 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Tapte  mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-28 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-23</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1085&nbsp;(-16)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 31&nbsp;</DIV></TD><td>Markus Slettmoen</td><td><div align="right"><a href="javascript:nsfChart('Slettmoen%20Markus', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1051</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519344" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Tapte  mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Tapte  mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD title="Remis mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;=39 </TT></TD>
+<TD title="Vant mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;+42 </TT></TD>
+<TD title="Tapte  mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;-29 </TT></TD>
+<TD title="Remis mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;=24 </TT></TD>
+<TD title="Vant mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;+32 </TT></TD>
+<TD title="Tapte  mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;-24 </TT></TD>
+<TD title="Vant mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;+34 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-24</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1050&nbsp;(-11)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 32&nbsp;</DIV></TD><td>Vemund Skjerve</td><td><div align="right"><a href="javascript:nsfChart('Skjerve%20Vemund', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 742</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1515667" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Tapte  mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Tapte  mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-31 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Vant mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  mot Erling Bj&oslash;rtomt." style="font-size:Small;"><TT>&nbsp;-29 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-31 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Vant mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;+37 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-27</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1036&nbsp;(+92)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 33&nbsp;</DIV></TD><td>Tommy Eriksen</td><td><div align="right"><a href="javascript:nsfChart('Eriksen%20Tommy', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 657</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1550586" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Tapte  mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-31 </TT></TD>
+<TD title="Tapte  mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;-34 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Tapte  mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;-36 </TT></TD>
+<TD title="Tapte  mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-27 </TT></TD>
+<TD title="Tapte  mot Frode Storli." style="font-size:Small;"><TT>&nbsp;-26 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Tapte  mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;-41 </TT></TD>
+<TD title="Tapte  mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-30 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-29</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0828&nbsp;(+42)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 34&nbsp;</DIV></TD><td>Ahmed Mohammed Ali</td><td><div align="right"><a href="javascript:nsfChart('Ali%20Ahmed%20Mohammed', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 900</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1524690" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Tapte  mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Frode Storli." style="font-size:Small;"><TT>&nbsp;-26 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-31 </TT></TD>
+<TD title="Tapte  mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;-24 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-21</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0888&nbsp;(-17)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 35&nbsp;</DIV></TD><td>Jonas Haukenes</td><td><div align="right"><a href="javascript:nsfChart('Haukenes%20Jonas', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 942</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516140" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  mot Sigurd Kittilsen." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Tapte  mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Vant mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;+38 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Tapte  mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Tapte  mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-30 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Tapte  mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-27 </TT></TD>
+<TD title="Tapte  mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-22</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0955&nbsp;(-12)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 36&nbsp;</DIV></TD><td>Julie Skjerve</td><td><div align="right"><a href="javascript:nsfChart('Skjerve%20Julie', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 615</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531336" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Anders W&aring;g&oslash;." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Tapte  mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Tapte  mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-28 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Vant mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Tapte  mot Hogne Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Tapte  mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;-34 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Tapte  mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;-34 </TT></TD>
+<TD title="Tapte  mot Frode Storli." style="font-size:Small;"><TT>&nbsp;-26 </TT></TD>
+<TD title="Tapte  mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;-40 </TT></TD>
+<TD title="Tapte  mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;-38 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-23</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0808&nbsp;(+24)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 37&nbsp;</DIV></TD><td>Sivert Holmlund</td><td><div align="right"><a href="javascript:nsfChart('Holmlund%20Sivert', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1000</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1524755" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Nikoai Hoff." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  mot Henning Pettersen." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Vant mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;+27 </TT></TD>
+<TD title="Tapte  mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-30 </TT></TD>
+<TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;+25 </TT></TD>
+<TD title="Tapte  mot Trym Daniel R&oslash;dvik." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Tapte  mot Thomas Nilsen." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Tapte  mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-27 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Tapte  mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;-32 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-25</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1011&nbsp;(-23)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 38&nbsp;</DIV></TD><td>Per Solbakken</td><td><div align="right"><a href="javascript:nsfChart('Solbakken%20Per', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 734</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519360" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Knut Engli." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Tapte  mot Einar Elfinn Glas&oslash;." style="font-size:Small;"><TT>&nbsp;-24 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Tapte  mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;-35 </TT></TD>
+<TD title="Tapte  mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;-34 </TT></TD>
+<TD title="Tapte  mot Frode Storli." style="font-size:Small;"><TT>&nbsp;-26 </TT></TD>
+<TD title="Tapte  mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-27 </TT></TD>
+<TD title="Tapte  mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;-33 </TT></TD>
+<TD title="Tapte  mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-30 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Tapte  mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;-33 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-29</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0843&nbsp;( +8)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 39&nbsp;</DIV></TD><td>Leander Eriksen</td><td><div align="right"><a href="javascript:nsfChart('Eriksen%20Leander', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 846</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519301" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Kristian Stuvik Holm." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+02 </TT></TD>
+<TD title="Tapte  mot Frode Storli." style="font-size:Small;"><TT>&nbsp;-26 </TT></TD>
+<TD title="Vant mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;+41 </TT></TD>
+<TD title="Remis mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;=27 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Tapte  mot Gard S Hagen." style="font-size:Small;"><TT>&nbsp;-42 </TT></TD>
+<TD title="Remis mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;=31 </TT></TD>
+<TD title="Tapte  mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD title="Tapte  mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-28 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Tapte  mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;-32 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Tapte  mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;-37 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-26</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0990&nbsp;( +3)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 40&nbsp;</DIV></TD><td>Tommy Gundersen</td><td><div align="right"><a href="javascript:nsfChart('Gundersen%20Tommy', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 600</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Jon K&aring;re Myrene." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  mot J&oslash;rn Anton Utst&oslash;l." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD title="Tapte  mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;-35 </TT></TD>
+<TD title="Tapte  mot Ahmed Mohammed Ali." style="font-size:Small;"><TT>&nbsp;-34 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Tapte  mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;-37 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+WO </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD title="Tapte  mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-28 </TT></TD>
+<TD title="Tapte  mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-39 </TT></TD>
+<TD title="Vant mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;+36 </TT></TD>
+<TD title="Tapte  mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;-41 </TT></TD>
+<TD title="Tapte  mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;-33 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-29</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0684&nbsp;( +1)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 41&nbsp;</DIV></TD><td>Svein Erik Holmen</td><td><div align="right"><a href="javascript:nsfChart('Holmen%20Svein%20Erik', 'Elverum%20SK')" title="Klikk for å  se nasjonal elo utvikling"> 999</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1517929" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Elverum%20SK">Elverum SK</a></TD><TD title="Tapte  mot Sindre Brobakken." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Tapte  mot Steinar Orm&aring;sen." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  mot Vemund Skjerve." style="font-size:Small;"><TT>&nbsp;-32 </TT></TD>
+<TD title="Tapte  mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-39 </TT></TD>
+<TD title="Tapte  mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Tapte  mot Elias Haukenes." style="font-size:Small;"><TT>&nbsp;-27 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Tapte  mot Odd N T&oslash;stibakken." style="font-size:Small;"><TT>&nbsp;-25 </TT></TD>
+<TD title="Tapte  mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-28 </TT></TD>
+<TD title="Vant mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;+33 </TT></TD>
+<TD title="Tapte  mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;-35 </TT></TD>
+<TD title="Tapte  mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;-38 </TT></TD>
+<TD title="Vant mot Ivar Trondsen." style="font-size:Small;"><TT>&nbsp;+43 </TT></TD>
+<TD title="Vant mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;+40 </TT></TD>
+<TD title="Tapte  mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;-38 </TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-30</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0748&nbsp;(-107)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 42&nbsp;</DIV></TD><td>Gard S Hagen</td><td><div align="right"><a href="javascript:nsfChart('Hagen%20Gard%20S', 'Elverum%20SK')" title="Klikk for å  se nasjonal elo utvikling">1050</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1537954" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Elverum%20SK">Elverum SK</a></TD><TD title="Vant mot Frode Kaveldiget." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Tapte  mot Ragnar Holm." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Tapte  mot J&oslash;rgen Brobakken." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Vant mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+28 </TT></TD>
+<TD title="Tapte  mot Petter Skjerve." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Vant mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+39 </TT></TD>
+<TD title="Tapte  mot Tobias Frisvold Ruud." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD title="Tapte  mot Markus Slettmoen." style="font-size:Small;"><TT>&nbsp;-31 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">0</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;1031&nbsp;(-17)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 43&nbsp;</DIV></TD><td>Ivar Trondsen</td><td><div align="right"><a href="javascript:nsfChart('Trondsen%20Ivar', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 450</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1524828" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  mot Lars Pil&oslash;." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Tapte  mot Anders S&oslash;berg." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Tapte  mot Erlend Reigstad." style="font-size:Small;"><TT>&nbsp;-30 </TT></TD>
+<TD title="Tapte  mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;-36 </TT></TD>
+<TD title="Tapte  mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;-33 </TT></TD>
+<TD title="Tapte  mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;-40 </TT></TD>
+<TD title="Tapte  mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;-41 </TT></TD>
+<TD title="Tapte  mot Sivert Holmlund." style="font-size:Small;"><TT>&nbsp;-37 </TT></TD>
+<TD title="Tapte  mot Tommy Gundersen." style="font-size:Small;"><TT>&nbsp;-40 </TT></TD>
+<TD title="Tapte  mot Jonas Haukenes." style="font-size:Small;"><TT>&nbsp;-35 </TT></TD>
+<TD title="Tapte  mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;-38 </TT></TD>
+<TD title="Tapte  mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;-33 </TT></TD>
+<TD title="Tapte  mot Svein Erik Holmen." style="font-size:Small;"><TT>&nbsp;-41 </TT></TD>
+<TD title="Tapte  mot Tommy Eriksen." style="font-size:Small;"><TT>&nbsp;-33 </TT></TD>
+<TD title="Tapte  mot Julie Skjerve." style="font-size:Small;"><TT>&nbsp;-36 </TT></TD>
+<TD ><DIV align="right"><b>0.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">0</DIV></TD><TD style="font-size:x-Small;"></TD><TD><TT>&nbsp;0475&nbsp;(-48)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td># 1:&nbsp;</td><td>Egendefinert 1</td></tr>
+<tr><td>3&nbsp;</td><td>Innb.:&nbsp;</td><td>Resultat i innbyrdes oppgj&oslash;r</td></tr>
+</tbody></table>
+Hvite partier st&aring;r med <B>fet skrift.</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>25. jul kl.23:51&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.5</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>
