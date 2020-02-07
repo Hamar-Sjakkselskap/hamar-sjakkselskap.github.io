@@ -1,9 +1,18 @@
 $files = dir .\resultater
 
-function Get-Stats([string]$file) {
-    Write-verbose "Getting winner for $file" -Verbose
-    $content = Get-Content -Raw $file -Encoding Default
-    
+$tournaments = @(
+    @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=A"; Active = $true}
+    @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=B"; Active = $true}
+    @{Name = "Seriespill 3.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920203div-NorgesSjakkforbund&group=3.%20div%20B"; Active = $true}
+    @{Name = "Seriespill 4.div"; Url = "turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien2018-194divisjon-NorgesSjakkforbund&Group=4.%20div%20G"; Active = $true}
+
+    @{Name = "Hamarturneringen 2019"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=A"; Active = $false}
+    @{Name = "Hamarturneringen 2019"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=B"; Active = $false}
+)
+
+
+# Get stats from string
+function Get-StatsFromContent([string]$content) {
     $stats = @{
         Winner = $null
         Participants = 0
@@ -26,6 +35,21 @@ function Get-Stats([string]$file) {
     return $stats
 }
 
+# Get stats from file
+function Get-StatsFromFile([string]$file) {
+    Write-verbose "Getting stats for $file" -Verbose
+    $content = Get-Content -Raw $file -Encoding Default
+    Get-StatsFromContent $content
+}
+
+# Get stats from turneringsservice
+function Get-StatsFromTurneringsservice([string]$uri) {
+    Write-verbose "Getting stats for $uri" -Verbose
+    $content = Invoke-WebRequest -Uri $uri -UseBasicParsing 
+    Get-StatsFromContent  $content.Content
+}
+
+# Parse all files into objects with statistics
 $objects = $files | foreach {
     $obj = @{
         Type = "Ukjent"
@@ -41,13 +65,13 @@ $objects = $files | foreach {
 
     if($_.Name -match "Hu[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Hurtigsjakk"
-        $obj.Stats = Get-Stats $obj.File
+        $obj.Stats = Get-StatsFromFile $obj.File
     } elseif($_.Name -match "Ly[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Lynsjakk"
-        $obj.Stats = Get-Stats $obj.File
+        $obj.Stats = Get-StatsFromFile $obj.File
     } elseif($_.Name -match "Hc[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Hamarcup"
-        $obj.Stats = Get-Stats $obj.File
+        $obj.Stats = Get-StatsFromFile $obj.File
     }
 
     [PSCustomObject] $obj
@@ -56,6 +80,22 @@ $objects = $files | foreach {
 
 
 $text = @("# Resultater")
+
+
+$text += $tournaments | ? active | Foreach -Begin {
+    ""
+    "## Aktive turneringer i turneringsservice"
+    ""
+    "| Navn | Gruppe | Deltagere | Leder |"
+    "|-|-|-|-|"
+} -Process {
+    $stats = Get-StatsFromTurneringsservice -uri $_.url
+    "|[{0}]({1})|{2}|{3}|{4}|" -f $_.Name, $_.Url, $_.Group, $Stats.Participants, $Stats.Winner
+} -End {
+    "|Arkiv](turneringer.md)||||"
+}
+
+
 
 # Generate summary file
 $text += $objects | Group Type | Foreach {
@@ -88,4 +128,22 @@ $objects | Group Type | Foreach {
     }
 
     $text | Set-Content "$($_.Name).md" -Encoding UTF8
+}
+
+$tournaments | Foreach -Begin {
+    $text = @(
+        "# Turneringer"
+        ""
+        "| Navn | Gruppe | Deltagere | Leder |"
+        "|-|-|-|-|"
+    )
+} -Process {
+    if($_.active) {
+        $stats = Get-StatsFromTurneringsservice -uri $_.url
+    } else {
+        $stats = @{}
+    }
+    $text += "|[{0}]({1})|{2}|{3}|{4}|" -f $_.Name, $_.Url, $_.Group, $Stats.Participants, $Stats.Winner
+} -End {
+    $text | Set-Content "turneringer.md" -Encoding UTF8
 }
