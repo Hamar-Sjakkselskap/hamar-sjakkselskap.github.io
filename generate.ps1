@@ -92,7 +92,7 @@ $text += $tournaments | ? active | Foreach -Begin {
     $stats = Get-StatsFromTurneringsservice -uri $_.url
     "|[{0}]({1})|{2}|{3}|{4}|" -f $_.Name, $_.Url, $_.Group, $Stats.Participants, $Stats.Winner
 } -End {
-    "|Arkiv](turneringer.md)||||"
+    "|[Arkiv](turneringer.md)||||"
 }
 
 
