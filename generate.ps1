@@ -16,6 +16,7 @@ function Get-StatsFromContent([string]$content) {
     $stats = @{
         Winner = $null
         Participants = 0
+        Title = $null
     }
 
     $html = New-Object -ComObject HTMLFile
@@ -30,6 +31,11 @@ function Get-StatsFromContent([string]$content) {
     if($xl45.length -gt 0) {
         $stats.Winner = $xl45[0].innerText
         $stats.Participants = $xl45.length
+    }
+
+    $h1s = $html.body.getElementsByTagName("h1")
+    if($h1s.length -gt 0) {
+        $stats.Title = $h1s[0].innerText
     }
 
     return $stats
@@ -70,7 +76,7 @@ $objects = $files | foreach {
         $obj.Type = "Lynsjakk"
         $obj.Stats = Get-StatsFromFile $obj.File
     } elseif($_.Name -match "Hc[0-9]{6}(-[A-C1-9])?.htm") {
-        $obj.Type = "Hamarcup"
+        $obj.Type = "Hurtigsjakk med tidshandicap"
         $obj.Stats = Get-StatsFromFile $obj.File
     }
 
@@ -98,7 +104,7 @@ $text += $tournaments | ? active | Foreach -Begin {
 
 
 # Generate summary file
-$text += $objects | Group Type | Foreach {
+$text += $objects | Group Type | ? Name -in "Lynsjakk","Hurtigsjakk" | Foreach {
     ""
     "## $($_.Name)"
     ""
@@ -112,6 +118,8 @@ $text += $objects | Group Type | Foreach {
     "|[Alle]({0}.md)||||" -f $_.Name
 }
 
+$text += ""
+$text += "[Fullstendig arkiv](arkiv.md)"
 $text | Set-Content "index.md" -Encoding UTF8
 
 # Generate per type files
@@ -147,3 +155,27 @@ $tournaments | Foreach -Begin {
 } -End {
     $text | Set-Content "turneringer.md" -Encoding UTF8
 }
+
+
+$objects | 
+    sort @{Expression = {$_.Date}; Ascending = $false}, Group |
+    Foreach-Object -Begin {
+        $text = @(
+            "# Alle turneringer"
+            ""
+            "| Dato | Turnering | Gruppe | Deltagere | Vinner |"
+            "|-|-|-|-|-|"
+        )
+    } -Process {
+        if($_.Type -ne "Ukjent") {
+            $Name = $_.Type
+            if($_.Group) {
+                $Name += " - " + $_.Group
+            }
+        } else {
+            $Name = $_.Stats.Name
+        }
+        $text += "|[{1}]({0})|[{2}]({0})|{3}|{4}|{5}|" -f $_.File, $Name, $_.Date.ToString("yyy-MM-dd"), $Name, $_.Stats.Participants, $_.Stats.Winner
+    } -End {
+        $text | Set-Content "arkiv.md" -Encoding UTF8
+    }

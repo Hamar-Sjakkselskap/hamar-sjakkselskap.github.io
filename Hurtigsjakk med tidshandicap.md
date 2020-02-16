@@ -1,4 +1,4 @@
-﻿# Hamarcup
+﻿# Hurtigsjakk med tidshandicap
 
 | Dato | Gruppe | Deltakere | Vinner |
 |-|-|-|-|

@@ -32,13 +32,4 @@
 |[2020-01-09](resultater/Hu200109-B.htm)|Gruppe B|19|Ledion Berisha|
 |[Alle](Hurtigsjakk.md)||||
 
-## Hamarcup
-
-| Dato | Gruppe | Deltagere | Vinner |
-|-|-|-|-|
-|[2005-04-14](resultater/Hc050414.htm)||10|Ragnar Holm|
-|[2005-03-31](resultater/Hc050331.htm)||13|Geir Brobakken|
-|[2005-02-24](resultater/Hc050224.htm)||12|Ragnar Holm|
-|[2005-02-10](resultater/Hc050210.htm)||8|Anders Wågø|
-|[2004-11-25](resultater/Hc041125.htm)||9|Ragnar Holm|
-|[Alle](Hamarcup.md)||||
+[Fullstendig arkiv](arkiv.md)
