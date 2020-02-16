@@ -85,7 +85,7 @@ $objects = $files | foreach {
 
 
 
-$text = @("# Resultater")
+$text = @() # "# Resultater - Hamar sjakkselskap")
 
 
 $text += $tournaments | ? active | Foreach -Begin {
