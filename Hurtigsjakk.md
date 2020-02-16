@@ -2,6 +2,8 @@
 
 | Dato | Gruppe | Deltakere | Vinner |
 |-|-|-|-|
+|[2020-02-13](resultater/Hu200213-A.htm)|Gruppe A|13|Lom Madagov|
+|[2020-02-13](resultater/Hu200213-B.htm)|Gruppe B|16|Erlend Teum|
 |[2020-01-23](resultater/Hu200123.htm)||16|Simen Øian Gjermundsen|
 |[2020-01-09](resultater/Hu200109-A.htm)|Gruppe A|18|Ibragim Madagov|
 |[2020-01-09](resultater/Hu200109-B.htm)|Gruppe B|19|Ledion Berisha|
