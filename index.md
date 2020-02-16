@@ -1,6 +1,5 @@
-﻿# Resultater
-
-## Aktive turneringer i turneringsservice
+﻿
+# Aktive turneringer i turneringsservice
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
@@ -10,7 +9,7 @@
 |[Seriespill 4.div](turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien2018-194divisjon-NorgesSjakkforbund&Group=4.%20div%20G)||6|Gjøvik 1|
 |[Arkiv](turneringer.md)||||
 
-## Lynsjakk
+# Lynsjakk
 
 | Dato | Gruppe | Deltagere | Vinner |
 |-|-|-|-|
@@ -21,7 +20,7 @@
 |[2019-10-24](resultater/Ly191024.htm)||12|Lom Madagov|
 |[Alle](Lynsjakk.md)||||
 
-## Hurtigsjakk
+# Hurtigsjakk
 
 | Dato | Gruppe | Deltagere | Vinner |
 |-|-|-|-|

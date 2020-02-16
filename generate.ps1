@@ -90,7 +90,7 @@ $text = @() # "# Resultater - Hamar sjakkselskap")
 
 $text += $tournaments | ? active | Foreach -Begin {
     ""
-    "## Aktive turneringer i turneringsservice"
+    "# Aktive turneringer i turneringsservice"
     ""
     "| Navn | Gruppe | Deltagere | Leder |"
     "|-|-|-|-|"
@@ -106,7 +106,7 @@ $text += $tournaments | ? active | Foreach -Begin {
 # Generate summary file
 $text += $objects | Group Type | ? Name -in "Lynsjakk","Hurtigsjakk" | Foreach {
     ""
-    "## $($_.Name)"
+    "# $($_.Name)"
     ""
     "| Dato | Gruppe | Deltagere | Vinner |"
     "|-|-|-|-|"
