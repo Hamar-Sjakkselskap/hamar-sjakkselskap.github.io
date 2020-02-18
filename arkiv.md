@@ -2,8 +2,8 @@
 
 | Dato | Turnering | Gruppe | Deltagere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|-|
-|[Hurtigsjakk - Gruppe A](resultater/Hu200213-A.htm)|[2020-02-13](resultater/Hu200213-A.htm)|Hurtigsjakk - Gruppe A|13|Lom Madagov|Lars HÃ¥vard S Dahl (+44)|
-|[Hurtigsjakk - Gruppe B](resultater/Hu200213-B.htm)|[2020-02-13](resultater/Hu200213-B.htm)|Hurtigsjakk - Gruppe B|16|Erlend Teum|Nicolai FrÃ¸yshov (+70)|
+|[Hurtigsjakk - Gruppe A](resultater/Hu200213-A.htm)|[2020-02-13](resultater/Hu200213-A.htm)|Hurtigsjakk - Gruppe A|13|Lom Madagov|Lars Håvard S Dahl (+44)|
+|[Hurtigsjakk - Gruppe B](resultater/Hu200213-B.htm)|[2020-02-13](resultater/Hu200213-B.htm)|Hurtigsjakk - Gruppe B|16|Erlend Teum|Nicolai Frøyshov (+70)|
 |[Lynsjakk](resultater/Ly200130.htm)|[2020-01-30](resultater/Ly200130.htm)|Lynsjakk|28|Lom Madagov|Lom Madagov (+109)|
 |[Hurtigsjakk](resultater/Hu200123.htm)|[2020-01-23](resultater/Hu200123.htm)|Hurtigsjakk|16|Simen Øian Gjermundsen|Vebjørn Holm-Gjerde (+42)|
 |[Lynsjakk](resultater/Ly200123.htm)|[2020-01-23](resultater/Ly200123.htm)|Lynsjakk|14|Ibragim Madagov|Ibragim Madagov (+109)|

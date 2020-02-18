@@ -2,8 +2,8 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
-|[2020-02-13](resultater/Hu200213-A.htm)|Gruppe A|13|Lom Madagov|Lars HÃ¥vard S Dahl (+44)|
-|[2020-02-13](resultater/Hu200213-B.htm)|Gruppe B|16|Erlend Teum|Nicolai FrÃ¸yshov (+70)|
+|[2020-02-13](resultater/Hu200213-A.htm)|Gruppe A|13|Lom Madagov|Lars Håvard S Dahl (+44)|
+|[2020-02-13](resultater/Hu200213-B.htm)|Gruppe B|16|Erlend Teum|Nicolai Frøyshov (+70)|
 |[2020-01-23](resultater/Hu200123.htm)||16|Simen Øian Gjermundsen|Vebjørn Holm-Gjerde (+42)|
 |[2020-01-09](resultater/Hu200109-A.htm)|Gruppe A|18|Ibragim Madagov|Leander Eriksen (+99)|
 |[2020-01-09](resultater/Hu200109-B.htm)|Gruppe B|19|Ledion Berisha|Ledion Berisha (+38)|

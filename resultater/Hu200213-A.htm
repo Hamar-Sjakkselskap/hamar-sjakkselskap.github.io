@@ -11,7 +11,7 @@ function Game(Index, pgnfile)
 {
 
 // ***********************************************************************************************
-// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN pÃ¥ serveren
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
 // der PGN og HTM-filene (resultatlistene) legges.
 // TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
 // ***********************************************************************************************
@@ -19,15 +19,15 @@ var BaseURL = 'http://www.myserver.com/myfolder/results';
 
 
 // ***************************  PGNtoJS: *********************************************************
-// Hvis du velger PGNtoJS som viewer mÃ¥ du huske pÃ¥ fÃ¸lgende nÃ¥r du genererer
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
 // partifilene i PGNtoJS:
-// - Under "Convert"-"Settings"-"Layout" mÃ¥ du krysse av "For each game a new page"
-// - PÃ¥ "Name of project" mÃ¥ du beholde standardnavnet "game". Hvis du endrer navn mÃ¥ du
-//   ogsÃ¥ endre variabelen NameOfProject_In_PGNtoJS nedenfor
-// - Filene som PGNtoJS genererer mÃ¥ lagres pÃ¥ WEB-serveren i en egen folder med samme navn
-//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, sÃ¥ mÃ¥ PGNtoJS altsÃ¥
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
 //   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
-// - Hvis turneringen har flere grupper, mÃ¥ partifilene fra hver gruppe lagres i separate foldere.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
 // ***********************************************************************************************
 var NameOfProject_In_PGNtoJS='game';
 
@@ -42,8 +42,8 @@ var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'
 
 
 // ***********************************************************************************************
-// Nedenfor velger du hvilken partiviewer som skal brukes,  ved Ã¥ "kommentere bort"
-// riktig linje.  Kommentartegnet (to skrÃ¥streker) mÃ¥ vÃ¦re fjernet fra EN  og
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
 // bare EN av linjene nedenfor.
 // ***********************************************************************************************
 window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
@@ -52,7 +52,7 @@ window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
 }
 
 // ***********************************************************************************************
-// Det fÃ¸lgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
 // ***********************************************************************************************
 
 
@@ -104,93 +104,93 @@ Endelig resultatliste
 <center>
 <table border="0" cellspacing="0" cellpadding="1"><tbody>
 <tr bgcolor="#5050B0" class="ts_top">
-<th><font color="#FFFFFF">Pl</font></th><th><font color="#FFFFFF">Navn</font></th><th><font color="#FFFFFF">n-Rtg</font></th><th><font color="#FFFFFF">Klubb</font></th><th><font color="#FFFFFF">1</font></th><th><font color="#FFFFFF">2</font></th><th><font color="#FFFFFF">3</font></th><th><font color="#FFFFFF">4</font></th><th><font color="#FFFFFF">5</font></th><th title="Poengsum (=Lagpoeng i lagturneringer)"><font color="#FFFFFF">Poeng</font></th><th style="font-size:xx-Small;" title="FIDE Buchholz, dÃ¥rligste strÃ¸ket"><font color="#FFFFFF">Buchholz-1</font></th><th style="font-size:xx-Small;" title="FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)"><font color="#FFFFFF">Buchholz</font></th><th style="font-size:xx-Small;" title="Gjennomsnittlig FIDE ratingmotstand"><font color="#FFFFFF">i-Snittm</font></th><th title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><font color="#FFFFFF">n-Prestasjon</font></th></tr>
-<tr class="ts_tabell"> <td><div align="right">  1&nbsp;</div></td><td>Lom Madagov</td><td><div align="right"><a href="javascript:nsfChart(&#39;Madagov%20Lom&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1892</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Sort mot Lars HÃ¥vard S Dahl." style="font-size:Small;"><tt>&nbsp;=03 </tt></td>
-<td title="Vant med Hvit mot Sivert Nikolai Ã˜rsleie." style="font-size:Small;"><tt><b>&nbsp;+04 </b></tt></td>
-<td title="Vant med Sort mot Odd N TÃ¸stibakken." style="font-size:Small;"><tt>&nbsp;+11 </tt></td>
+<th><font color="#FFFFFF">Pl</font></th><th><font color="#FFFFFF">Navn</font></th><th><font color="#FFFFFF">n-Rtg</font></th><th><font color="#FFFFFF">Klubb</font></th><th><font color="#FFFFFF">1</font></th><th><font color="#FFFFFF">2</font></th><th><font color="#FFFFFF">3</font></th><th><font color="#FFFFFF">4</font></th><th><font color="#FFFFFF">5</font></th><th title="Poengsum (=Lagpoeng i lagturneringer)"><font color="#FFFFFF">Poeng</font></th><th style="font-size:xx-Small;" title="FIDE Buchholz, dårligste strøket"><font color="#FFFFFF">Buchholz-1</font></th><th style="font-size:xx-Small;" title="FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)"><font color="#FFFFFF">Buchholz</font></th><th style="font-size:xx-Small;" title="Gjennomsnittlig FIDE ratingmotstand"><font color="#FFFFFF">i-Snittm</font></th><th title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><font color="#FFFFFF">n-Prestasjon</font></th></tr>
+<tr class="ts_tabell"> <td><div align="right">  1&nbsp;</div></td><td>Lom Madagov</td><td><div align="right"><a href="javascript:nsfChart(&#39;Madagov%20Lom&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1892</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Sort mot Lars Håvard S Dahl." style="font-size:Small;"><tt>&nbsp;=03 </tt></td>
+<td title="Vant med Hvit mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt><b>&nbsp;+04 </b></tt></td>
+<td title="Vant med Sort mot Odd N Tøstibakken." style="font-size:Small;"><tt>&nbsp;+11 </tt></td>
 <td title="Vant med Hvit mot Jan Jotun." style="font-size:Small;"><tt><b>&nbsp;+09 </b></tt></td>
-<td title="Vant med Sort mot Stein NordstrÃ¸m." style="font-size:Small;"><tt>&nbsp;+05 </tt></td>
+<td title="Vant med Sort mot Stein Nordstrøm." style="font-size:Small;"><tt>&nbsp;+05 </tt></td>
 <td><div align="right"><b>4.5 </b></div></td><td style="font-size:x-Small;"><div align="right">11.5</div></td><td style="font-size:x-Small;"><div align="right">13.0</div></td><td style="font-size:x-Small;"><div align="right">1527</div></td><td><tt>&nbsp;1645&nbsp;( +1)</tt></td></tr>
-<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  2&nbsp;</div></td><td>Markus Slettmoen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Slettmoen%20Markus&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1435</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Sort mot Odd N TÃ¸stibakken." style="font-size:Small;"><tt>&nbsp;=11 </tt></td>
-<td title="Tapte  med Hvit mot Lars HÃ¥vard S Dahl." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
-<td title="Vant med Sort mot Simen Ã˜ian Gjermundsen." style="font-size:Small;"><tt>&nbsp;+12 </tt></td>
+<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  2&nbsp;</div></td><td>Markus Slettmoen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Slettmoen%20Markus&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1435</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Sort mot Odd N Tøstibakken." style="font-size:Small;"><tt>&nbsp;=11 </tt></td>
+<td title="Tapte  med Hvit mot Lars Håvard S Dahl." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
+<td title="Vant med Sort mot Simen Øian Gjermundsen." style="font-size:Small;"><tt>&nbsp;+12 </tt></td>
 <td title="Vant med Hvit mot Ibragim Madagov." style="font-size:Small;"><tt><b>&nbsp;+10 </b></tt></td>
-<td title="Vant med Sort mot Sivert Nikolai Ã˜rsleie." style="font-size:Small;"><tt>&nbsp;+04 </tt></td>
+<td title="Vant med Sort mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt>&nbsp;+04 </tt></td>
 <td><div align="right"><b>3.5 </b></div></td><td style="font-size:x-Small;"><div align="right"> 9.0</div></td><td style="font-size:x-Small;"><div align="right"> 9.5</div></td><td style="font-size:x-Small;"><div align="right">1504</div></td><td><tt>&nbsp;1344&nbsp;( -4)</tt></td></tr>
-<tr class="ts_tabell"> <td><div align="right">  3&nbsp;</div></td><td>Lars HÃ¥vard S Dahl</td><td><div align="right"><a href="javascript:nsfChart(&#39;Dahl%20Lars%20H%E5vard%20S&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1199</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Hvit mot Lom Madagov." style="font-size:Small;"><tt><b>&nbsp;=01 </b></tt></td>
+<tr class="ts_tabell"> <td><div align="right">  3&nbsp;</div></td><td>Lars Håvard S Dahl</td><td><div align="right"><a href="javascript:nsfChart(&#39;Dahl%20Lars%20H%E5vard%20S&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1199</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Hvit mot Lom Madagov." style="font-size:Small;"><tt><b>&nbsp;=01 </b></tt></td>
 <td title="Vant med Sort mot Markus Slettmoen." style="font-size:Small;"><tt>&nbsp;+02 </tt></td>
-<td title="Tapte  med Hvit mot Stein NordstrÃ¸m." style="font-size:Small;"><tt><b>&nbsp;-05 </b></tt></td>
-<td title="Vant med Sort mot Odd N TÃ¸stibakken." style="font-size:Small;"><tt>&nbsp;+11 </tt></td>
-<td title="Remis med Hvit mot Steinar OrmÃ¥sen." style="font-size:Small;"><tt><b>&nbsp;=06 </b></tt></td>
+<td title="Tapte  med Hvit mot Stein Nordstrøm." style="font-size:Small;"><tt><b>&nbsp;-05 </b></tt></td>
+<td title="Vant med Sort mot Odd N Tøstibakken." style="font-size:Small;"><tt>&nbsp;+11 </tt></td>
+<td title="Remis med Hvit mot Steinar Ormåsen." style="font-size:Small;"><tt><b>&nbsp;=06 </b></tt></td>
 <td><div align="right"><b>3.0 </b></div></td><td style="font-size:x-Small;"><div align="right">14.0</div></td><td style="font-size:x-Small;"><div align="right">15.5</div></td><td style="font-size:x-Small;"><div align="right">1728</div></td><td><tt>&nbsp;1484&nbsp;(+44)</tt></td></tr>
-<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  4&nbsp;</div></td><td>Sivert Nikolai Ã˜rsleie</td><td><div align="right"><a href="javascript:nsfChart(&#39;%D8rsleie%20Sivert%20Nikolai&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1298</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><tt><b>&nbsp;+07 </b></tt></td>
+<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  4&nbsp;</div></td><td>Sivert Nikolai Ørsleie</td><td><div align="right"><a href="javascript:nsfChart(&#39;%D8rsleie%20Sivert%20Nikolai&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1298</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><tt><b>&nbsp;+07 </b></tt></td>
 <td title="Tapte  med Sort mot Lom Madagov." style="font-size:Small;"><tt>&nbsp;-01 </tt></td>
 <td title="Vant med Hvit mot Ibragim Madagov." style="font-size:Small;"><tt><b>&nbsp;+10 </b></tt></td>
-<td title="Vant med Sort mot Steinar OrmÃ¥sen." style="font-size:Small;"><tt>&nbsp;+06 </tt></td>
+<td title="Vant med Sort mot Steinar Ormåsen." style="font-size:Small;"><tt>&nbsp;+06 </tt></td>
 <td title="Tapte  med Hvit mot Markus Slettmoen." style="font-size:Small;"><tt><b>&nbsp;-02 </b></tt></td>
 <td><div align="right"><b>3.0 </b></div></td><td style="font-size:x-Small;"><div align="right">13.5</div></td><td style="font-size:x-Small;"><div align="right">15.0</div></td><td style="font-size:x-Small;"><div align="right">1778</div></td><td><tt>&nbsp;1477&nbsp;(+33)</tt></td></tr>
-<tr class="ts_tabell"> <td><div align="right">  5&nbsp;</div></td><td>Stein NordstrÃ¸m</td><td><div align="right"><a href="javascript:nsfChart(&#39;Nordstr%F8m%20Stein&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1318</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Sort mot Simen Ã˜ian Gjermundsen." style="font-size:Small;"><tt>&nbsp;+12 </tt></td>
+<tr class="ts_tabell"> <td><div align="right">  5&nbsp;</div></td><td>Stein Nordstrøm</td><td><div align="right"><a href="javascript:nsfChart(&#39;Nordstr%F8m%20Stein&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1318</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Sort mot Simen Øian Gjermundsen." style="font-size:Small;"><tt>&nbsp;+12 </tt></td>
 <td title="Tapte  med Hvit mot Jan Jotun." style="font-size:Small;"><tt><b>&nbsp;-09 </b></tt></td>
-<td title="Vant med Sort mot Lars HÃ¥vard S Dahl." style="font-size:Small;"><tt>&nbsp;+03 </tt></td>
+<td title="Vant med Sort mot Lars Håvard S Dahl." style="font-size:Small;"><tt>&nbsp;+03 </tt></td>
 <td title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><tt><b>&nbsp;+07 </b></tt></td>
 <td title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><tt><b>&nbsp;-01 </b></tt></td>
 <td><div align="right"><b>3.0 </b></div></td><td style="font-size:x-Small;"><div align="right">12.5</div></td><td style="font-size:x-Small;"><div align="right">13.0</div></td><td style="font-size:x-Small;"><div align="right">1754</div></td><td><tt>&nbsp;1374&nbsp;( +6)</tt></td></tr>
-<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  6&nbsp;</div></td><td>Steinar OrmÃ¥sen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Orm%E5sen%20Steinar&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1385</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Leander Eriksen." style="font-size:Small;"><tt><b>&nbsp;+08 </b></tt></td>
+<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  6&nbsp;</div></td><td>Steinar Ormåsen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Orm%E5sen%20Steinar&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1385</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Leander Eriksen." style="font-size:Small;"><tt><b>&nbsp;+08 </b></tt></td>
 <td title="Vant med Sort mot Ibragim Madagov." style="font-size:Small;"><tt>&nbsp;+10 </tt></td>
 <td title="Remis med Sort mot Jan Jotun." style="font-size:Small;"><tt>&nbsp;=09 </tt></td>
-<td title="Tapte  med Hvit mot Sivert Nikolai Ã˜rsleie." style="font-size:Small;"><tt><b>&nbsp;-04 </b></tt></td>
-<td title="Remis med Sort mot Lars HÃ¥vard S Dahl." style="font-size:Small;"><tt>&nbsp;=03 </tt></td>
+<td title="Tapte  med Hvit mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt><b>&nbsp;-04 </b></tt></td>
+<td title="Remis med Sort mot Lars Håvard S Dahl." style="font-size:Small;"><tt>&nbsp;=03 </tt></td>
 <td><div align="right"><b>3.0 </b></div></td><td style="font-size:x-Small;"><div align="right">11.5</div></td><td style="font-size:x-Small;"><div align="right">13.0</div></td><td style="font-size:x-Small;"><div align="right">1577</div></td><td><tt>&nbsp;1372&nbsp;( +1)</tt></td></tr>
-<tr class="ts_tabell"> <td><div align="right">  7&nbsp;</div></td><td>Marius Solbakken Mellum</td><td><div align="right"><a href="javascript:nsfChart(&#39;Mellum%20Marius%20Solbakken&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling"> 868</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Sivert Nikolai Ã˜rsleie." style="font-size:Small;"><tt>&nbsp;-04 </tt></td>
-<td title="Vant pÃ¥ wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<tr class="ts_tabell"> <td><div align="right">  7&nbsp;</div></td><td>Marius Solbakken Mellum</td><td><div align="right"><a href="javascript:nsfChart(&#39;Mellum%20Marius%20Solbakken&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 868</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt>&nbsp;-04 </tt></td>
+<td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
 <td title="Vant med Hvit mot Leander Eriksen." style="font-size:Small;"><tt><b>&nbsp;+08 </b></tt></td>
-<td title="Tapte  med Sort mot Stein NordstrÃ¸m." style="font-size:Small;"><tt>&nbsp;-05 </tt></td>
-<td title="Vant med Hvit mot Odd N TÃ¸stibakken." style="font-size:Small;"><tt><b>&nbsp;+11 </b></tt></td>
+<td title="Tapte  med Sort mot Stein Nordstrøm." style="font-size:Small;"><tt>&nbsp;-05 </tt></td>
+<td title="Vant med Hvit mot Odd N Tøstibakken." style="font-size:Small;"><tt><b>&nbsp;+11 </b></tt></td>
 <td><div align="right"><b>3.0 </b></div></td><td style="font-size:x-Small;"><div align="right">10.5</div></td><td style="font-size:x-Small;"><div align="right">12.0</div></td><td style="font-size:x-Small;"><div align="right">1435</div></td><td><tt>&nbsp;1163&nbsp;(+37)</tt></td></tr>
-<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  8&nbsp;</div></td><td>Leander Eriksen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Eriksen%20Leander&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1007</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Steinar OrmÃ¥sen." style="font-size:Small;"><tt>&nbsp;-06 </tt></td>
-<td title="Vant med Hvit mot Simen Ã˜ian Gjermundsen." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
+<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right">  8&nbsp;</div></td><td>Leander Eriksen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Eriksen%20Leander&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1007</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Steinar Ormåsen." style="font-size:Small;"><tt>&nbsp;-06 </tt></td>
+<td title="Vant med Hvit mot Simen Øian Gjermundsen." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
 <td title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><tt>&nbsp;-07 </tt></td>
-<td title="Vant med Hvit mot Fredrik Ã˜stlie Pettersen." style="font-size:Small;"><tt><b>&nbsp;+13 </b></tt></td>
+<td title="Vant med Hvit mot Fredrik Østlie Pettersen." style="font-size:Small;"><tt><b>&nbsp;+13 </b></tt></td>
 <td title="Vant med Sort mot Jan Jotun." style="font-size:Small;"><tt>&nbsp;+09 </tt></td>
 <td><div align="right"><b>3.0 </b></div></td><td style="font-size:x-Small;"><div align="right"> 9.0</div></td><td style="font-size:x-Small;"><div align="right"> 9.5</div></td><td style="font-size:x-Small;"><div align="right">1547</div></td><td><tt>&nbsp;1251&nbsp;(+40)</tt></td></tr>
-<tr class="ts_tabell"> <td><div align="right">  9&nbsp;</div></td><td>Jan Jotun</td><td><div align="right"><a href="javascript:nsfChart(&#39;Jotun%20Jan&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1551</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Fredrik Ã˜stlie Pettersen." style="font-size:Small;"><tt><b>&nbsp;+13 </b></tt></td>
-<td title="Vant med Sort mot Stein NordstrÃ¸m." style="font-size:Small;"><tt>&nbsp;+05 </tt></td>
-<td title="Remis med Hvit mot Steinar OrmÃ¥sen." style="font-size:Small;"><tt><b>&nbsp;=06 </b></tt></td>
+<tr class="ts_tabell"> <td><div align="right">  9&nbsp;</div></td><td>Jan Jotun</td><td><div align="right"><a href="javascript:nsfChart(&#39;Jotun%20Jan&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1551</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Fredrik Østlie Pettersen." style="font-size:Small;"><tt><b>&nbsp;+13 </b></tt></td>
+<td title="Vant med Sort mot Stein Nordstrøm." style="font-size:Small;"><tt>&nbsp;+05 </tt></td>
+<td title="Remis med Hvit mot Steinar Ormåsen." style="font-size:Small;"><tt><b>&nbsp;=06 </b></tt></td>
 <td title="Tapte  med Sort mot Lom Madagov." style="font-size:Small;"><tt>&nbsp;-01 </tt></td>
 <td title="Tapte  med Hvit mot Leander Eriksen." style="font-size:Small;"><tt><b>&nbsp;-08 </b></tt></td>
 <td><div align="right"><b>2.5 </b></div></td><td style="font-size:x-Small;"><div align="right">13.5</div></td><td style="font-size:x-Small;"><div align="right">14.5</div></td><td style="font-size:x-Small;"><div align="right">1644</div></td><td><tt>&nbsp;1338&nbsp;(-10)</tt></td></tr>
-<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right"> 10&nbsp;</div></td><td>Ibragim Madagov</td><td><div align="right"><a href="javascript:nsfChart(&#39;Madagov%20Ibragim&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1449</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant pÃ¥ wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
-<td title="Tapte  med Hvit mot Steinar OrmÃ¥sen." style="font-size:Small;"><tt><b>&nbsp;-06 </b></tt></td>
-<td title="Tapte  med Sort mot Sivert Nikolai Ã˜rsleie." style="font-size:Small;"><tt>&nbsp;-04 </tt></td>
+<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right"> 10&nbsp;</div></td><td>Ibragim Madagov</td><td><div align="right"><a href="javascript:nsfChart(&#39;Madagov%20Ibragim&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1449</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<td title="Tapte  med Hvit mot Steinar Ormåsen." style="font-size:Small;"><tt><b>&nbsp;-06 </b></tt></td>
+<td title="Tapte  med Sort mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt>&nbsp;-04 </tt></td>
 <td title="Tapte  med Sort mot Markus Slettmoen." style="font-size:Small;"><tt>&nbsp;-02 </tt></td>
-<td title="Vant med Hvit mot Simen Ã˜ian Gjermundsen." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
+<td title="Vant med Hvit mot Simen Øian Gjermundsen." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
 <td><div align="right"><b>2.0 </b></div></td><td style="font-size:x-Small;"><div align="right">11.5</div></td><td style="font-size:x-Small;"><div align="right">12.0</div></td><td style="font-size:x-Small;"><div align="right">1629</div></td><td><tt>&nbsp;1086&nbsp;(-20)</tt></td></tr>
-<tr class="ts_tabell"> <td><div align="right"> 11&nbsp;</div></td><td>Odd N TÃ¸stibakken</td><td><div align="right"><a href="javascript:nsfChart(&#39;T%F8stibakken%20Odd%20N&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1032</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Hvit mot Markus Slettmoen." style="font-size:Small;"><tt><b>&nbsp;=02 </b></tt></td>
-<td title="Vant med Sort mot Fredrik Ã˜stlie Pettersen." style="font-size:Small;"><tt>&nbsp;+13 </tt></td>
+<tr class="ts_tabell"> <td><div align="right"> 11&nbsp;</div></td><td>Odd N Tøstibakken</td><td><div align="right"><a href="javascript:nsfChart(&#39;T%F8stibakken%20Odd%20N&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1032</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Hvit mot Markus Slettmoen." style="font-size:Small;"><tt><b>&nbsp;=02 </b></tt></td>
+<td title="Vant med Sort mot Fredrik Østlie Pettersen." style="font-size:Small;"><tt>&nbsp;+13 </tt></td>
 <td title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><tt><b>&nbsp;-01 </b></tt></td>
-<td title="Tapte  med Hvit mot Lars HÃ¥vard S Dahl." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
+<td title="Tapte  med Hvit mot Lars Håvard S Dahl." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
 <td title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><tt>&nbsp;-07 </tt></td>
 <td><div align="right"><b>1.5 </b></div></td><td style="font-size:x-Small;"><div align="right">13.5</div></td><td style="font-size:x-Small;"><div align="right">14.5</div></td><td style="font-size:x-Small;"><div align="right">1590</div></td><td><tt>&nbsp;1148&nbsp;( +1)</tt></td></tr>
-<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right"> 12&nbsp;</div></td><td>Simen Ã˜ian Gjermundsen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Gjermundsen%20Simen%20%D8ian&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1001</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Hvit mot Stein NordstrÃ¸m." style="font-size:Small;"><tt><b>&nbsp;-05 </b></tt></td>
+<tr bgcolor="#e8e8ff" class="ts_tabell"> <td><div align="right"> 12&nbsp;</div></td><td>Simen Øian Gjermundsen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Gjermundsen%20Simen%20%D8ian&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1001</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Hvit mot Stein Nordstrøm." style="font-size:Small;"><tt><b>&nbsp;-05 </b></tt></td>
 <td title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><tt>&nbsp;-08 </tt></td>
 <td title="Tapte  med Hvit mot Markus Slettmoen." style="font-size:Small;"><tt><b>&nbsp;-02 </b></tt></td>
-<td title="Vant pÃ¥ wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
 <td title="Tapte  med Sort mot Ibragim Madagov." style="font-size:Small;"><tt>&nbsp;-10 </tt></td>
 <td><div align="right"><b>1.0 </b></div></td><td style="font-size:x-Small;"><div align="right">11.0</div></td><td style="font-size:x-Small;"><div align="right">11.5</div></td><td style="font-size:x-Small;"><div align="right">1661</div></td><td><tt>&nbsp;0902&nbsp;( -8)</tt></td></tr>
-<tr class="ts_tabell"> <td><div align="right"> 13&nbsp;</div></td><td>Fredrik Ã˜stlie Pettersen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Pettersen%20Fredrik%20%D8stlie&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for Ã¥  se nasjonal elo utvikling">1092</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><tt>&nbsp;-09 </tt></td>
-<td title="Tapte  med Hvit mot Odd N TÃ¸stibakken." style="font-size:Small;"><tt><b>&nbsp;-11 </b></tt></td>
-<td title="Vant pÃ¥ wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<tr class="ts_tabell"> <td><div align="right"> 13&nbsp;</div></td><td>Fredrik Østlie Pettersen</td><td><div align="right"><a href="javascript:nsfChart(&#39;Pettersen%20Fredrik%20%D8stlie&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1092</a></div></td><td><a href="http://hamar.hosjakk.no/resultater/standings.aspx?TID=Hurtigsjakk2020-HamarSjakkselskap&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><tt>&nbsp;-09 </tt></td>
+<td title="Tapte  med Hvit mot Odd N Tøstibakken." style="font-size:Small;"><tt><b>&nbsp;-11 </b></tt></td>
+<td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
 <td title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><tt>&nbsp;-08 </tt></td>
 <td title="Ingen parti ." style="font-size:Small;"><tt>&nbsp;    </tt></td>
 <td><div align="right"><b>1.0 </b></div></td><td style="font-size:x-Small;"><div align="right"> 9.0</div></td><td style="font-size:x-Small;"><div align="right">10.0</div></td><td style="font-size:x-Small;"><div align="right">1584</div></td><td><tt>&nbsp;0796&nbsp;(-12)</tt></td></tr>
 </tbody></table>
 <table style="font-size:xx-Small;" border="0" cellspacing="0" cellpadding="1"><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
 <tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
-<tr><td>2&nbsp;</td><td>Buchholz-1:&nbsp;</td><td>FIDE Buchholz, dÃ¥rligste strÃ¸ket</td></tr>
+<tr><td>2&nbsp;</td><td>Buchholz-1:&nbsp;</td><td>FIDE Buchholz, dårligste strøket</td></tr>
 <tr><td>3&nbsp;</td><td>Buchholz:&nbsp;</td><td>FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)</td></tr>
 <tr><td>4&nbsp;</td><td>i-Snittm:&nbsp;</td><td>Gjennomsnittlig FIDE ratingmotstand</td></tr>
 </tbody></table>
-Hvite partier stÃ¥r med <b>fet skrift.</b><br>
+Hvite partier står med <b>fet skrift.</b><br>
 <table border="0" cellspacing="0" cellpadding="1" width="95%"><tbody><tr><td>15. feb kl.20:33&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.6</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
 
 </center></body></html>
