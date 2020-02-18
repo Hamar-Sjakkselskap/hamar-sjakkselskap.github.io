@@ -31,4 +31,4 @@
 |[2020-01-09](resultater/Hu200109-B.htm)|Gruppe B|19|Ledion Berisha|Ledion Berisha (+38)|
 |[Alle](Hurtigsjakk.md)||||
 
-[Fullstendig arkiv](arkiv.md)
+[Alle resultater](arkiv.md)

@@ -137,7 +137,7 @@ $text += $objects | Group Type | ? Name -in "Lynsjakk","Hurtigsjakk" | Foreach {
 }
 
 $text += ""
-$text += "[Fullstendig arkiv](arkiv.md)"
+$text += "[Alle resultater](arkiv.md)"
 $text | Set-Content "index.md" -Encoding UTF8
 
 # Generate per type files
@@ -193,7 +193,7 @@ $objects |
         } else {
             $Name = $_.Stats.Name
         }
-        $text += "|[{1}]({0})|[{2}]({0})|{3}|{4}|{5}|" -f $_.File, $Name, $_.Date.ToString("yyy-MM-dd"), $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
+        $text += "|[{1}]({0})|[{2}]({0})|{3}|{4}|{5}|" -f $_.File, $_.Date.ToString("yyyy-MM-dd"), $Name , $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
     } -End {
         $text | Set-Content "arkiv.md" -Encoding UTF8
     }
