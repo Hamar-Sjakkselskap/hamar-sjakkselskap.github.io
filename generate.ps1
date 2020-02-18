@@ -4,7 +4,7 @@ $tournaments = @(
     @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=A"; Active = $true}
     @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=B"; Active = $true}
     @{Name = "Seriespill 3.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920203div-NorgesSjakkforbund&group=3.%20div%20B"; Active = $true}
-    @{Name = "Seriespill 4.div"; Url = "turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien2018-194divisjon-NorgesSjakkforbund&Group=4.%20div%20G"; Active = $true}
+    @{Name = "Seriespill 4.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien2018-194divisjon-NorgesSjakkforbund&Group=4.%20div%20G"; Active = $true}
 
     @{Name = "Hamarturneringen 2019"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=A"; Active = $false}
     @{Name = "Hamarturneringen 2019"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=B"; Active = $false}
@@ -17,6 +17,7 @@ function Get-StatsFromContent([string]$content) {
         Winner = $null
         Participants = 0
         Title = $null
+        BestRatingProgress = $null
     }
 
     $html = New-Object -ComObject HTMLFile
@@ -37,6 +38,23 @@ function Get-StatsFromContent([string]$content) {
     if($h1s.length -gt 0) {
         $stats.Title = $h1s[0].innerText
     }
+
+    # Determine who has best rating progress
+    $trElements = $html.body.getElementsByTagName("tr")
+    $bestRatingProgress = -999
+    $trElements | ? className -eq 'ts_tabell' | foreach {
+        $lastTd = $_.getElementsByTagName("td")  | select -last 1
+        $allTds = $_.getElementsByTagName("td") 
+        $txt = $lastTd.innerText.Trim()
+        if($txt -match "^[0-9]+ \([+-]?[0-9]+\)$") {
+            $prog = [int] $txt.Split("(")[1].Replace(")","")
+            if($prog -gt $bestRatingProgress) {
+                $bestRatingProgress = $prog
+                $stats.BestRatingProgress = $allTds[1].InnerText + " " + $txt.Split(" ")[1]
+            }
+        }
+    }
+
 
     return $stats
 }
@@ -108,11 +126,11 @@ $text += $objects | Group Type | ? Name -in "Lynsjakk","Hurtigsjakk" | Foreach {
     ""
     "# $($_.Name)"
     ""
-    "| Dato | Gruppe | Deltagere | Vinner |"
-    "|-|-|-|-|"
+    "| Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |"
+    "|-|-|-|-|-|"
 
     $_.Group | Sort @{Expression = {$_.Date}; Ascending = $false}, Group | Select -First 5 | Foreach {
-        "|[{0}]({1})|{2}|{3}|{4}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner
+        "|[{0}]({1})|{2}|{3}|{4}|{5}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
     }
 
     "|[Alle]({0}.md)||||" -f $_.Name
@@ -127,12 +145,12 @@ $objects | Group Type | Foreach {
     $text = @(
         "# $($_.Name)"
         ""
-        "| Dato | Gruppe | Deltakere | Vinner |"
-        "|-|-|-|-|"
+        "| Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |"
+        "|-|-|-|-|-|"
     )
 
     $text += $_.Group | sort @{Expression = {$_.Date}; Ascending = $false}, Group | Foreach {
-        "|[{0}]({1})|{2}|{3}|{4}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner
+        "|[{0}]({1})|{2}|{3}|{4}|{5}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
     }
 
     $text | Set-Content "$($_.Name).md" -Encoding UTF8
@@ -163,8 +181,8 @@ $objects |
         $text = @(
             "# Alle turneringer"
             ""
-            "| Dato | Turnering | Gruppe | Deltagere | Vinner |"
-            "|-|-|-|-|-|"
+            "| Dato | Turnering | Gruppe | Deltagere | Vinner | Beste ratingfremgang |"
+            "|-|-|-|-|-|-|"
         )
     } -Process {
         if($_.Type -ne "Ukjent") {
@@ -175,7 +193,7 @@ $objects |
         } else {
             $Name = $_.Stats.Name
         }
-        $text += "|[{1}]({0})|[{2}]({0})|{3}|{4}|{5}|" -f $_.File, $Name, $_.Date.ToString("yyy-MM-dd"), $Name, $_.Stats.Participants, $_.Stats.Winner
+        $text += "|[{1}]({0})|[{2}]({0})|{3}|{4}|{5}|{6}|" -f $_.File, $Name, $_.Date.ToString("yyy-MM-dd"), $Name, $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
     } -End {
         $text | Set-Content "arkiv.md" -Encoding UTF8
     }
