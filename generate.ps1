@@ -181,8 +181,8 @@ $objects |
         $text = @(
             "# Alle turneringer"
             ""
-            "| Dato | Turnering | Gruppe | Deltagere | Vinner | Beste ratingfremgang |"
-            "|-|-|-|-|-|-|"
+            "| Dato | Turnering | Deltagere | Vinner | Beste ratingfremgang |"
+            "|-|-|-|-|-|"
         )
     } -Process {
         if($_.Type -ne "Ukjent") {
@@ -193,7 +193,7 @@ $objects |
         } else {
             $Name = $_.Stats.Name
         }
-        $text += "|[{1}]({0})|[{2}]({0})|{3}|{4}|{5}|{6}|" -f $_.File, $Name, $_.Date.ToString("yyy-MM-dd"), $Name, $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
+        $text += "|[{1}]({0})|[{2}]({0})|{3}|{4}|{5}|" -f $_.File, $Name, $_.Date.ToString("yyy-MM-dd"), $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
     } -End {
         $text | Set-Content "arkiv.md" -Encoding UTF8
     }
