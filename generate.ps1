@@ -3,8 +3,8 @@ $files = dir .\resultater
 $tournaments = @(
     @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=A"; Active = $true}
     @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=B"; Active = $true}
-    @{Name = "Seriespill 3.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920203div-NorgesSjakkforbund&group=3.%20div%20B"; Active = $true}
-    @{Name = "Seriespill 4.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien2018-194divisjon-NorgesSjakkforbund&Group=4.%20div%20G"; Active = $true}
+    @{Name = "Seriespill 3.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920204div-NorgesSjakkforbund&group=3.%20div%20B"; Active = $true}
+    @{Name = "Seriespill 4.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920204div-NorgesSjakkforbund&group=4.%20div%20A"; Active = $true}
 
     @{Name = "Hamarturneringen 2019"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=A"; Active = $false}
     @{Name = "Hamarturneringen 2019"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=B"; Active = $false}
@@ -69,7 +69,7 @@ function Get-StatsFromFile([string]$file) {
 # Get stats from turneringsservice
 function Get-StatsFromTurneringsservice([string]$uri) {
     Write-verbose "Getting stats for $uri" -Verbose
-    $content = Invoke-WebRequest -Uri $uri -UseBasicParsing 
+    $content = Invoke-WebRequest -Uri $uri -UseBasicParsing -ErrorAction Stop
     Get-StatsFromContent  $content.Content
 }
 
