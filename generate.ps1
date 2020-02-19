@@ -1,5 +1,7 @@
 cd $PSScriptRoot
 
+git pull
+
 $files = Get-ChildItem .\resultater
 
 $tournaments = @(
@@ -204,4 +206,3 @@ $objects |
 git add -A
 git commit -m 'Nye resultater'
 git push
-git pull 
