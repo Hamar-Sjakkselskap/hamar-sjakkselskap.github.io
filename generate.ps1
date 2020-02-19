@@ -1,4 +1,6 @@
-$files = dir .\resultater
+cd $PSScriptRoot
+
+$files = Get-ChildItem .\resultater
 
 $tournaments = @(
     @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=A"; Active = $true}
@@ -42,8 +44,8 @@ function Get-StatsFromContent([string]$content) {
     # Determine who has best rating progress
     $trElements = $html.body.getElementsByTagName("tr")
     $bestRatingProgress = -999
-    $trElements | ? className -eq 'ts_tabell' | foreach {
-        $lastTd = $_.getElementsByTagName("td")  | select -last 1
+    $trElements | Where-Object className -eq 'ts_tabell' | ForEach-Object {
+        $lastTd = $_.getElementsByTagName("td")  | Select-Object -last 1
         $allTds = $_.getElementsByTagName("td") 
         $txt = $lastTd.innerText.Trim()
         if($txt -match "^[0-9]+ \([+-]?[0-9]+\)$") {
@@ -74,11 +76,11 @@ function Get-StatsFromTurneringsservice([string]$uri) {
 }
 
 # Parse all files into objects with statistics
-$objects = $files | foreach {
+$objects = $files | ForEach-Object {
     $obj = @{
         Type = "Ukjent"
         File = "resultater/$($_.Name)"
-        Date = [Datetime]::ParseExact(([Regex]::Matches($_.BaseName, "[0-9]{6}") | Select -First 1 | Select -exp Value),"yyMMdd", $null)
+        Date = [Datetime]::ParseExact(([Regex]::Matches($_.BaseName, "[0-9]{6}") | Select-Object -First 1 | Select-Object -exp Value),"yyMMdd", $null)
         Group = $null
         Stats = $null
     }
@@ -99,14 +101,14 @@ $objects = $files | foreach {
     }
 
     [PSCustomObject] $obj
-} | sort Date, Group
+} | Sort-Object Date, Group
 
 
 
 $text = @() # "# Resultater - Hamar sjakkselskap")
 
 
-$text += $tournaments | ? active | Foreach -Begin {
+$text += $tournaments | Where-Object active | ForEach-Object -Begin {
     ""
     "# Aktive turneringer i turneringsservice"
     ""
@@ -122,14 +124,14 @@ $text += $tournaments | ? active | Foreach -Begin {
 
 
 # Generate summary file
-$text += $objects | Group Type | ? Name -in "Lynsjakk","Hurtigsjakk" | Foreach {
+$text += $objects | Group-Object Type | Where-Object Name -in "Lynsjakk","Hurtigsjakk" | ForEach-Object {
     ""
     "# $($_.Name)"
     ""
     "| Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |"
     "|-|-|-|-|-|"
 
-    $_.Group | Sort @{Expression = {$_.Date}; Ascending = $false}, Group | Select -First 5 | Foreach {
+    $_.Group | Sort-Object @{Expression = {$_.Date}; Ascending = $false}, Group | Select-Object -First 5 | ForEach-Object {
         "|[{0}]({1})|{2}|{3}|{4}|{5}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
     }
 
@@ -141,7 +143,7 @@ $text += "[Alle resultater](arkiv.md)"
 $text | Set-Content "index.md" -Encoding UTF8
 
 # Generate per type files
-$objects | Group Type | Foreach {
+$objects | Group-Object Type | ForEach-Object {
     $text = @(
         "# $($_.Name)"
         ""
@@ -149,14 +151,14 @@ $objects | Group Type | Foreach {
         "|-|-|-|-|-|"
     )
 
-    $text += $_.Group | sort @{Expression = {$_.Date}; Ascending = $false}, Group | Foreach {
+    $text += $_.Group | Sort-Object @{Expression = {$_.Date}; Ascending = $false}, Group | ForEach-Object {
         "|[{0}]({1})|{2}|{3}|{4}|{5}|" -f $_.Date.ToString("yyyy-MM-dd"), $_.File, $_.Group, $_.Stats.Participants, $_.Stats.Winner, $_.Stats.BestRatingProgress
     }
 
     $text | Set-Content "$($_.Name).md" -Encoding UTF8
 }
 
-$tournaments | Foreach -Begin {
+$tournaments | ForEach-Object -Begin {
     $text = @(
         "# Turneringer"
         ""
@@ -176,7 +178,7 @@ $tournaments | Foreach -Begin {
 
 
 $objects | 
-    sort @{Expression = {$_.Date}; Ascending = $false}, Group |
+    Sort-Object @{Expression = {$_.Date}; Ascending = $false}, Group |
     Foreach-Object -Begin {
         $text = @(
             "# Alle turneringer"
@@ -197,3 +199,9 @@ $objects |
     } -End {
         $text | Set-Content "arkiv.md" -Encoding UTF8
     }
+
+# stage all changes
+git add -A
+git commit -m 'Nye resultater'
+git push
+git pull 
