@@ -1,6 +1,6 @@
 cd $PSScriptRoot
 
-git pull
+git pull | Out-Null
 
 $files = Get-ChildItem .\resultater
 
@@ -202,7 +202,14 @@ $objects |
         $text | Set-Content "arkiv.md" -Encoding UTF8
     }
 
+if($Error) {
+    Write-Warning "Fix feil under kjøring"
+    Read-Host -Prompt "Trykk enter for å sende resultater uansett - kan bli meget feil!"    
+} 
+
 # stage all changes
 git add -A
 git commit -m 'Nye resultater'
 git push
+
+Read-Host -Prompt "Sendt, lukk vindu eller klikk enter" 
