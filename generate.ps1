@@ -10,6 +10,7 @@ $tournaments = @(
     @{Name = "Seriespill 3.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920204div-NorgesSjakkforbund&group=3.%20div%20B"; Active = $true}
     @{Name = "Seriespill 4.div"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920204div-NorgesSjakkforbund&group=4.%20div%20A"; Active = $true}
 
+    @{Name = "Hamar Vinterlyn 2020"; Url="http://turneringsservice.sjakklubb.no/standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&fbclid=IwAR3vN8uLxFtBOng25gkQqFaRQIip1GKcLZ3tcHgjw9P14qMbxykzTR8WTk0"; Active = $true}
     @{Name = "Hamarturneringen 2019"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=A"; Active = $false}
     @{Name = "Hamarturneringen 2019"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2019-HamarSjakkselskap&group=B"; Active = $false}
 )

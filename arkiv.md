@@ -12,8 +12,8 @@
 |[2019-12-19](resultater/Ly191219.htm)|[Lynsjakk](resultater/Ly191219.htm)|44|Ragnar Holm|Kristian Vedvik Holm (+139)|
 |[2019-12-12](resultater/Hu191212-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu191212-A.htm)|12|Erik Lie|Fredrik Østlie Pettersen (+31)|
 |[2019-12-12](resultater/Hu191212-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu191212-B.htm)|12|Vebjørn Holm-Gjerde|Vebjørn Holm-Gjerde (+33)|
-|[2019-11-28](resultater/Hu191128.htm)|[Hurtigsjakk](resultater/Hu191128.htm)|14|Per Solbakken|Mikael Santiago Avdem Frankmo (+37)|
 |[2019-11-28](resultater/Ly191128.htm)|[Lynsjakk](resultater/Ly191128.htm)|10|Lom Madagov|Vebjørn Holm-Gjerde (+116)|
+|[2019-11-28](resultater/Hu191128.htm)|[Hurtigsjakk](resultater/Hu191128.htm)|14|Per Solbakken|Mikael Santiago Avdem Frankmo (+37)|
 |[2019-11-14](resultater/Hu191114.htm)|[Hurtigsjakk](resultater/Hu191114.htm)|27|Lom Madagov|Vebjørn Holm-Gjerde (+41)|
 |[2019-10-24](resultater/Hu191024.htm)|[Hurtigsjakk](resultater/Hu191024.htm)|17|Marius Solbakken Mellum|Jørgen Andersen Hommerstad (+51)|
 |[2019-10-24](resultater/Ly191024.htm)|[Lynsjakk](resultater/Ly191024.htm)|12|Lom Madagov|Lars Håvard S Dahl (+117)|
@@ -25,8 +25,8 @@
 |[2019-08-29](resultater/Hu190829-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu190829-A.htm)|13|Jan Jotun|Lars Håvard S Dahl (+53)|
 |[2019-08-29](resultater/Hu190829-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu190829-B.htm)|15|Pål Gjersvik|Pål Gjersvik (+47)|
 |[2019-08-15](resultater/Ly190815.htm)|[Lynsjakk](resultater/Ly190815.htm)|9|Geir Brobakken|Lars Håvard S Dahl (+42)|
-|[2019-08-08](resultater/Ly190808.htm)|[Lynsjakk](resultater/Ly190808.htm)|6|Hugo Røste|Hugo Røste (+59)|
 |[2019-08-08](resultater/Hu190808.htm)|[Hurtigsjakk](resultater/Hu190808.htm)|12|Lars Håvard S Dahl|Lars Håvard S Dahl (+45)|
+|[2019-08-08](resultater/Ly190808.htm)|[Lynsjakk](resultater/Ly190808.htm)|6|Hugo Røste|Hugo Røste (+59)|
 |[2019-08-01](resultater/Ly190801.htm)|[Lynsjakk](resultater/Ly190801.htm)|4|Geir Brobakken|Marius Solbakken Mellum (+52)|
 |[2019-07-18](resultater/Ly190718.htm)|[Lynsjakk](resultater/Ly190718.htm)|4|Geir Brobakken|Marius Solbakken Mellum (+16)|
 |[2019-07-04](resultater/Ly190704.htm)|[Lynsjakk](resultater/Ly190704.htm)|8|Markus Slettmoen|Mikael Santiago Avdem Frankmo (+57)|
@@ -42,28 +42,28 @@
 |[2019-03-28](resultater/Hu190328.htm)|[Hurtigsjakk](resultater/Hu190328.htm)|27|Marius Græsby|Marius Græsby (+60)|
 |[2019-03-14](resultater/Hu190314-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu190314-A.htm)|13|Ragnar Holm|Ibragim Madagov (+76)|
 |[2019-03-14](resultater/Hu190314-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu190314-B.htm)|17|Marius Solbakken Mellum|Vebjørn Holm-Gjerde (+70)|
-|[2019-02-28](resultater/Ly190228.htm)|[Lynsjakk](resultater/Ly190228.htm)|15|Ibragim Madagov|Ledion Berisha (+95)|
 |[2019-02-28](resultater/Hu190228.htm)|[Hurtigsjakk](resultater/Hu190228.htm)|9|Frank Kvernvolden|Morten-Olav Tangnæs (+55)|
+|[2019-02-28](resultater/Ly190228.htm)|[Lynsjakk](resultater/Ly190228.htm)|15|Ibragim Madagov|Ledion Berisha (+95)|
 |[2019-02-14](resultater/Hu190214-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu190214-A.htm)|12|Erik Lie|Ibragim Madagov (+55)|
 |[2019-02-14](resultater/Hu190214-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu190214-B.htm)|15|Odd Frydendal|Lars Ystad-Deglum (+37)|
 |[2019-01-31](resultater/Ly190131.htm)|[Lynsjakk](resultater/Ly190131.htm)|33|Ragnar Holm|Marius Græsby (+79)|
-|[2019-01-24](resultater/Ly190124.htm)|[Lynsjakk](resultater/Ly190124.htm)|9|Lom Madagov|Jørgen Brobakken (+72)|
 |[2019-01-24](resultater/Hu190124.htm)|[Hurtigsjakk](resultater/Hu190124.htm)|18|Steinar Ormåsen|Lars Ystad-Deglum (+42)|
+|[2019-01-24](resultater/Ly190124.htm)|[Lynsjakk](resultater/Ly190124.htm)|9|Lom Madagov|Jørgen Brobakken (+72)|
 |[2019-01-10](resultater/Hu190110-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu190110-A.htm)|19|Ragnar Holm|Markus Flermoen (+30)|
 |[2019-01-10](resultater/Hu190110-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu190110-B.htm)|11|Espen Nordby|Freddy Røed (+42)|
 |[2018-12-20](resultater/Ly181220.htm)|[Lynsjakk](resultater/Ly181220.htm)|47|IM Kristian Stuvik Holm|Leander Eriksen (+105)|
 |[2018-12-13](resultater/Hu181213-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu181213-A.htm)|13|Lom Madagov|Jørgen Brobakken (+39)|
 |[2018-12-13](resultater/Hu181213-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu181213-B.htm)|9|Egil Flermoen|Egil Flermoen (+38)|
-|[2018-11-22](resultater/Ly181122.htm)|[Lynsjakk](resultater/Ly181122.htm)|12|Lom Madagov|Marius Græsby (+47)|
 |[2018-11-22](resultater/Hu181122.htm)|[Hurtigsjakk](resultater/Hu181122.htm)|6|Odd Frydendal|Fredrik Østlie Pettersen (+22)|
+|[2018-11-22](resultater/Ly181122.htm)|[Lynsjakk](resultater/Ly181122.htm)|12|Lom Madagov|Marius Græsby (+47)|
 |[2018-11-08](resultater/Hu181108-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu181108-A.htm)|18|Ragnar Holm|Odd N Tøstibakken (+32)|
 |[2018-11-08](resultater/Hu181108-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu181108-B.htm)|14|Arda Kücük|Arda Kücük (+34)|
-|[2018-10-25](resultater/Ly181025.htm)|[Lynsjakk](resultater/Ly181025.htm)|18|Lom Madagov|Markus Flermoen (+59)|
 |[2018-10-25](resultater/Hu181025.htm)|[Hurtigsjakk](resultater/Hu181025.htm)|6|Lars Ystad-Deglum|Lars Ystad-Deglum (+63)|
+|[2018-10-25](resultater/Ly181025.htm)|[Lynsjakk](resultater/Ly181025.htm)|18|Lom Madagov|Markus Flermoen (+59)|
 |[2018-10-11](resultater/Hu181011-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu181011-A.htm)|7|Lom Madagov|Lom Madagov (+14)|
 |[2018-10-11](resultater/Hu181011-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu181011-B.htm)|8|Egil Flermoen|Egil Flermoen (+48)|
-|[2018-09-27](resultater/Ly180927.htm)|[Lynsjakk](resultater/Ly180927.htm)|10|Lom Madagov|Arda Kücük (+51)|
 |[2018-09-27](resultater/Hu180927.htm)|[Hurtigsjakk](resultater/Hu180927.htm)|12|Amund Hønningstad|Lars Ystad-Deglum (+38)|
+|[2018-09-27](resultater/Ly180927.htm)|[Lynsjakk](resultater/Ly180927.htm)|10|Lom Madagov|Arda Kücük (+51)|
 |[2018-09-13](resultater/Hu180913-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu180913-A.htm)|11|Lom Madagov|Jørgen Brobakken (+25)|
 |[2018-09-13](resultater/Hu180913-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu180913-B.htm)|14|Arda Kücük|Mattis Gammelmo Wiksén (+39)|
 |[2018-08-30](resultater/Hu180830-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu180830-A.htm)|14|Lom Madagov|Sivert Nikolai Ørsleie (+38)|
@@ -78,8 +78,8 @@
 |[2018-05-31](resultater/Ly180531.htm)|[Lynsjakk](resultater/Ly180531.htm)|8|Lom Madagov|Ibragim Madagov (+94)|
 |[2018-05-24](resultater/Hu180524.htm)|[Hurtigsjakk](resultater/Hu180524.htm)|12|Odd N Tøstibakken|Mattis Gammelmo Wiksén (+28)|
 |[2018-05-24](resultater/Ly180524.htm)|[Lynsjakk](resultater/Ly180524.htm)|13|Lom Madagov|Sivert Nikolai Ørsleie (+98)|
-|[2018-04-26](resultater/Ly180426.htm)|[Lynsjakk](resultater/Ly180426.htm)|8|Lom Madagov|Marius Græsby (+58)|
 |[2018-04-26](resultater/Hu180426.htm)|[Hurtigsjakk](resultater/Hu180426.htm)|18|Frode Storli|Jørgen Andersen Hommerstad (+404)|
+|[2018-04-26](resultater/Ly180426.htm)|[Lynsjakk](resultater/Ly180426.htm)|8|Lom Madagov|Marius Græsby (+58)|
 |[2018-04-12](resultater/Hu180412-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu180412-A.htm)|15|Ragnar Holm|Ibragim Madagov (+35)|
 |[2018-04-12](resultater/Hu180412-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu180412-B.htm)|21|Frank Kvernvolden|Jørgen Andersen Hommerstad (+358)|
 |[2018-03-22](resultater/Ly180322.htm)|[Lynsjakk](resultater/Ly180322.htm)|14|Markus Slettmoen|Markus Slettmoen (+89)|
@@ -97,15 +97,15 @@
 |[2017-12-21](resultater/Ly171221.htm)|[Lynsjakk](resultater/Ly171221.htm)|41|Lars Pilø|Vidar Brobakken (+130)|
 |[2017-12-14](resultater/Hu171214-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu171214-A.htm)|14|Lom Madagov|Ibragim Madagov (+26)|
 |[2017-12-14](resultater/Hu171214-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu171214-B.htm)|13|Fredrik Østlie Pettersen|Lars Håvard Skuggerud Dahl (+32)|
-|[2017-11-30](resultater/Ly171130.htm)|[Lynsjakk](resultater/Ly171130.htm)|12|Lom Madagov|Ibragim Madagov (+141)|
 |[2017-11-30](resultater/Hu171130.htm)|[Hurtigsjakk](resultater/Hu171130.htm)|18|Tore Haraldstad|Tore Haraldstad (+42)|
+|[2017-11-30](resultater/Ly171130.htm)|[Lynsjakk](resultater/Ly171130.htm)|12|Lom Madagov|Ibragim Madagov (+141)|
 |[2017-11-23](resultater/Hu171123-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu171123-A.htm)|6|Erlend Reigstad|Erlend Reigstad (+67)|
 |[2017-11-23](resultater/Hu171123-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu171123-B.htm)|7|Ibragim Madagov|Ibragim Madagov (+32)|
 |[2017-11-23](resultater/Hu171123-C.htm)|[Hurtigsjakk - Gruppe C](resultater/Hu171123-C.htm)|7|Trond Søberg|Freddy Røed (+23)|
 |[2017-11-09](resultater/Hu171109-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu171109-A.htm)|11|Lom Madagov|Ibragim Madagov (+33)|
 |[2017-11-09](resultater/Hu171109-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu171109-B.htm)|16|Arnt Kristian Roksvold|Fredrik Østlie Pettersen (+30)|
-|[2017-10-26](resultater/Ly171026.htm)|[Lynsjakk](resultater/Ly171026.htm)|16|Lom Madagov|Ibragim Madagov (+152)|
 |[2017-10-26](resultater/Hu171026.htm)|[Hurtigsjakk](resultater/Hu171026.htm)|14|Steinar Ormåsen|Mattis Gammelmo Wiksén (+32)|
+|[2017-10-26](resultater/Ly171026.htm)|[Lynsjakk](resultater/Ly171026.htm)|16|Lom Madagov|Ibragim Madagov (+152)|
 |[2017-10-12](resultater/Hu171012-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu171012-A.htm)|12|Markus Slettmoen|Markus Slettmoen (+101)|
 |[2017-10-12](resultater/Hu171012-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu171012-B.htm)|11|Odin Thune Brønstad|Erik Opseth (+37)|
 |[2017-09-28](resultater/Ly170928.htm)|[Lynsjakk](resultater/Ly170928.htm)|10|Lom Madagov|Odd N Tøstibakken (+51)|
@@ -130,8 +130,8 @@
 |[2017-05-18](resultater/Hu170518-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu170518-A.htm)|11|Lom Madagov|Vidar Brobakken (+24)|
 |[2017-05-18](resultater/Hu170518-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu170518-B.htm)|16|Frank Kvernvolden|Frank Kvernvolden (+36)|
 |[2017-05-11](resultater/Hu170511.htm)|[Hurtigsjakk](resultater/Hu170511.htm)|17|Ole-Jakob Kristiansen|Jad Mouawad (+24)|
-|[2017-04-27](resultater/Ly170427.htm)|[Lynsjakk](resultater/Ly170427.htm)|15|Lars Pilø|Mats Myhr Hansen (+54)|
 |[2017-04-27](resultater/Hu170427.htm)|[Hurtigsjakk](resultater/Hu170427.htm)|12|Frode Floen|Pål Gjersvik (+37)|
+|[2017-04-27](resultater/Ly170427.htm)|[Lynsjakk](resultater/Ly170427.htm)|15|Lars Pilø|Mats Myhr Hansen (+54)|
 |[2017-04-06](resultater/Hu170406-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu170406-A.htm)|16|Lom Madagov|Frode Floen (+42)|
 |[2017-04-06](resultater/Hu170406-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu170406-B.htm)|15|Frank Kvernvolden|Arijanit Berisha (+30)|
 |[2017-03-23](resultater/Ly170323.htm)|[Lynsjakk](resultater/Ly170323.htm)|18|Lom Madagov|Ibragim Madagov (+109)|
@@ -144,20 +144,20 @@
 |[2017-01-12](resultater/Hu170112-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu170112-A.htm)|19|Lom Madagov|Anders Søberg (+30)|
 |[2017-01-12](resultater/Hu170112-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu170112-B.htm)|24|Per Solbakken|Sigurd Lauritzen Molberg (+50)|
 |[2016-12-20](resultater/Ly161220.htm)|[Lynsjakk](resultater/Ly161220.htm)|11|Fredrik Ø Pettersen|Fredrik Ø Pettersen (+66)|
-|[2016-12-15](resultater/Ly161215.htm)|[Lynsjakk](resultater/Ly161215.htm)|17|Lars Pilø|Ole-Jakob Kristiansen (+90)|
 |[2016-12-15](resultater/Hu161215.htm)|[Hurtigsjakk](resultater/Hu161215.htm)|12|Erling Bjørtomt|Marius Græsby (+42)|
+|[2016-12-15](resultater/Ly161215.htm)|[Lynsjakk](resultater/Ly161215.htm)|17|Lars Pilø|Ole-Jakob Kristiansen (+90)|
 |[2016-12-08](resultater/Hu161208-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu161208-A.htm)|15|Lars Pilø|Elliot Sveum Torp (+54)|
 |[2016-12-08](resultater/Hu161208-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu161208-B.htm)|24|Mats Hansen|Benjamin Vigdel (+80)|
 |[2016-11-24](resultater/Hu161124.htm)|[Hurtigsjakk](resultater/Hu161124.htm)|32|Lars Pilø|Erlend Teum (+76)|
 |[2016-11-10](resultater/Hu161110-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu161110-A.htm)|9|Lom Madagov|Odd N Tøstibakken (+36)|
 |[2016-11-10](resultater/Hu161110-b.htm)|[Hurtigsjakk - Gruppe b](resultater/Hu161110-b.htm)|14|Ibragim Madagov|Mattis Gammelmo Wiksén (+114)|
-|[2016-10-27](resultater/Hu161027.htm)|[Hurtigsjakk](resultater/Hu161027.htm)|18|Ibragim Madagov|Ibragim Madagov (+78)|
 |[2016-10-27](resultater/Ly161027.htm)|[Lynsjakk](resultater/Ly161027.htm)|13|Lom Madagov|Elliot Sveum Torp (+72)|
+|[2016-10-27](resultater/Hu161027.htm)|[Hurtigsjakk](resultater/Hu161027.htm)|18|Ibragim Madagov|Ibragim Madagov (+78)|
 |[2016-10-13](resultater/Hu161013-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu161013-A.htm)|10|Ragnar Holm|Erlend Reigstad (+60)|
 |[2016-10-13](resultater/Hu161013-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu161013-B.htm)|8|Ibragim Madagov|Nicolas Kvernvolden (+76)|
 |[2016-09-29](resultater/Hu160929.htm)|[Hurtigsjakk](resultater/Hu160929.htm)|14|Lars Pilø|Leif Magne Moen (+48)|
-|[2016-09-22](resultater/Ly160922.htm)|[Lynsjakk](resultater/Ly160922.htm)|13|Lom Madagov|Jonas Haukenes (+114)|
 |[2016-09-22](resultater/Hu160922.htm)|[Hurtigsjakk](resultater/Hu160922.htm)|18|Per Solbakken|Kjetil Wold Henriksen (+70)|
+|[2016-09-22](resultater/Ly160922.htm)|[Lynsjakk](resultater/Ly160922.htm)|13|Lom Madagov|Jonas Haukenes (+114)|
 |[2016-09-08](resultater/Hu160908-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu160908-A.htm)|14|Lars Pilø|Oliver Opseth (+70)|
 |[2016-09-08](resultater/Hu160908-B.htm)|[Hurtigsjakk - Gruppe B](resultater/Hu160908-B.htm)|21|Frank Kvernvolden|Ledion Berisha (+92)|
 |[2016-08-25](resultater/Hu160825-A.htm)|[Hurtigsjakk - Gruppe A](resultater/Hu160825-A.htm)|16|Ragnar Holm|Sivert Nikolai Ørsleie (+93)|
@@ -193,8 +193,8 @@
 |[2015-09-24](resultater/Ly150924.htm)|[Lynsjakk](resultater/Ly150924.htm)|15|Anders Wågø|Jørgen Brobakken (+79)|
 |[2015-09-10](resultater/Hu150910.htm)|[Hurtigsjakk](resultater/Hu150910.htm)|28|Ragnar Holm|Markus Slettmoen (+68)|
 |[2015-08-27](resultater/Hu150827.htm)|[Hurtigsjakk](resultater/Hu150827.htm)|30|Ragnar Holm|Elias Haukenes (+80)|
-|[2015-08-20](resultater/Hu150820.htm)|[Hurtigsjakk](resultater/Hu150820.htm)|17|Einar Elfinn Glasø|Erlend Teum (+78)|
 |[2015-08-20](resultater/Ly150820.htm)|[Lynsjakk](resultater/Ly150820.htm)|11|Stein Nordstrøm|Stein Nordstrøm (+162)|
+|[2015-08-20](resultater/Hu150820.htm)|[Hurtigsjakk](resultater/Hu150820.htm)|17|Einar Elfinn Glasø|Erlend Teum (+78)|
 |[2015-08-13](resultater/Ly150813.htm)|[Lynsjakk](resultater/Ly150813.htm)|10|Anders Søberg|Anders Søberg (+214)|
 |[2015-08-06](resultater/Ly150806.htm)|[Lynsjakk](resultater/Ly150806.htm)|14|Lars Pilø|Frank Kvernvolden (+74)|
 |[2015-07-30](resultater/Ly150730.htm)|[Lynsjakk](resultater/Ly150730.htm)|9|Gisle Salem|Erlend Teum (+55)|
@@ -206,14 +206,14 @@
 |[2015-06-25](resultater/Hu150625.htm)|[Hurtigsjakk](resultater/Hu150625.htm)|4|Frank Kvernvolden|Frank Kvernvolden (+36)|
 |[2015-06-18](resultater/Hu150618.htm)|[Hurtigsjakk](resultater/Hu150618.htm)|9|Einar Elfinn Glasø|Jad Mouawad (+76)|
 |[2015-06-18](resultater/Ly150618.htm)|[Lynsjakk](resultater/Ly150618.htm)|9|Anders Wågø|Anders Wågø (+60)|
-|[2015-06-11](resultater/Hu150611.htm)|[Hurtigsjakk](resultater/Hu150611.htm)|15|Erling Bjørtomt|Espen Nordby (+372)|
 |[2015-06-11](resultater/Ly150611.htm)|[Lynsjakk](resultater/Ly150611.htm)|12|Ragnar Holm|Marius Trelvik (+81)|
+|[2015-06-11](resultater/Hu150611.htm)|[Hurtigsjakk](resultater/Hu150611.htm)|15|Erling Bjørtomt|Espen Nordby (+372)|
 |[2015-06-04](resultater/Ly150604.htm)|[Lynsjakk](resultater/Ly150604.htm)|9|Geir Brobakken|Odd N Tøstibakken (+87)|
-|[2015-05-28](resultater/Ly150528.htm)|[Lynsjakk](resultater/Ly150528.htm)|10|Ragnar Holm|Stein Nordstrøm (+80)|
 |[2015-05-28](resultater/Hu150528.htm)|[Hurtigsjakk](resultater/Hu150528.htm)|15|Jørn Utstøl|Tollef Vikerødegården (+74)|
+|[2015-05-28](resultater/Ly150528.htm)|[Lynsjakk](resultater/Ly150528.htm)|10|Ragnar Holm|Stein Nordstrøm (+80)|
 |[2015-05-21](resultater/Ly150521.htm)|[Lynsjakk](resultater/Ly150521.htm)|10|Ragnar Holm|Geir Brobakken (+66)|
-|[2015-04-30](resultater/Hu150430.htm)|[Hurtigsjakk](resultater/Hu150430.htm)|16|Erling Bjørtomt|Peter Istad Brobakken (+103)|
 |[2015-04-30](resultater/Ly150430.htm)|[Lynsjakk](resultater/Ly150430.htm)|15|Ragnar Holm|Anders Søberg (+98)|
+|[2015-04-30](resultater/Hu150430.htm)|[Hurtigsjakk](resultater/Hu150430.htm)|16|Erling Bjørtomt|Peter Istad Brobakken (+103)|
 |[2015-04-16](resultater/Hu150416.htm)|[Hurtigsjakk](resultater/Hu150416.htm)|29|Ragnar Holm|Frank Kvernvolden (+60)|
 |[2015-03-26](resultater/Ly150326.htm)|[Lynsjakk](resultater/Ly150326.htm)|28|Lars Pilø|Marius Trelvik (+66)|
 |[2015-03-12](resultater/Hu150312.htm)|[Hurtigsjakk](resultater/Hu150312.htm)|26|Lars Pilø|Oliver Opseth (+78)|
@@ -231,8 +231,8 @@
 |[2014-09-25](resultater/Ly140925.htm)|[Lynsjakk](resultater/Ly140925.htm)|18|Nikolai Hoff|Stein Nordstrøm (+42)|
 |[2014-09-11](resultater/Hu140911.htm)|[Hurtigsjakk](resultater/Hu140911.htm)|29|Ragnar Holm|Anders Søberg (+56)|
 |[2014-09-11](resultater/Ly140911.htm)|[Lynsjakk](resultater/Ly140911.htm)|9|Jan Jotun|Jan Jotun (+86)|
-|[2014-08-28](resultater/Hu140828.htm)|[Hurtigsjakk](resultater/Hu140828.htm)|21|Nikolai Hoff|Per Solbakken (+56)|
 |[2014-08-28](resultater/Ly140828.htm)|[Lynsjakk](resultater/Ly140828.htm)|5|Nikolai Hoff|Geir Brobakken (+14)|
+|[2014-08-28](resultater/Hu140828.htm)|[Hurtigsjakk](resultater/Hu140828.htm)|21|Nikolai Hoff|Per Solbakken (+56)|
 |[2014-08-21](resultater/Ly140821.htm)|[Lynsjakk](resultater/Ly140821.htm)|31|Nikolai Hoff|Trond Nerland (+105)|
 |[2014-08-14](resultater/Ly140814.htm)|[Lynsjakk](resultater/Ly140814.htm)|14|Anders Wågø|Kristoffer Opsahl (+102)|
 |[2014-08-07](resultater/Ly140807.htm)|[Lynsjakk](resultater/Ly140807.htm)|12|Knut Engli|Lars Kr M Telle (+105)|
@@ -292,8 +292,8 @@
 |[2009-10-22](resultater/Ly091022.htm)|[Lynsjakk](resultater/Ly091022.htm)|19|Kristian Stuvik Holm|Trym Daniel Rødvik (+130)|
 |[2009-10-08](resultater/Hu091008.htm)|[Hurtigsjakk](resultater/Hu091008.htm)|7|Trym Daniel Rødvik|Trym Daniel Rødvik (+83)|
 |[2009-09-10](resultater/Hu090910.htm)|[Hurtigsjakk](resultater/Hu090910.htm)|7|Nikolai Hoff|Vebjørn Olstad (+28)|
-|[2009-08-27](resultater/Ly090827.htm)|[Lynsjakk](resultater/Ly090827.htm)|4|Geir Brobakken|Trym Daniel Rødvik (+26)|
 |[2009-08-27](resultater/Hu090827.htm)|[Hurtigsjakk](resultater/Hu090827.htm)|9|Steinar Ormåsen|Trym Daniel Rødvik (+28)|
+|[2009-08-27](resultater/Ly090827.htm)|[Lynsjakk](resultater/Ly090827.htm)|4|Geir Brobakken|Trym Daniel Rødvik (+26)|
 |[2009-05-14](resultater/Hu090514.htm)|[Hurtigsjakk](resultater/Hu090514.htm)|7|Erik Feragen|Kristian Stuvik Holm (+34)|
 |[2009-04-16](resultater/Hu090416.htm)|[Hurtigsjakk](resultater/Hu090416.htm)|6|Kristian Stuvik Holm|Leif Magne Moen (+17)|
 |[2009-03-12](resultater/Hu090312.htm)|[Hurtigsjakk](resultater/Hu090312.htm)|15|Kristian Stuvik Holm|Kristian Stuvik Holm (+72)|
@@ -302,8 +302,8 @@
 |[2008-12-11](resultater/Hu081211.htm)|[Hurtigsjakk](resultater/Hu081211.htm)|8|Ragnar Holm|Kristian Stuvik Holm (+20)|
 |[2008-11-13](resultater/Hu081113.htm)|[Hurtigsjakk](resultater/Hu081113.htm)|11|Ragnar Holm|Trym Daniel Rødvik (+43)|
 |[2008-10-09](resultater/Hu081009.htm)|[Hurtigsjakk](resultater/Hu081009.htm)|11|Kristian Stuvik Holm|Kristian Stuvik Holm (+41)|
-|[2008-09-11](resultater/Ly080911.htm)|[Lynsjakk](resultater/Ly080911.htm)|7|Steinar Ormåsen|Espen Wasshaug (+19)|
 |[2008-09-11](resultater/Hu080911.htm)|[Hurtigsjakk](resultater/Hu080911.htm)|12|Ragnar Holm|Espen Wasshaug (+40)|
+|[2008-09-11](resultater/Ly080911.htm)|[Lynsjakk](resultater/Ly080911.htm)|7|Steinar Ormåsen|Espen Wasshaug (+19)|
 |[2008-05-15](resultater/Hu080515.htm)|[Hurtigsjakk](resultater/Hu080515.htm)|12|Ragnar Holm|Erlend Pilø (+20)|
 |[2008-04-10](resultater/Hu080410.htm)|[Hurtigsjakk](resultater/Hu080410.htm)|8|Geir Brobakken|Geir Brobakken (+31)|
 |[2008-04-10](resultater/Hu080410-1.htm)|[Hurtigsjakk - Gruppe 1](resultater/Hu080410-1.htm)|7|Geir Brobakken||
@@ -354,18 +354,18 @@
 |[2004-11-25](resultater/Hc041125.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc041125.htm)|9|Ragnar Holm|Stein Nordstrøm (+20)|
 |[2004-11-25](resultater/Ly041125.htm)|[Lynsjakk](resultater/Ly041125.htm)|7|Nikolai Hoff|Nikolai Hoff (+32)|
 |[2004-11-18](resultater/Ly041118.htm)|[Lynsjakk](resultater/Ly041118.htm)|5|Jan Jotun|Jan Jotun (+19)|
-|[2004-11-11](resultater/Ly041111.htm)|[Lynsjakk](resultater/Ly041111.htm)|16|Geir Brobakken|Geir Brobakken (+20)|
 |[2004-11-11](resultater/Hu041111.htm)|[Hurtigsjakk](resultater/Hu041111.htm)|11|Trond Nilsen|Kjetil Sangen (+33)|
-|[2004-10-28](resultater/Ly041028.htm)|[Lynsjakk](resultater/Ly041028.htm)|8|Nikolai Hoff|Stein Nordstrøm (+19)|
+|[2004-11-11](resultater/Ly041111.htm)|[Lynsjakk](resultater/Ly041111.htm)|16|Geir Brobakken|Geir Brobakken (+20)|
 |[2004-10-28](resultater/Hc041028.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc041028.htm)|12|Nikolai Hoff|Per Johnny Nygård (+37)|
+|[2004-10-28](resultater/Ly041028.htm)|[Lynsjakk](resultater/Ly041028.htm)|8|Nikolai Hoff|Stein Nordstrøm (+19)|
 |[2004-10-14](resultater/Hc041014.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc041014.htm)|12|Ragnar Holm|Hogne Ormåsen (+50)|
 |[2004-10-14](resultater/Ly041014.htm)|[Lynsjakk](resultater/Ly041014.htm)|7|Nikolai Hoff|Jan Arne Bjerke (+11)|
 |[2004-09-30](resultater/Hu040930.htm)|[Hurtigsjakk](resultater/Hu040930.htm)|18|Ragnar Holm|Per Johnny Nygård (+21)|
 |[2004-09-30](resultater/Ly040930.htm)|[Lynsjakk](resultater/Ly040930.htm)|7|Lars Pilø|Ole-Jakob Kristiansen (+32)|
-|[2004-09-23](resultater/Hc040923.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040923.htm)|13|Jan Jotun|Jan Jotun (+21)|
 |[2004-09-23](resultater/Ly040923.htm)|[Lynsjakk](resultater/Ly040923.htm)|13|Nikolai Hoff|Erik Feragen (+33)|
-|[2004-09-09](resultater/Hc040909.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040909.htm)|12|Nikolai Hoff|Nikolai Hoff (+23)|
+|[2004-09-23](resultater/Hc040923.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040923.htm)|13|Jan Jotun|Jan Jotun (+21)|
 |[2004-09-09](resultater/Ly040909.htm)|[Lynsjakk](resultater/Ly040909.htm)|10|Lars Pilø|Thomas Nilsen (+53)|
+|[2004-09-09](resultater/Hc040909.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040909.htm)|12|Nikolai Hoff|Nikolai Hoff (+23)|
 |[2004-08-26](resultater/Ly040826.htm)|[Lynsjakk](resultater/Ly040826.htm)|7|Ole-Jakob Kristiansen|Jan Børge Solbakken (+18)|
 |[2004-08-26](resultater/Hu040826.htm)|[Hurtigsjakk](resultater/Hu040826.htm)|15|Ragnar Holm|Frode Storli (+39)|
 |[2004-08-19](resultater/Ly040819.htm)|[Lynsjakk](resultater/Ly040819.htm)|4|Jan Jotun||
@@ -385,28 +385,28 @@
 |[2004-06-03](resultater/Ly040603-1.htm)|[Lynsjakk - Gruppe 1](resultater/Ly040603-1.htm)|12|Ole-Jakob Kristiansen|Ole-Jakob Kristiansen (+30)|
 |[2004-05-27](resultater/Hu040527.htm)|[Hurtigsjakk](resultater/Hu040527.htm)|13|Ole J Kristiansen|Ole J Kristiansen (+41)|
 |[2004-05-27](resultater/Ly040527.htm)|[Lynsjakk](resultater/Ly040527.htm)|7|Ole-Jakob Kristiansen|Ole-Jakob Kristiansen (+43)|
-|[2004-05-13](resultater/Hc040513.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040513.htm)|13|Jan Jotun|Kjetil Sangen (+43)|
 |[2004-05-13](resultater/Ly040513.htm)|[Lynsjakk](resultater/Ly040513.htm)|8|Lars Pilø|Geir Brobakken (+42)|
-|[2004-04-29](resultater/Hc040429.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040429.htm)|11|Lars Pilø|Kjetil Sangen (+49)|
+|[2004-05-13](resultater/Hc040513.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040513.htm)|13|Jan Jotun|Kjetil Sangen (+43)|
 |[2004-04-29](resultater/Ly040429.htm)|[Lynsjakk](resultater/Ly040429.htm)|11|Lars Pilø|Erik Feragen (+24)|
+|[2004-04-29](resultater/Hc040429.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040429.htm)|11|Lars Pilø|Kjetil Sangen (+49)|
 |[2004-04-15](resultater/Hu040415.htm)|[Hurtigsjakk](resultater/Hu040415.htm)|18|Trond Nilsen|Dusan Markovic (+23)|
 |[2004-04-15](resultater/Ly040415.htm)|[Lynsjakk](resultater/Ly040415.htm)|18|Ole-Jakob Kristiansen|Kjetil Sangen (+59)|
 |[2004-04-08](resultater/Ly040408.htm)|[Lynsjakk](resultater/Ly040408.htm)|30|Trond Nerland|Thomas Nilsen (+38)|
 |[2004-04-01](resultater/Ly040401.htm)|[Lynsjakk](resultater/Ly040401.htm)|8|Geir Brobakken|Jan Jotun (+14)|
-|[2004-03-25](resultater/Ly040325.htm)|[Lynsjakk](resultater/Ly040325.htm)|12|Geir Brobakken|Erik Feragen (+22)|
 |[2004-03-25](resultater/Hc040325.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040325.htm)|11|Trond Nerland|Trond Nerland (+29)|
+|[2004-03-25](resultater/Ly040325.htm)|[Lynsjakk](resultater/Ly040325.htm)|12|Geir Brobakken|Erik Feragen (+22)|
 |[2004-03-18](resultater/Ly040318.htm)|[Lynsjakk](resultater/Ly040318.htm)|4|Jan Jotun|Leif Magne Moen (+16)|
 |[2004-03-11](resultater/Hc040311.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040311.htm)|12|Jan Jotun|Leif Magne Moen (+40)|
 |[2004-03-11](resultater/Ly040311.htm)|[Lynsjakk](resultater/Ly040311.htm)|9|Geir Brobakken|Geir Brobakken (+32)|
 |[2004-02-26](resultater/Hu040226.htm)|[Hurtigsjakk](resultater/Hu040226.htm)|16|Ragnar Holm|Håkon Haugsrud (+38)|
 |[2004-02-26](resultater/Ly040226.htm)|[Lynsjakk](resultater/Ly040226.htm)|17|Geir Brobakken|Jan Børge Solbakken (+29)|
-|[2004-02-12](resultater/Hc040212.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040212.htm)|7|Trond Nilsen|Leif Magne Moen (+36)|
 |[2004-02-12](resultater/Ly040212.htm)|[Lynsjakk](resultater/Ly040212.htm)|8|Geir Brobakken|Ole-Jakob Kristiansen (+13)|
+|[2004-02-12](resultater/Hc040212.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040212.htm)|7|Trond Nilsen|Leif Magne Moen (+36)|
 |[2004-02-05](resultater/Ly040205.htm)|[Lynsjakk](resultater/Ly040205.htm)|6|Geir Brobakken|Geir Brobakken (+15)|
 |[2004-01-29](resultater/Ly040129.htm)|[Lynsjakk](resultater/Ly040129.htm)|19|Ragnar Holm|Per Johnny Nygård (+41)|
 |[2004-01-22](resultater/Ly040122.htm)|[Lynsjakk](resultater/Ly040122.htm)|5|Anders Wågø|Anders Wågø (+13)|
-|[2004-01-15](resultater/Ly040115.htm)|[Lynsjakk](resultater/Ly040115.htm)|10|Geir Brobakken|Kjetil Sangen (+51)|
 |[2004-01-15](resultater/Hc040115.htm)|[Hurtigsjakk med tidshandicap](resultater/Hc040115.htm)|16|Geir Brobakken|Kjetil Sangen (+39)|
+|[2004-01-15](resultater/Ly040115.htm)|[Lynsjakk](resultater/Ly040115.htm)|10|Geir Brobakken|Kjetil Sangen (+51)|
 |[2004-01-08](resultater/Ly040108.htm)|[Lynsjakk](resultater/Ly040108.htm)|12|Geir Brobakken|Kjetil Sangen (+27)|
 |[2004-01-01](resultater/Ly040101.htm)|[Lynsjakk](resultater/Ly040101.htm)|19|Ragnar Holm|Jan Jotun (+50)|
 |[2003-12-18](resultater/Ly031218.htm)|[Lynsjakk](resultater/Ly031218.htm)|18|Ragnar Holm|Kjetil Sangen (+97)|
