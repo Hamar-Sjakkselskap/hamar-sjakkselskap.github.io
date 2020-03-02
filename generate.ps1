@@ -72,9 +72,16 @@ function Get-StatsFromFile([string]$file) {
 }
 
 # Get stats from turneringsservice
+$turneringsserviceCache = @{}
 function Get-StatsFromTurneringsservice([string]$uri) {
-    Write-verbose "Getting stats for $uri" -Verbose
-    $content = Invoke-WebRequest -Uri $uri -UseBasicParsing -ErrorAction Stop
+    if($turneringsserviceCache.ContainsKey($uri)) {
+        Write-Verbose "Cached stats for $uri" -Verbose
+        $content = $turneringsserviceCache[$uri]
+    } else {
+        Write-verbose "Getting stats for $uri" -Verbose
+        $content = Invoke-WebRequest -Uri $uri -UseBasicParsing -ErrorAction Stop
+        $turneringsserviceCache[$uri] = $content
+    }
     Get-StatsFromContent  $content.Content
 }
 
