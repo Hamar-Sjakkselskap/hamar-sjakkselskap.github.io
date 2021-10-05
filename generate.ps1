@@ -211,13 +211,13 @@ $objects |
     }
 
 if($Error) {
-    Write-Warning "Fix feil under kjøring"
-    Read-Host -Prompt "Trykk enter for å sende resultater uansett - kan bli meget feil!"    
+    Write-Warning "Fix feil under kjï¿½ring"
+    Read-Host -Prompt "Trykk enter for ï¿½ sende resultater uansett - kan bli meget feil!"    
 } 
 
 # stage all changes
-git add -A
-git commit -m 'Nye resultater'
-git push
+# git add -A
+# git commit -m 'Nye resultater'
+# git push
 
-Read-Host -Prompt "Sendt, lukk vindu eller klikk enter" 
+# Read-Host -Prompt "Sendt, lukk vindu eller klikk enter" 

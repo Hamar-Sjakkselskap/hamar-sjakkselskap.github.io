@@ -2,6 +2,8 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen||
+|[2021-09-30](resultater/Hu210930-B.htm)|Gruppe B|12|Amund Hønningstad||
 |[2021-09-23](resultater/Hu210923.htm)||11|Geir Brobakken||
 |[2021-09-05](resultater/Hu210905.htm)||18|Nicolai Frøyshov||
 |[2020-02-13](resultater/Hu200213-A.htm)|Gruppe A|13|Lom Madagov|Lars Håvard S Dahl (+44)|
