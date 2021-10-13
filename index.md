@@ -25,11 +25,11 @@
 
 | Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
-|[2021-09-30](resultater/Hu210930.htm)||26|Vidar Ingebretsen||
 |[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen|Marius Solbakken Mellum (+80)|
 |[2021-09-30](resultater/Hu210930-B.htm)|Gruppe B|12|Amund Hønningstad|Morten-Olav Tangnæs (+75)|
 |[2021-09-23](resultater/Hu210923.htm)||11|Geir Brobakken|Elias Saeedi (+33)|
 |[2021-09-05](resultater/Hu210905.htm)||18|Nicolai Frøyshov|Nicolai Frøyshov (+98)|
+|[2021-04-22](resultater/Hu210422.htm)||5|Leander Eriksen|Leander Eriksen (+60)|
 |[Alle](Hurtigsjakk.md)||||
 
 [Alle resultater](arkiv.md)

@@ -2,7 +2,6 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
-|[2021-09-30](resultater/Hu210930.htm)||26|Vidar Ingebretsen||
 |[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen|Marius Solbakken Mellum (+80)|
 |[2021-09-30](resultater/Hu210930-B.htm)|Gruppe B|12|Amund Hønningstad|Morten-Olav Tangnæs (+75)|
 |[2021-09-23](resultater/Hu210923.htm)||11|Geir Brobakken|Elias Saeedi (+33)|
