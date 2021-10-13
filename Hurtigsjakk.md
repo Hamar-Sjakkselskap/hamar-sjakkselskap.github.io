@@ -2,10 +2,16 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
-|[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen||
-|[2021-09-30](resultater/Hu210930-B.htm)|Gruppe B|12|Amund Hønningstad||
-|[2021-09-23](resultater/Hu210923.htm)||11|Geir Brobakken||
-|[2021-09-05](resultater/Hu210905.htm)||18|Nicolai Frøyshov||
+|[2021-09-30](resultater/Hu210930.htm)||26|Vidar Ingebretsen||
+|[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen|Marius Solbakken Mellum (+80)|
+|[2021-09-30](resultater/Hu210930-B.htm)|Gruppe B|12|Amund Hønningstad|Morten-Olav Tangnæs (+75)|
+|[2021-09-23](resultater/Hu210923.htm)||11|Geir Brobakken|Elias Saeedi (+33)|
+|[2021-09-05](resultater/Hu210905.htm)||18|Nicolai Frøyshov|Nicolai Frøyshov (+98)|
+|[2021-04-22](resultater/Hu210422.htm)||5|Leander Eriksen|Leander Eriksen (+60)|
+|[2021-03-11](resultater/Hu210311.htm)||10|Ledion Berisha|Vebjørn Holm-Gjerde (+23)|
+|[2021-02-25](resultater/Hu210225.htm)||8|Leander Eriksen|Leander Eriksen (+43)|
+|[2021-02-18](resultater/Hu210218.htm)||6|Leander Eriksen|Elias Saeedi (+43)|
+|[2021-02-11](resultater/Hu210211.htm)||10|Vebjørn Holm-Gjerde|Nicolai Frøyshov (+39)|
 |[2020-02-13](resultater/Hu200213-A.htm)|Gruppe A|13|Lom Madagov|Lars Håvard S Dahl (+44)|
 |[2020-02-13](resultater/Hu200213-B.htm)|Gruppe B|16|Erlend Teum|Nicolai Frøyshov (+70)|
 |[2020-01-23](resultater/Hu200123.htm)||16|Simen Øian Gjermundsen|Vebjørn Holm-Gjerde (+42)|

@@ -1,0 +1,499 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.6">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Hamar Vinterlyn 2020<BR></H1>
+<H2 ALIGN=CENTER>
+Ridabu skole,  27.02.2020<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 ><TBODY>
+<TR bgcolor="#5050B0" class="ts_top">
+<TH><FONT COLOR="#FFFFFF">Pl</FONT></TH><TH><FONT COLOR="#FFFFFF">Navn</FONT></TH><TH><FONT COLOR="#FFFFFF">n-Rtg</FONT></TH><TH><FONT COLOR="#FFFFFF">i-Rtg</FONT></TH><TH><FONT COLOR="#FFFFFF">Klubb</FONT></TH><TH><FONT COLOR="#FFFFFF">1</FONT></TH><TH><FONT COLOR="#FFFFFF">2</FONT></TH><TH><FONT COLOR="#FFFFFF">3</FONT></TH><TH><FONT COLOR="#FFFFFF">4</FONT></TH><TH><FONT COLOR="#FFFFFF">5</FONT></TH><TH><FONT COLOR="#FFFFFF">6</FONT></TH><TH><FONT COLOR="#FFFFFF">7</FONT></TH><TH><FONT COLOR="#FFFFFF">8</FONT></TH><TH><FONT COLOR="#FFFFFF">9</FONT></TH><TH><FONT COLOR="#FFFFFF">10</FONT></TH><TH><FONT COLOR="#FFFFFF">11</FONT></TH><TH><FONT COLOR="#FFFFFF">12</FONT></TH><TH><FONT COLOR="#FFFFFF">13</FONT></TH><TH><FONT COLOR="#FFFFFF">14</FONT></TH><TH><FONT COLOR="#FFFFFF">15</FONT></TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)"><FONT COLOR="#FFFFFF">Poeng</FONT></TH><TH style="font-size:xx-Small;" title="Egendefinert 1"><FONT COLOR="#FFFFFF"># 1</FONT></TH><TH style="font-size:xx-Small;" title="Resultat i innbyrdes oppgj&oslash;r"><FONT COLOR="#FFFFFF">Innb.</FONT></TH><TH style="font-size:xx-Small;" title="Gjennomsnittlig FIDE ratingmotstand"><FONT COLOR="#FFFFFF">i-Snittm</FONT></TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen"><FONT COLOR="#FFFFFF">n-Prestasjon</FONT></TH></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Lom Madagov</td><td><div align="right"><a href="javascript:nsfChart('Madagov%20Lom', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1810</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1541072" title="Klikk for &aring;  se FIDE-elo utvikling">2022</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Vant med Hvit mot Edvard Dyre Hansen." style="font-size:Small;"><TT><B>&nbsp;+09 </B></TT></TD>
+<TD title="Vant med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Vant med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;+05 </B></TT></TD>
+<TD title="Remis med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;=04 </B></TT></TD>
+<TD title="Vant med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Vant med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;+02 </TT></TD>
+<TD title="Vant med Sort mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT>&nbsp;+05 </TT></TD>
+<TD title="Vant med Hvit mot Leander Eriksen." style="font-size:Small;"><TT><B>&nbsp;+06 </B></TT></TD>
+<TD title="Vant med Hvit mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT><B>&nbsp;+12 </B></TT></TD>
+<TD title="Vant med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;+02 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ibragim Madagov." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD title="Tapte  med Sort mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD ><DIV align="right"><b>11.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-3</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1659</DIV></TD><TD><TT>&nbsp;1577&nbsp;(-17)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Geir Brobakken</td><td><div align="right"><a href="javascript:nsfChart('Brobakken%20Geir', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1408</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1511270" title="Klikk for &aring;  se FIDE-elo utvikling">1739</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+16 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Vant med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Vant med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Remis med Hvit mot Leander Eriksen." style="font-size:Small;"><TT><B>&nbsp;=06 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Vant med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD title="Vant med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;+05 </B></TT></TD>
+<TD title="Vant med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;+03 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lom Madagov." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Vant med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;+01 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant med Hvit mot Leander Eriksen." style="font-size:Small;"><TT><B>&nbsp;+06 </B></TT></TD>
+<TD ><DIV align="right"><b>10.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-3</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1623</DIV></TD><TD><TT>&nbsp;1481&nbsp;(+76)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Ibragim Madagov</td><td><div align="right"><a href="javascript:nsfChart('Madagov%20Ibragim', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1529</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1538322" title="Klikk for &aring;  se FIDE-elo utvikling">1635</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Remis med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;=10 </B></TT></TD>
+<TD title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Vant med Sort mot Benjamin Andreas Lien." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+16 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;-13 </B></TT></TD>
+<TD title="Vant med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Vant med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;+04 </B></TT></TD>
+<TD title="Vant med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant med Hvit mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT><B>&nbsp;+12 </B></TT></TD>
+<TD title="Vant med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;+01 </B></TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Vant med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;+13 </B></TT></TD>
+<TD title="Vant med Sort mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT>&nbsp;+05 </TT></TD>
+<TD ><DIV align="right"><b>10.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-5</DIV></TD><TD style="font-size:x-Small;">+</TD><TD style="font-size:x-Small;"><DIV align="right">1566</DIV></TD><TD><TT>&nbsp;1381&nbsp;(-13)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Ole-Jakob Kristiansen</td><td><div align="right"><a href="javascript:nsfChart('Kristiansen%20Ole-Jakob', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1679</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1508989" title="Klikk for &aring;  se FIDE-elo utvikling">1895</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Vant med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Vant med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Vant med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;+07 </B></TT></TD>
+<TD title="Remis med Sort mot Lom Madagov." style="font-size:Small;"><TT>&nbsp;=01 </TT></TD>
+<TD title="Tapte  med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;-05 </B></TT></TD>
+<TD title="Vant med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;+14 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ibragim Madagov." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Vant med Sort mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT>&nbsp;+05 </TT></TD>
+<TD title="Vant med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Vant med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;+10 </B></TT></TD>
+<TD title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Vant med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;+02 </B></TT></TD>
+<TD title="Vant med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;+01 </B></TT></TD>
+<TD ><DIV align="right"><b>10.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-5</DIV></TD><TD style="font-size:x-Small;">-</TD><TD style="font-size:x-Small;"><DIV align="right">1596</DIV></TD><TD><TT>&nbsp;1456&nbsp;(-17)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>Lars H&aring;vard S Dahl</td><td><div align="right"><a href="javascript:nsfChart('Dahl%20Lars%20H%E5vard%20S', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1500</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1548123" title="Klikk for &aring;  se FIDE-elo utvikling">1504</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+16 </B></TT></TD>
+<TD title="Vant med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;+02 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lom Madagov." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;+07 </B></TT></TD>
+<TD title="Vant med Sort mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT>&nbsp;+04 </TT></TD>
+<TD title="Vant med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;+06 </TT></TD>
+<TD title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Tapte  med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;-04 </B></TT></TD>
+<TD title="Vant med Sort mot Benjamin Andreas Lien." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Vant med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;+07 </TT></TD>
+<TD title="Vant med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Vant med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;+07 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;-03 </B></TT></TD>
+<TD ><DIV align="right"><b>10.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-5</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1686</DIV></TD><TD><TT>&nbsp;1515&nbsp;(+34)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Leander Eriksen</td><td><div align="right"><a href="javascript:nsfChart('Eriksen%20Leander', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1288</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519301" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;+13 </B></TT></TD>
+<TD title="Vant med Sort mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Vant med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;+03 </B></TT></TD>
+<TD title="Vant med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Vant med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Remis med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;=02 </TT></TD>
+<TD title="Tapte  med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;-05 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;-02 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lom Madagov." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Vant med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;+14 </B></TT></TD>
+<TD title="Vant med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Vant med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;+13 </TT></TD>
+<TD title="Vant med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;+04 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD ><DIV align="right"><b>9.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-5</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1600</DIV></TD><TD><TT>&nbsp;1385&nbsp;(+66)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Jan Jotun</td><td><div align="right"><a href="javascript:nsfChart('Jotun%20Jan', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1439</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1516680" title="Klikk for &aring;  se FIDE-elo utvikling">1730</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Vant med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;+14 </B></TT></TD>
+<TD title="Vant med Sort mot Lasse Preben Hanssen." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Tapte  med Sort mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Tapte  med Sort mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Vant med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;+18 </B></TT></TD>
+<TD title="Remis med Sort mot Benjamin Andreas Lien." style="font-size:Small;"><TT>&nbsp;=10 </TT></TD>
+<TD title="Vant med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Vant med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;+10 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;-04 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;-05 </B></TT></TD>
+<TD title="Vant med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;+03 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Vant med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;+13 </B></TT></TD>
+<TD ><DIV align="right"><b>8.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-8</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1521</DIV></TD><TD><TT>&nbsp;1296&nbsp;(-12)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Tor Hernan Floor</td><td><div align="right"><a href="javascript:nsfChart('Floor%20Tor%20Hernan', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 783</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1561871" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;-04 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;-17 </B></TT></TD>
+<TD title="Tapte  med Sort mot Erlend Teum." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Vant med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Vant med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;+20 </B></TT></TD>
+<TD title="Tapte  med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Vant med Hvit mot Edvard Dyre Hansen." style="font-size:Small;"><TT><B>&nbsp;+09 </B></TT></TD>
+<TD title="Tapte  med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Remis med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;=18 </B></TT></TD>
+<TD title="Remis med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;=09 </TT></TD>
+<TD title="Vant med Hvit mot Edvard Dyre Hansen." style="font-size:Small;"><TT><B>&nbsp;+09 </B></TT></TD>
+<TD title="Vant med Sort mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Remis med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;=11 </TT></TD>
+<TD ><DIV align="right"><b>8.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-10</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1291</DIV></TD><TD><TT>&nbsp;0988&nbsp;(+94)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right">  9&nbsp;</DIV></TD><td>Edvard Dyre Hansen</td><td><div align="right"><a href="javascript:nsfChart('Hansen%20Edvard%20Dyre', 'Elverum%20SK')" title="Klikk for å  se nasjonal elo utvikling"> 895</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1559320" title="Klikk for &aring;  se FIDE-elo utvikling">1211</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Elverum%20SK">Elverum SK</a></TD><TD title="Vant med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Tapte  med Sort mot Lom Madagov." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Tapte  med Hvit mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT><B>&nbsp;-12 </B></TT></TD>
+<TD title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><TT><B>&nbsp;+15 </B></TT></TD>
+<TD title="Tapte  med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;-17 </TT></TD>
+<TD title="Vant med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Vant med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;+17 </B></TT></TD>
+<TD title="Tapte  med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Tapte  med Hvit mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT><B>&nbsp;-12 </B></TT></TD>
+<TD title="Remis med Sort mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT>&nbsp;=18 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Remis med Hvit mot Tor Hernan Floor." style="font-size:Small;"><TT><B>&nbsp;=08 </B></TT></TD>
+<TD title="Tapte  med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant med Hvit mot Christopher Coello." style="font-size:Small;"><TT><B>&nbsp;+11 </B></TT></TD>
+<TD title="Vant med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;+18 </B></TT></TD>
+<TD ><DIV align="right"><b>8.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-10</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1398</DIV></TD><TD><TT>&nbsp;1065&nbsp;(+85)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 10&nbsp;</DIV></TD><td>Benjamin Andreas Lien</td><td><div align="right"><a href="javascript:nsfChart('Lien%20Benjamin%20Andreas', 'Elverum%20SK')" title="Klikk for å  se nasjonal elo utvikling">1124</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1559338" title="Klikk for &aring;  se FIDE-elo utvikling">1408</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Elverum%20SK">Elverum SK</a></TD><TD title="Vant med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;+18 </B></TT></TD>
+<TD title="Remis med Sort mot Ibragim Madagov." style="font-size:Small;"><TT>&nbsp;=03 </TT></TD>
+<TD title="Tapte  med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;-13 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;-03 </B></TT></TD>
+<TD title="Remis med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;=13 </TT></TD>
+<TD title="Vant med Sort mot Ledion Berisha." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Vant med Sort mot Erlend Teum." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Remis med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;=07 </B></TT></TD>
+<TD title="Vant med Sort mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT>&nbsp;+18 </TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Tapte  med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;-05 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Tapte  med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;-17 </B></TT></TD>
+<TD title="Vant med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+16 </B></TT></TD>
+<TD ><DIV align="right"><b>7.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-10</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1447</DIV></TD><TD><TT>&nbsp;1227&nbsp;(+50)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 11&nbsp;</DIV></TD><td>Christopher Coello</td><td><div align="right"><a href="javascript:nsfChart('Coello%20Christopher', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 849</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;-07 </B></TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Vant med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Tapte  med Hvit mot Leander Eriksen." style="font-size:Small;"><TT><B>&nbsp;-06 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;-02 </B></TT></TD>
+<TD title="Tapte  med Sort mot Erlend Teum." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Tapte  med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;-16 </B></TT></TD>
+<TD title="Vant med Sort mot Lasse Preben Hanssen." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><TT><B>&nbsp;+15 </B></TT></TD>
+<TD title="Vant med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Vant med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;+20 </B></TT></TD>
+<TD title="Vant med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;+18 </B></TT></TD>
+<TD title="Tapte  med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Remis med Hvit mot Tor Hernan Floor." style="font-size:Small;"><TT><B>&nbsp;=08 </B></TT></TD>
+<TD ><DIV align="right"><b>7.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-13</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1310</DIV></TD><TD><TT>&nbsp;0965&nbsp;(+50)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 12&nbsp;</DIV></TD><td>Simen &Oslash;ian Gjermundsen</td><td><div align="right"><a href="javascript:nsfChart('Gjermundsen%20Simen%20%D8ian', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1200</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><TT><B>&nbsp;-15 </B></TT></TD>
+<TD title="Vant med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Vant med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;+17 </B></TT></TD>
+<TD title="Vant med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Tapte  med Hvit mot Edvard Dyre Hansen." style="font-size:Small;"><TT><B>&nbsp;-09 </B></TT></TD>
+<TD title="Vant med Hvit mot Tor Hernan Floor." style="font-size:Small;"><TT><B>&nbsp;+08 </B></TT></TD>
+<TD title="Vant med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Vant med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;+09 </TT></TD>
+<TD title="Tapte  med Sort mot Lom Madagov." style="font-size:Small;"><TT>&nbsp;-01 </TT></TD>
+<TD title="Tapte  med Sort mot Ibragim Madagov." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;-02 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ledion Berisha." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Tapte  med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;-10 </B></TT></TD>
+<TD title="Vant med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;+17 </B></TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-6</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1498</DIV></TD><TD><TT>&nbsp;1182&nbsp;( +0)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 13&nbsp;</DIV></TD><td>Stein Nordstr&oslash;m</td><td><div align="right"><a href="javascript:nsfChart('Nordstr%F8m%20Stein', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1162</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1545221" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Vant med Hvit mot Simen Myhre." style="font-size:Small;"><TT><B>&nbsp;+21 </B></TT></TD>
+<TD title="Vant med Sort mot Benjamin Andreas Lien." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+16 </B></TT></TD>
+<TD title="Remis med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;=10 </B></TT></TD>
+<TD title="Vant med Sort mot Ibragim Madagov." style="font-size:Small;"><TT>&nbsp;+03 </TT></TD>
+<TD title="Tapte  med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;-03 </B></TT></TD>
+<TD title="Tapte  med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Vant med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;+04 </B></TT></TD>
+<TD title="Remis med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;=17 </TT></TD>
+<TD title="Vant med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;+14 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Leander Eriksen." style="font-size:Small;"><TT><B>&nbsp;-06 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;-05 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ibragim Madagov." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-6</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1487</DIV></TD><TD><TT>&nbsp;1212&nbsp;(+31)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 14&nbsp;</DIV></TD><td>Arijanit Berisha</td><td><div align="right"><a href="javascript:nsfChart('Berisha%20Arijanit', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 812</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531212" title="Klikk for &aring;  se FIDE-elo utvikling">1174</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Remis med Sort mot Lasse Preben Hanssen." style="font-size:Small;"><TT>&nbsp;=22 </TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Tapte  med Hvit mot Christopher Coello." style="font-size:Small;"><TT><B>&nbsp;-11 </B></TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Vant med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;+20 </B></TT></TD>
+<TD title="Vant med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Tapte  med Sort mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;+13 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;-03 </B></TT></TD>
+<TD title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Tapte  med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Tapte  med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;-17 </B></TT></TD>
+<TD title="Remis med Sort mot Erlend Teum." style="font-size:Small;"><TT>&nbsp;=19 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><TT><B>&nbsp;+15 </B></TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-10</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1517</DIV></TD><TD><TT>&nbsp;1035&nbsp;(+80)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 15&nbsp;</DIV></TD><td>Marius Solbakken Mellum</td><td><div align="right"><a href="javascript:nsfChart('Mellum%20Marius%20Solbakken', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1071</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1558307" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Edvard Dyre Hansen." style="font-size:Small;"><TT><B>&nbsp;-09 </B></TT></TD>
+<TD title="Vant med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;+12 </TT></TD>
+<TD title="Tapte  med Hvit mot Lom Madagov." style="font-size:Small;"><TT><B>&nbsp;-01 </B></TT></TD>
+<TD title="Tapte  med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  med Hvit mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT><B>&nbsp;-12 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT><B>&nbsp;-17 </B></TT></TD>
+<TD title="Vant med Hvit mot Christopher Coello." style="font-size:Small;"><TT><B>&nbsp;+11 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lasse Preben Hanssen." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;+16 </B></TT></TD>
+<TD title="Tapte  med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Vant med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant med Sort mot Erlend Teum." style="font-size:Small;"><TT>&nbsp;+19 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Vant med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Tapte  med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-15</DIV></TD><TD style="font-size:x-Small;">+</TD><TD style="font-size:x-Small;"><DIV align="right">1326</DIV></TD><TD><TT>&nbsp;0954&nbsp;(-38)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 16&nbsp;</DIV></TD><td>Ledion Berisha</td><td><div align="right"><a href="javascript:nsfChart('Berisha%20Ledion', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1072</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1540637" title="Klikk for &aring;  se FIDE-elo utvikling">1220</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Sort mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT>&nbsp;-05 </TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Vant med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;+20 </B></TT></TD>
+<TD title="Tapte  med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Tapte  med Sort mot Ibragim Madagov." style="font-size:Small;"><TT>&nbsp;-03 </TT></TD>
+<TD title="Tapte  med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;-10 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;-22 </B></TT></TD>
+<TD title="Vant med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;+11 </TT></TD>
+<TD title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Vant med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+24 </B></TT></TD>
+<TD title="Vant med Hvit mot June Stendahl-Thorsen." style="font-size:Small;"><TT><B>&nbsp;+23 </B></TT></TD>
+<TD title="Vant med Hvit mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT><B>&nbsp;+12 </B></TT></TD>
+<TD title="Vant med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Tapte  med Sort mot Benjamin Andreas Lien." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD ><DIV align="right"><b>7.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-15</DIV></TD><TD style="font-size:x-Small;">-</TD><TD style="font-size:x-Small;"><DIV align="right">1430</DIV></TD><TD><TT>&nbsp;0977&nbsp;(-11)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 17&nbsp;</DIV></TD><td>Sivert Nikolai &Oslash;rsleie</td><td><div align="right"><a href="javascript:nsfChart('%D8rsleie%20Sivert%20Nikolai', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling">1229</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1518267" title="Klikk for &aring;  se FIDE-elo utvikling">1433</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;-19 </B></TT></TD>
+<TD title="Vant med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;+08 </TT></TD>
+<TD title="Tapte  med Hvit mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT><B>&nbsp;-04 </B></TT></TD>
+<TD title="Tapte  med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD title="Vant med Hvit mot Edvard Dyre Hansen." style="font-size:Small;"><TT><B>&nbsp;+09 </B></TT></TD>
+<TD title="Vant med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;+15 </TT></TD>
+<TD title="Tapte  med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  med Hvit mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT><B>&nbsp;-12 </B></TT></TD>
+<TD title="Vant med Hvit mot Tor Hernan Floor." style="font-size:Small;"><TT><B>&nbsp;+08 </B></TT></TD>
+<TD title="Remis med Hvit mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT><B>&nbsp;=13 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Leander Eriksen." style="font-size:Small;"><TT><B>&nbsp;-06 </B></TT></TD>
+<TD title="Vant med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;+14 </TT></TD>
+<TD title="Vant med Sort mot Benjamin Andreas Lien." style="font-size:Small;"><TT>&nbsp;+10 </TT></TD>
+<TD title="Tapte  med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;-16 </B></TT></TD>
+<TD title="Tapte  med Sort mot Simen &Oslash;ian Gjermundsen." style="font-size:Small;"><TT>&nbsp;-12 </TT></TD>
+<TD ><DIV align="right"><b>6.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-10</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1339</DIV></TD><TD><TT>&nbsp;1013&nbsp;(-40)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 18&nbsp;</DIV></TD><td>Morten-Olav Tangn&aelig;s</td><td><div align="right"><a href="javascript:nsfChart('Tangn%E6s%20Morten-Olav', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 811</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1554433" title="Klikk for &aring;  se FIDE-elo utvikling">1053</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Sort mot Benjamin Andreas Lien." style="font-size:Small;"><TT>&nbsp;-10 </TT></TD>
+<TD title="Tapte  med Hvit mot Leander Eriksen." style="font-size:Small;"><TT><B>&nbsp;-06 </B></TT></TD>
+<TD title="Vant med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Vant med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;+20 </TT></TD>
+<TD title="Vant med Hvit mot Simen Myhre." style="font-size:Small;"><TT><B>&nbsp;+21 </B></TT></TD>
+<TD title="Tapte  med Sort mot Lasse Preben Hanssen." style="font-size:Small;"><TT>&nbsp;-22 </TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Vant med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;+19 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;-10 </B></TT></TD>
+<TD title="Remis med Hvit mot Edvard Dyre Hansen." style="font-size:Small;"><TT><B>&nbsp;=09 </B></TT></TD>
+<TD title="Remis med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;=08 </TT></TD>
+<TD title="Vant med Hvit mot Lasse Preben Hanssen." style="font-size:Small;"><TT><B>&nbsp;+22 </B></TT></TD>
+<TD title="Tapte  med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  med Hvit mot Tor Hernan Floor." style="font-size:Small;"><TT><B>&nbsp;-08 </B></TT></TD>
+<TD title="Tapte  med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD ><DIV align="right"><b>6.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-11</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1340</DIV></TD><TD><TT>&nbsp;0816&nbsp;( -5)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 19&nbsp;</DIV></TD><td>Erlend Teum</td><td><div align="right"><a href="javascript:nsfChart('Teum%20Erlend', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 784</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531344" title="Klikk for &aring;  se FIDE-elo utvikling">1256</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Vant med Sort mot Sivert Nikolai &Oslash;rsleie." style="font-size:Small;"><TT>&nbsp;+17 </TT></TD>
+<TD title="Tapte  med Sort mot Ole-Jakob Kristiansen." style="font-size:Small;"><TT>&nbsp;-04 </TT></TD>
+<TD title="Vant med Hvit mot Tor Hernan Floor." style="font-size:Small;"><TT><B>&nbsp;+08 </B></TT></TD>
+<TD title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><TT>&nbsp;-02 </TT></TD>
+<TD title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><TT>&nbsp;-06 </TT></TD>
+<TD title="Vant med Hvit mot Christopher Coello." style="font-size:Small;"><TT><B>&nbsp;+11 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Benjamin Andreas Lien." style="font-size:Small;"><TT><B>&nbsp;-10 </B></TT></TD>
+<TD title="Tapte  med Sort mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Tapte  med Sort mot Jan Jotun." style="font-size:Small;"><TT>&nbsp;-07 </TT></TD>
+<TD title="Vant med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;+20 </B></TT></TD>
+<TD title="Tapte  med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><TT><B>&nbsp;-15 </B></TT></TD>
+<TD title="Remis med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;=14 </B></TT></TD>
+<TD title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Vant med Sort mot Lasse Preben Hanssen." style="font-size:Small;"><TT>&nbsp;+22 </TT></TD>
+<TD ><DIV align="right"><b>5.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-14</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1448</DIV></TD><TD><TT>&nbsp;0960&nbsp;(+48)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 20&nbsp;</DIV></TD><td>Mikael Santiago Avdem Frankmo</td><td><div align="right"><a href="javascript:nsfChart('Frankmo%20Mikael%20Santiago%20Avdem', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 575</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1561880" title="Klikk for &aring;  se FIDE-elo utvikling">1158</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><TT><B>&nbsp;-02 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Lars H&aring;vard S Dahl." style="font-size:Small;"><TT><B>&nbsp;-05 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ledion Berisha." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Tapte  med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;-18 </B></TT></TD>
+<TD title="Tapte  med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Vant med Hvit mot June Stendahl-Thorsen." style="font-size:Small;"><TT><B>&nbsp;+23 </B></TT></TD>
+<TD title="Vant med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;+21 </TT></TD>
+<TD title="Tapte  med Sort mot Erlend Teum." style="font-size:Small;"><TT>&nbsp;-19 </TT></TD>
+<TD title="Tapte  med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><TT><B>&nbsp;-15 </B></TT></TD>
+<TD title="Tapte  med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Vant med Sort mot June Stendahl-Thorsen." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Remis med Hvit mot Simen Myhre." style="font-size:Small;"><TT><B>&nbsp;=21 </B></TT></TD>
+<TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+24 </B></TT></TD>
+<TD ><DIV align="right"><b>5.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-17</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1283</DIV></TD><TD><TT>&nbsp;0693&nbsp;(+17)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 21&nbsp;</DIV></TD><td>Simen Myhre</td><td><div align="right"><a href="javascript:nsfChart('Myhre%20Simen', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 550</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Tapte  med Hvit mot Ibragim Madagov." style="font-size:Small;"><TT><B>&nbsp;-03 </B></TT></TD>
+<TD title="Tapte  med Sort mot Stein Nordstr&oslash;m." style="font-size:Small;"><TT>&nbsp;-13 </TT></TD>
+<TD title="Tapte  med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;-18 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Tor Hernan Floor." style="font-size:Small;"><TT><B>&nbsp;-08 </B></TT></TD>
+<TD title="Tapte  med Sort mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Tapte  med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;-14 </B></TT></TD>
+<TD title="Tapte  med Sort mot June Stendahl-Thorsen." style="font-size:Small;"><TT>&nbsp;-23 </TT></TD>
+<TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+24 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;-20 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Ledion Berisha." style="font-size:Small;"><TT><B>&nbsp;-16 </B></TT></TD>
+<TD title="Vant med Sort mot June Stendahl-Thorsen." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Tapte  med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;-24 </TT></TD>
+<TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+24 </B></TT></TD>
+<TD title="Remis med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;=20 </TT></TD>
+<TD title="Vant med Hvit mot June Stendahl-Thorsen." style="font-size:Small;"><TT><B>&nbsp;+23 </B></TT></TD>
+<TD ><DIV align="right"><b>4.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-18</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1193</DIV></TD><TD><TT>&nbsp;0556&nbsp;(-12)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 22&nbsp;</DIV></TD><td>Lasse Preben Hanssen</td><td><div align="right"><a href="javascript:nsfChart('Hanssen%20Lasse%20Preben', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 841</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Remis med Hvit mot Arijanit Berisha." style="font-size:Small;"><TT><B>&nbsp;=14 </B></TT></TD>
+<TD title="Tapte  med Sort mot Christopher Coello." style="font-size:Small;"><TT>&nbsp;-11 </TT></TD>
+<TD title="Tapte  med Hvit mot Jan Jotun." style="font-size:Small;"><TT><B>&nbsp;-07 </B></TT></TD>
+<TD title="Tapte  med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Vant med Hvit mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;+18 </B></TT></TD>
+<TD title="Vant med Sort mot Ledion Berisha." style="font-size:Small;"><TT>&nbsp;+16 </TT></TD>
+<TD title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><TT><B>&nbsp;+15 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Christopher Coello." style="font-size:Small;"><TT><B>&nbsp;-11 </B></TT></TD>
+<TD title="Tapte  med Sort mot Tor Hernan Floor." style="font-size:Small;"><TT>&nbsp;-08 </TT></TD>
+<TD title="Tapte  med Sort mot Edvard Dyre Hansen." style="font-size:Small;"><TT>&nbsp;-09 </TT></TD>
+<TD title="Tapte  med Sort mot Morten-Olav Tangn&aelig;s." style="font-size:Small;"><TT>&nbsp;-18 </TT></TD>
+<TD title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><TT>&nbsp;-15 </TT></TD>
+<TD title="Tapte  med Sort mot Arijanit Berisha." style="font-size:Small;"><TT>&nbsp;-14 </TT></TD>
+<TD title="Tapte  med Hvit mot Erlend Teum." style="font-size:Small;"><TT><B>&nbsp;-19 </B></TT></TD>
+<TD ><DIV align="right"><b>3.5 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-14</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1227</DIV></TD><TD><TT>&nbsp;0699&nbsp;(-29)</TT></TD></TR>
+<TR class="ts_tabell"> <TD><DIV align="right"> 23&nbsp;</DIV></TD><td>June Stendahl-Thorsen</td><td><div align="right"><a href="javascript:nsfChart('Stendahl-Thorsen%20June', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 428</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1561901" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Vant med Hvit mot Simen Myhre." style="font-size:Small;"><TT><B>&nbsp;+21 </B></TT></TD>
+<TD title="Tapte  med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;-24 </B></TT></TD>
+<TD title="Tapte  med Hvit mot Simen Myhre." style="font-size:Small;"><TT><B>&nbsp;-21 </B></TT></TD>
+<TD title="Tapte  med Sort mot Ledion Berisha." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Tapte  med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;-20 </B></TT></TD>
+<TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+24 </TT></TD>
+<TD title="Tapte  med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-18</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1169</DIV></TD><TD><TT>&nbsp;0434&nbsp;( -3)</TT></TD></TR>
+<TR bgcolor="#e8e8ff" class="ts_tabell"> <TD><DIV align="right"> 24&nbsp;</DIV></TD><td>Christer Tungard</td><td><div align="right"><a href="javascript:nsfChart('Tungard%20Christer', 'Hamar%20SS')" title="Klikk for å  se nasjonal elo utvikling"> 389</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531360" title="Klikk for &aring;  se FIDE-elo utvikling">1160</a></div></td><TD ><a href="standings.aspx?TID=HamarVinterlyn2020-HamarSjakkselskap&group=&club=Hamar%20SS">Hamar SS</a></TD><TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;    </TT></TD>
+<TD title="Tapte  med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;-20 </B></TT></TD>
+<TD title="Tapte  med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Tapte  med Hvit mot June Stendahl-Thorsen." style="font-size:Small;"><TT><B>&nbsp;-23 </B></TT></TD>
+<TD title="Vant med Sort mot June Stendahl-Thorsen." style="font-size:Small;"><TT>&nbsp;+23 </TT></TD>
+<TD title="Tapte  med Sort mot Ledion Berisha." style="font-size:Small;"><TT>&nbsp;-16 </TT></TD>
+<TD title="Vant med Hvit mot Simen Myhre." style="font-size:Small;"><TT><B>&nbsp;+21 </B></TT></TD>
+<TD title="Tapte  med Sort mot Simen Myhre." style="font-size:Small;"><TT>&nbsp;-21 </TT></TD>
+<TD title="Tapte  med Hvit mot June Stendahl-Thorsen." style="font-size:Small;"><TT><B>&nbsp;-23 </B></TT></TD>
+<TD title="Tapte  med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;-20 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD style="font-size:x-Small;"><DIV align="right">-18</DIV></TD><TD style="font-size:x-Small;"></TD><TD style="font-size:x-Small;"><DIV align="right">1178</DIV></TD><TD><TT>&nbsp;0352&nbsp;( -7)</TT></TD></TR>
+</TBODY></TABLE>
+<TABLE style="font-size:xx-Small;"BORDER=0 CELLSPACING=0 CELLPADDING=1><tbody><tr><th colspan="3"><a href="http://sjakklubb.no/turneringsservice/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td># 1:&nbsp;</td><td>Egendefinert 1</td></tr>
+<tr><td>3&nbsp;</td><td>Innb.:&nbsp;</td><td>Resultat i innbyrdes oppgj&oslash;r</td></tr>
+<tr><td>4&nbsp;</td><td>i-Snittm:&nbsp;</td><td>Gjennomsnittlig FIDE ratingmotstand</td></tr>
+</tbody></table>
+Hvite partier st&aring;r med <B>fet skrift.</B><br>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 width="95%"><tbody><tr><td>09. okt kl.18:29:15&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sjakklubb.no/turneringsservice">TurneringsService 6.6</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>
