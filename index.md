@@ -3,8 +3,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A)|Gruppe A|16|Vidar Ingebretsen|
-|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B)|Gruppe B|20|Arda Berg|
+|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A)|Gruppe A|17|Ole Hoel|
+|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B)|Gruppe B|24|Erlend Teum|
 |[Arkiv](turneringer.md)||||
 
 # Lynsjakk
@@ -22,11 +22,11 @@
 
 | Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2021-10-14](resultater/Hu211014-A.htm)|Gruppe A|9|Leander Eriksen|Leander Eriksen (+91)|
+|[2021-10-14](resultater/Hu211014-B.htm)|Gruppe B|14|Christopher Coello|Anton Antonsen (+64)|
 |[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen|Marius Solbakken Mellum (+80)|
 |[2021-09-30](resultater/Hu210930-B.htm)|Gruppe B|12|Amund Hønningstad|Morten-Olav Tangnæs (+75)|
 |[2021-09-23](resultater/Hu210923.htm)||11|Geir Brobakken|Elias Saeedi (+33)|
-|[2021-09-05](resultater/Hu210905.htm)||18|Nicolai Frøyshov|Nicolai Frøyshov (+98)|
-|[2021-04-22](resultater/Hu210422.htm)||5|Leander Eriksen|Leander Eriksen (+60)|
 |[Alle](Hurtigsjakk.md)||||
 
 [Alle resultater](arkiv.md)

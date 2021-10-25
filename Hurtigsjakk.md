@@ -2,6 +2,8 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2021-10-14](resultater/Hu211014-A.htm)|Gruppe A|9|Leander Eriksen|Leander Eriksen (+91)|
+|[2021-10-14](resultater/Hu211014-B.htm)|Gruppe B|14|Christopher Coello|Anton Antonsen (+64)|
 |[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen|Marius Solbakken Mellum (+80)|
 |[2021-09-30](resultater/Hu210930-B.htm)|Gruppe B|12|Amund Hønningstad|Morten-Olav Tangnæs (+75)|
 |[2021-09-23](resultater/Hu210923.htm)||11|Geir Brobakken|Elias Saeedi (+33)|

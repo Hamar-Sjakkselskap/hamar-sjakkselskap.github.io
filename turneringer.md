@@ -2,8 +2,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A)|Gruppe A|16|Vidar Ingebretsen|
-|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B)|Gruppe B|20|Arda Berg|
+|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A)|Gruppe A|17|Ole Hoel|
+|[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B)|Gruppe B|24|Erlend Teum|
 |[Klubbmesterskapet 2020](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Klubbmesterskapet 2020](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Seriespill 3.div](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Ostlandsserien201920204div-NorgesSjakkforbund&group=3.%20div%20B)||||
