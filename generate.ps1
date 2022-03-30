@@ -1,12 +1,19 @@
-cd $PSScriptRoot
+[CmdletBinding()]
 
-git pull | Out-Null
+Param()
+
+Push-Location $PSScriptRoot
+
+# git pull | Out-Null
 
 $files = Get-ChildItem .\resultater
 
 $tournaments = @(
-    @{Name = "Hamarturneringen 2021"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A"; Active = $true}
-    @{Name = "Hamarturneringen 2021"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B"; Active = $true}
+    @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A"; Active = $true}
+    @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B"; Active = $true}
+
+    @{Name = "Hamarturneringen 2021"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A"; Active = $false}
+    @{Name = "Hamarturneringen 2021"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B"; Active = $false}
 
     @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=A"; Active = $false}
     @{Name = "Klubbmesterskapet 2020"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=B"; Active = $false}

@@ -2,6 +2,12 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2022-03-10](resultater/Hu220310.htm)||17|Niklas Eriksen Bjørnstad|Georg Slettmoen Stokke (+329)|
+|[2022-03-10](resultater/Hu220310-A.htm)|Gruppe A|10|Niklas Eriksen Bjørnstad|Odd N Tøstibakken (+55)|
+|[2022-03-10](resultater/Hu220310-B.htm)|Gruppe B|7|Per Solbakken|Noah Dalsrud Pedersen (+57)|
+|[2022-02-10](resultater/Hu220210.htm)||21|Lars Håvard S Dahl|Amund Hønningstad (+85)|
+|[2022-01-27](resultater/Hu220127.htm)||13|Geir Brobakken|Elias Saeedi (+43)|
+|[2022-01-20](resultater/Hu220120.htm)||10|Nicolai Frøyshov|Nicolai Frøyshov (+99)|
 |[2021-10-14](resultater/Hu211014-A.htm)|Gruppe A|9|Leander Eriksen|Leander Eriksen (+91)|
 |[2021-10-14](resultater/Hu211014-B.htm)|Gruppe B|14|Christopher Coello|Anton Antonsen (+64)|
 |[2021-09-30](resultater/Hu210930-A.htm)|Gruppe A|14|Vidar Ingebretsen|Marius Solbakken Mellum (+80)|

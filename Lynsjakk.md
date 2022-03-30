@@ -2,6 +2,8 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2022-02-24](resultater/Ly220224.htm)||24|Ragnar Holm|Nicolai Frøyshov (+106)|
+|[2021-11-25](resultater/Ly211125.htm)||26|Lars Håvard S Dahl|Markus Flermoen (+88)|
 |[2020-02-27](resultater/Ly200227.htm)||24|Lom Madagov|Tor Hernan Floor (+94)|
 |[2020-01-30](resultater/Ly200130.htm)||28|Lom Madagov|Lom Madagov (+109)|
 |[2020-01-23](resultater/Ly200123.htm)||14|Ibragim Madagov|Ibragim Madagov (+109)|
