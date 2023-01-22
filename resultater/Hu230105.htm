@@ -1,0 +1,340 @@
+
+<!-- saved from url=(0052)https://www.hamar.hosjakk.no/resultater/Hu230105.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Resultatliste</title>
+<meta name="Author" content="Hamar Sjakkselskap">
+<meta name="GENERATOR" content="TurneringsService 6.6">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+</head><body bgcolor="#FFFFFF"><form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+
+
+<h1 align="CENTER">Hurtigsjakk<br></h1>
+<h2 align="CENTER">
+Gruppe A<br>
+Hamar Frivillighetssentral,  05.01.2023<br>
+</h2>
+<h2 align="CENTER">
+Endelig resultatliste
+</h2>
+<center>
+<table class="table table-standings"><tbody>
+<tr class="ts_top">
+<th>Pl</th><th>Navn</th><th>Kl</th><th>n-Rtg</th><th>Klubb</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th title="Poengsum (=Lagpoeng i lagturneringer)">Poeng</th><th class="tiebreaks" title="FIDE Buchholz, dårligste strøket">Buchholz-1</th><th class="tiebreaks" title="FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)">Buchholz</th><th class="tiebreaks" title="Gjennomsnittlig FIDE ratingmotstand">i-Snittm</th><th title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen">n-Prestasjon</th></tr>
+<tr class="oddRow"> <td><div align="right">  1&nbsp;</div></td><td>Lars Håvard S Dahl</td><td>3</td><td><div align="right"><a href="javascript:nsfChart(&#39;Dahl%20Lars%20H%E5vard%20S&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1438</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Odd N Tøstibakken." style="font-size:Small;"><tt><b>&nbsp;+14 </b></tt></td>
+<td title="Vant med Sort mot Markus Flermoen." style="font-size:Small;"><tt>&nbsp;+17 </tt></td>
+<td title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><tt><b>&nbsp;+05 </b></tt></td>
+<td title="Vant med Hvit mot Geir Brobakken." style="font-size:Small;"><tt><b>&nbsp;+04 </b></tt></td>
+<td title="Vant med Sort mot Niklas Eriksen Bjørnstad." style="font-size:Small;"><tt>&nbsp;+06 </tt></td>
+<td><div align="right"><b>5.0 </b></div></td><td class="tiebreaks"><div align="right">10.0</div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">1490</div></td><td>&nbsp;1695&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right">  2&nbsp;</div></td><td>Leander Eriksen</td><td>3</td><td><div align="right"><a href="javascript:nsfChart(&#39;Eriksen%20Leander&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1353</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Sort mot Nicolai Frøyshov." style="font-size:Small;"><tt>&nbsp;+08 </tt></td>
+<td title="Vant med Hvit mot Vebjørn Holm-Gjerde." style="font-size:Small;"><tt><b>&nbsp;+07 </b></tt></td>
+<td title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><tt>&nbsp;-04 </tt></td>
+<td title="Vant med Hvit mot Ledion Berisha." style="font-size:Small;"><tt><b>&nbsp;+05 </b></tt></td>
+<td title="Vant med Sort mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt>&nbsp;+09 </tt></td>
+<td><div align="right"><b>4.0 </b></div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">13.0</div></td><td class="tiebreaks"><div align="right">1419</div></td><td>&nbsp;1508&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right">  3&nbsp;</div></td><td>Marius Solbakken Mellum</td><td>4</td><td><div align="right"><a href="javascript:nsfChart(&#39;Mellum%20Marius%20Solbakken&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1227</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Niklas Eriksen Bjørnstad." style="font-size:Small;"><tt>&nbsp;-06 </tt></td>
+<td title="Vant med Hvit mot Nicolai Frøyshov." style="font-size:Small;"><tt><b>&nbsp;+08 </b></tt></td>
+<td title="Vant med Sort mot Rafael Hope." style="font-size:Small;"><tt>&nbsp;+18 </tt></td>
+<td title="Vant med Hvit mot Elias Saeedi." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
+<td title="Vant med Sort mot Geir Brobakken." style="font-size:Small;"><tt>&nbsp;+04 </tt></td>
+<td><div align="right"><b>4.0 </b></div></td><td class="tiebreaks"><div align="right">10.0</div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">1513</div></td><td>&nbsp;1577&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right">  4&nbsp;</div></td><td>Geir Brobakken</td><td>2</td><td><div align="right"><a href="javascript:nsfChart(&#39;Brobakken%20Geir&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1585</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Stein Nordstrøm." style="font-size:Small;"><tt><b>&nbsp;+16 </b></tt></td>
+<td title="Vant med Sort mot Amund Hønningstad." style="font-size:Small;"><tt>&nbsp;+11 </tt></td>
+<td title="Vant med Hvit mot Leander Eriksen." style="font-size:Small;"><tt><b>&nbsp;+02 </b></tt></td>
+<td title="Tapte  med Sort mot Lars Håvard S Dahl." style="font-size:Small;"><tt>&nbsp;-01 </tt></td>
+<td title="Tapte  med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right">15.0</div></td><td class="tiebreaks"><div align="right">16.0</div></td><td class="tiebreaks"><div align="right">1510</div></td><td>&nbsp;1425&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right">  5&nbsp;</div></td><td>Ledion Berisha</td><td>3</td><td><div align="right"><a href="javascript:nsfChart(&#39;Berisha%20Ledion&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1210</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+   </tt></td>
+<td title="Vant med Hvit mot Niklas Eriksen Bjørnstad." style="font-size:Small;"><tt><b>&nbsp;+06 </b></tt></td>
+<td title="Tapte  med Sort mot Lars Håvard S Dahl." style="font-size:Small;"><tt>&nbsp;-01 </tt></td>
+<td title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><tt>&nbsp;-02 </tt></td>
+<td title="Vant med Hvit mot Amund Hønningstad." style="font-size:Small;"><tt><b>&nbsp;+11 </b></tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right">14.0</div></td><td class="tiebreaks"><div align="right">16.0</div></td><td class="tiebreaks"><div align="right">1533</div></td><td>&nbsp;1415&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right">  6&nbsp;</div></td><td>Niklas Eriksen Bjørnstad</td><td>3</td><td><div align="right"><a href="javascript:nsfChart(&#39;Bj%F8rnstad%20Niklas%20Eriksen&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1563</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><tt><b>&nbsp;+03 </b></tt></td>
+<td title="Tapte  med Sort mot Ledion Berisha." style="font-size:Small;"><tt>&nbsp;-05 </tt></td>
+<td title="Vant med Hvit mot Christian Fredrik Nilsen." style="font-size:Small;"><tt><b>&nbsp;+10 </b></tt></td>
+<td title="Vant med Sort mot Amund Hønningstad." style="font-size:Small;"><tt>&nbsp;+11 </tt></td>
+<td title="Tapte  med Hvit mot Lars Håvard S Dahl." style="font-size:Small;"><tt><b>&nbsp;-01 </b></tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right">14.0</div></td><td class="tiebreaks"><div align="right">16.0</div></td><td class="tiebreaks"><div align="right">1366</div></td><td>&nbsp;1374&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right">  7&nbsp;</div></td><td>Vebjørn Holm-Gjerde</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Holm-Gjerde%20Vebj%F8rn&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling">1048</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar">Hamar</a></td><td title="Vant med Hvit mot Elias Saeedi." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
+<td title="Tapte  med Sort mot Leander Eriksen." style="font-size:Small;"><tt>&nbsp;-02 </tt></td>
+<td title="Tapte  med Hvit mot Amund Hønningstad." style="font-size:Small;"><tt><b>&nbsp;-11 </b></tt></td>
+<td title="Vant med Sort mot Markus Flermoen." style="font-size:Small;"><tt>&nbsp;+17 </tt></td>
+<td title="Vant med Hvit mot Christian Fredrik Nilsen." style="font-size:Small;"><tt><b>&nbsp;+10 </b></tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">1237</div></td><td>&nbsp;1242&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right">  8&nbsp;</div></td><td>Nicolai Frøyshov</td><td>4</td><td><div align="right"><a href="javascript:nsfChart(&#39;Fr%F8yshov%20Nicolai&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1166</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Hvit mot Leander Eriksen." style="font-size:Small;"><tt><b>&nbsp;-02 </b></tt></td>
+<td title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><tt>&nbsp;-03 </tt></td>
+<td title="Remis med Hvit mot Odd N Tøstibakken." style="font-size:Small;"><tt><b>&nbsp;=14 </b></tt></td>
+<td title="Vant med Sort mot Stein Nordstrøm." style="font-size:Small;"><tt>&nbsp;+16 </tt></td>
+<td title="Vant på wo med Sort mot Tobias Frisvold Ruud." style="font-size:Small;"><tt>&nbsp;W15 </tt></td>
+<td><div align="right"><b>2.5 </b></div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">12.0</div></td><td class="tiebreaks"><div align="right">1438</div></td><td>&nbsp;1215&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right">  9&nbsp;</div></td><td>Sivert Nikolai Ørsleie</td><td>3</td><td><div align="right"><a href="javascript:nsfChart(&#39;%D8rsleie%20Sivert%20Nikolai&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1333</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Hvit mot Markus Flermoen." style="font-size:Small;"><tt><b>&nbsp;-17 </b></tt></td>
+<td title="Remis med Sort mot Christian Fredrik Nilsen." style="font-size:Small;"><tt>&nbsp;=10 </tt></td>
+<td title="Vant med Hvit mot Stein Nordstrøm." style="font-size:Small;"><tt><b>&nbsp;+16 </b></tt></td>
+<td title="Vant med Sort mot Frode Storli." style="font-size:Small;"><tt>&nbsp;+13 </tt></td>
+<td title="Tapte  med Hvit mot Leander Eriksen." style="font-size:Small;"><tt><b>&nbsp;-02 </b></tt></td>
+<td><div align="right"><b>2.5 </b></div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">1570</div></td><td>&nbsp;1310&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 10&nbsp;</div></td><td>Christian Fredrik Nilsen</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Nilsen%20Christian%20Fredrik&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling">    </a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar">Hamar</a></td><td title="Vant med Sort mot Tobias Frisvold Ruud." style="font-size:Small;"><tt>&nbsp;+15 </tt></td>
+<td title="Remis med Hvit mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt><b>&nbsp;=09 </b></tt></td>
+<td title="Tapte  med Sort mot Niklas Eriksen Bjørnstad." style="font-size:Small;"><tt>&nbsp;-06 </tt></td>
+<td title="Vant med Hvit mot Rafael Hope." style="font-size:Small;"><tt><b>&nbsp;+18 </b></tt></td>
+<td title="Tapte  med Sort mot Vebjørn Holm-Gjerde." style="font-size:Small;"><tt>&nbsp;-07 </tt></td>
+<td><div align="right"><b>2.5 </b></div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">1474</div></td><td>&nbsp;1330&nbsp;(+1330)</td></tr>
+<tr class="oddRow"> <td><div align="right"> 11&nbsp;</div></td><td>Amund Hønningstad</td><td>3</td><td><div align="right"><a href="javascript:nsfChart(&#39;H%F8nningstad%20Amund&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1309</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Sort mot Rafael Hope." style="font-size:Small;"><tt>&nbsp;+18 </tt></td>
+<td title="Tapte  med Hvit mot Geir Brobakken." style="font-size:Small;"><tt><b>&nbsp;-04 </b></tt></td>
+<td title="Vant med Sort mot Vebjørn Holm-Gjerde." style="font-size:Small;"><tt>&nbsp;+07 </tt></td>
+<td title="Tapte  med Hvit mot Niklas Eriksen Bjørnstad." style="font-size:Small;"><tt><b>&nbsp;-06 </b></tt></td>
+<td title="Tapte  med Sort mot Ledion Berisha." style="font-size:Small;"><tt>&nbsp;-05 </tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">12.5</div></td><td class="tiebreaks"><div align="right">1449</div></td><td>&nbsp;1299&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 12&nbsp;</div></td><td>Elias Saeedi</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Saeedi%20Elias&#39;, &#39;J%92adoube&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 925</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=J%92adoube">J’adoube</a></td><td title="Tapte  med Sort mot Vebjørn Holm-Gjerde." style="font-size:Small;"><tt>&nbsp;-07 </tt></td>
+<td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<td title="Vant med Hvit mot Markus Flermoen." style="font-size:Small;"><tt><b>&nbsp;+17 </b></tt></td>
+<td title="Tapte  med Sort mot Marius Solbakken Mellum." style="font-size:Small;"><tt>&nbsp;-03 </tt></td>
+<td title="Ingen parti ." style="font-size:Small;"><tt>&nbsp;    </tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">12.5</div></td><td class="tiebreaks"><div align="right">1274</div></td><td>&nbsp;0944&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right"> 13&nbsp;</div></td><td>Frode Storli</td><td>3</td><td><div align="right"><a href="javascript:nsfChart(&#39;Storli%20Frode&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1496</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Ingen parti ." style="font-size:Small;"><tt>&nbsp;    </tt></td>
+<td title="Ingen parti ." style="font-size:Small;"><tt>&nbsp;    </tt></td>
+<td title="Vant med Sort mot Tobias Frisvold Ruud." style="font-size:Small;"><tt>&nbsp;+15 </tt></td>
+<td title="Tapte  med Hvit mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt><b>&nbsp;-09 </b></tt></td>
+<td title="Vant med Sort mot Rafael Hope." style="font-size:Small;"><tt>&nbsp;+18 </tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">10.0</div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">1534</div></td><td>&nbsp;1471&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 14&nbsp;</div></td><td>Odd N Tøstibakken</td><td>4</td><td><div align="right"><a href="javascript:nsfChart(&#39;T%F8stibakken%20Odd%20N&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling">1187</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Lars Håvard S Dahl." style="font-size:Small;"><tt>&nbsp;-01 </tt></td>
+<td title="Tapte  med Hvit mot Rafael Hope." style="font-size:Small;"><tt><b>&nbsp;-18 </b></tt></td>
+<td title="Remis med Sort mot Nicolai Frøyshov." style="font-size:Small;"><tt>&nbsp;=08 </tt></td>
+<td title="Tapte  med Hvit mot Tobias Frisvold Ruud." style="font-size:Small;"><tt><b>&nbsp;-15 </b></tt></td>
+<td title="Vant med Hvit mot Markus Flermoen." style="font-size:Small;"><tt><b>&nbsp;+17 </b></tt></td>
+<td><div align="right"><b>1.5 </b></div></td><td class="tiebreaks"><div align="right">10.0</div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">1573</div></td><td>&nbsp;1099&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right"> 15&nbsp;</div></td><td>Tobias Frisvold Ruud</td><td>2</td><td><div align="right"><a href="javascript:nsfChart(&#39;Ruud%20Tobias%20Frisvold&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling">1256</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar">Hamar</a></td><td title="Tapte  med Hvit mot Christian Fredrik Nilsen." style="font-size:Small;"><tt><b>&nbsp;-10 </b></tt></td>
+<td title="Remis med Sort mot Stein Nordstrøm." style="font-size:Small;"><tt>&nbsp;=16 </tt></td>
+<td title="Tapte  med Hvit mot Frode Storli." style="font-size:Small;"><tt><b>&nbsp;-13 </b></tt></td>
+<td title="Vant med Sort mot Odd N Tøstibakken." style="font-size:Small;"><tt>&nbsp;+14 </tt></td>
+<td title="Tapte på wo med Hvit mot Nicolai Frøyshov." style="font-size:Small;"><tt><b>&nbsp;w08 </b></tt></td>
+<td><div align="right"><b>1.5 </b></div></td><td class="tiebreaks"><div align="right"> 9.5</div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">1504</div></td><td>&nbsp;1276&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 16&nbsp;</div></td><td>Stein Nordstrøm</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Nordstr%F8m%20Stein&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling">1441</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar">Hamar</a></td><td title="Tapte  med Sort mot Geir Brobakken." style="font-size:Small;"><tt>&nbsp;-04 </tt></td>
+<td title="Remis med Hvit mot Tobias Frisvold Ruud." style="font-size:Small;"><tt><b>&nbsp;=15 </b></tt></td>
+<td title="Tapte  med Sort mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt>&nbsp;-09 </tt></td>
+<td title="Tapte  med Hvit mot Nicolai Frøyshov." style="font-size:Small;"><tt><b>&nbsp;-08 </b></tt></td>
+<td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<td><div align="right"><b>1.5 </b></div></td><td class="tiebreaks"><div align="right"> 9.5</div></td><td class="tiebreaks"><div align="right">10.0</div></td><td class="tiebreaks"><div align="right">1605</div></td><td>&nbsp;0999&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right"> 17&nbsp;</div></td><td>Markus Flermoen</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Flermoen%20Markus&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 934</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Sort mot Sivert Nikolai Ørsleie." style="font-size:Small;"><tt>&nbsp;+09 </tt></td>
+<td title="Tapte  med Hvit mot Lars Håvard S Dahl." style="font-size:Small;"><tt><b>&nbsp;-01 </b></tt></td>
+<td title="Tapte  med Sort mot Elias Saeedi." style="font-size:Small;"><tt>&nbsp;-12 </tt></td>
+<td title="Tapte  med Hvit mot Vebjørn Holm-Gjerde." style="font-size:Small;"><tt><b>&nbsp;-07 </b></tt></td>
+<td title="Tapte  med Sort mot Odd N Tøstibakken." style="font-size:Small;"><tt>&nbsp;-14 </tt></td>
+<td><div align="right"><b>1.0 </b></div></td><td class="tiebreaks"><div align="right">12.5</div></td><td class="tiebreaks"><div align="right">14.0</div></td><td class="tiebreaks"><div align="right">1378</div></td><td>&nbsp;0946&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 18&nbsp;</div></td><td>Rafael Hope</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Hope%20Rafael&#39;, &#39;&#39;)" title="Klikk for å  se nasjonal elo utvikling">1450</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=A&amp;club="></a></td><td title="Tapte  med Hvit mot Amund Hønningstad." style="font-size:Small;"><tt><b>&nbsp;-11 </b></tt></td>
+<td title="Vant med Sort mot Odd N Tøstibakken." style="font-size:Small;"><tt>&nbsp;+14 </tt></td>
+<td title="Tapte  med Hvit mot Marius Solbakken Mellum." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
+<td title="Tapte  med Sort mot Christian Fredrik Nilsen." style="font-size:Small;"><tt>&nbsp;-10 </tt></td>
+<td title="Tapte  med Hvit mot Frode Storli." style="font-size:Small;"><tt><b>&nbsp;-13 </b></tt></td>
+<td><div align="right"><b>1.0 </b></div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">13.0</div></td><td class="tiebreaks"><div align="right">1504</div></td><td>&nbsp;1069&nbsp;( +0)</td></tr>
+</tbody></table>
+<table class="table tiebreaks"><tbody><tr><th colspan="3"><a href="http://tournamentservice.com/hjelp/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Buchholz-1:&nbsp;</td><td>FIDE Buchholz, dårligste strøket</td></tr>
+<tr><td>3&nbsp;</td><td>Buchholz:&nbsp;</td><td>FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)</td></tr>
+<tr><td>4&nbsp;</td><td>i-Snittm:&nbsp;</td><td>Gjennomsnittlig FIDE ratingmotstand</td></tr>
+</tbody></table>
+Hvite partier står med <b>fet skrift.</b><br>
+<table class="table tableFooter"><tbody><tr><td>14. jan kl.14:59:10&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://tournamentservice.com/">TurneringsService 6.6</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+
+
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+
+
+<h1 align="CENTER">Hurtigsjakk<br></h1>
+<h2>
+Gruppe B<br>
+Hamar Frivillighetssentral,  05.01.2023<br>
+</h2>
+<h2>
+Endelig resultatliste
+</h2>
+<center>
+<table class="table table-standings"><tbody>
+<tr class="ts_top">
+<th>Pl</th><th>Navn</th><th>Kl</th><th>n-Rtg</th><th>Klubb</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th title="Poengsum (=Lagpoeng i lagturneringer)">Poeng</th><th class="tiebreaks" title="FIDE Buchholz, dårligste strøket">Buchholz-1</th><th class="tiebreaks" title="FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)">Buchholz</th><th class="tiebreaks" title="Gjennomsnittlig FIDE ratingmotstand">i-Snittm</th><th title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen">n-Prestasjon</th></tr>
+<tr class="oddRow"> <td><div align="right">  1&nbsp;</div></td><td>Egil Flermoen</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Flermoen%20Egil&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 929</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><tt>&nbsp;+06 </tt></td>
+<td title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><tt><b>&nbsp;+04 </b></tt></td>
+<td title="Vant med Sort mot Geir Kristian Jacobsen." style="font-size:Small;"><tt>&nbsp;+08 </tt></td>
+<td title="Vant med Hvit mot Frank Kvernvolden." style="font-size:Small;"><tt><b>&nbsp;+05 </b></tt></td>
+<td title="Tapte  med Sort mot Robin Ganre." style="font-size:Small;"><tt>&nbsp;-02 </tt></td>
+<td><div align="right"><b>4.0 </b></div></td><td class="tiebreaks"><div align="right">13.0</div></td><td class="tiebreaks"><div align="right">15.0</div></td><td class="tiebreaks"><div align="right">1138</div></td><td>&nbsp;1107&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right">  2&nbsp;</div></td><td>Robin Ganre</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Ganre%20Robin&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling">    </a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar">Hamar</a></td><td title="Vant med Sort mot Frank Kvernvolden." style="font-size:Small;"><tt>&nbsp;+05 </tt></td>
+<td title="Vant med Hvit mot Tommy Eriksen." style="font-size:Small;"><tt><b>&nbsp;+10 </b></tt></td>
+<td title="Tapte  med Sort mot Christer Tungard." style="font-size:Small;"><tt>&nbsp;-04 </tt></td>
+<td title="Vant med Hvit mot Geir Kristian Jacobsen." style="font-size:Small;"><tt><b>&nbsp;+08 </b></tt></td>
+<td title="Vant med Hvit mot Egil Flermoen." style="font-size:Small;"><tt><b>&nbsp;+01 </b></tt></td>
+<td><div align="right"><b>4.0 </b></div></td><td class="tiebreaks"><div align="right">12.0</div></td><td class="tiebreaks"><div align="right">14.0</div></td><td class="tiebreaks"><div align="right">1187</div></td><td>&nbsp;1092&nbsp;(+1092)</td></tr>
+<tr class="oddRow"> <td><div align="right">  3&nbsp;</div></td><td>Per Solbakken</td><td>4</td><td><div align="right"><a href="javascript:nsfChart(&#39;Solbakken%20Per&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 950</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Remis med Hvit mot Ane Elisabeth Jacobsen." style="font-size:Small;"><tt><b>&nbsp;=14 </b></tt></td>
+<td title="Tapte  med Sort mot Jens W. Lindstad." style="font-size:Small;"><tt>&nbsp;-12 </tt></td>
+<td title="Vant med Hvit mot Thomas Elnes." style="font-size:Small;"><tt><b>&nbsp;+13 </b></tt></td>
+<td title="Vant med Sort mot Jarne Lutnæs." style="font-size:Small;"><tt>&nbsp;+11 </tt></td>
+<td title="Vant med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><tt>&nbsp;+06 </tt></td>
+<td><div align="right"><b>3.5 </b></div></td><td class="tiebreaks"><div align="right"> 8.0</div></td><td class="tiebreaks"><div align="right"> 8.5</div></td><td class="tiebreaks"><div align="right"></div></td><td>&nbsp;0906&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right">  4&nbsp;</div></td><td>Christer Tungard</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Tungard%20Christer&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 795</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Sort mot Jonas Solbakken." style="font-size:Small;"><tt>&nbsp;+07 </tt></td>
+<td title="Tapte  med Sort mot Egil Flermoen." style="font-size:Small;"><tt>&nbsp;-01 </tt></td>
+<td title="Vant med Hvit mot Robin Ganre." style="font-size:Small;"><tt><b>&nbsp;+02 </b></tt></td>
+<td title="Tapte  med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><tt><b>&nbsp;-06 </b></tt></td>
+<td title="Vant med Sort mot Pål Gjersvik." style="font-size:Small;"><tt>&nbsp;+09 </tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right">14.0</div></td><td class="tiebreaks"><div align="right">16.0</div></td><td class="tiebreaks"><div align="right">1264</div></td><td>&nbsp;0961&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right">  5&nbsp;</div></td><td>Frank Kvernvolden</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Kvernvolden%20Frank&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 814</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar">Hamar</a></td><td title="Tapte  med Hvit mot Robin Ganre." style="font-size:Small;"><tt><b>&nbsp;-02 </b></tt></td>
+<td title="Vant med Sort mot Ane Elisabeth Jacobsen." style="font-size:Small;"><tt>&nbsp;+14 </tt></td>
+<td title="Vant med Hvit mot Pål Gjersvik." style="font-size:Small;"><tt><b>&nbsp;+09 </b></tt></td>
+<td title="Tapte  med Sort mot Egil Flermoen." style="font-size:Small;"><tt>&nbsp;-01 </tt></td>
+<td title="Vant med Hvit mot Jarne Lutnæs." style="font-size:Small;"><tt><b>&nbsp;+11 </b></tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right">12.0</div></td><td class="tiebreaks"><div align="right">13.5</div></td><td class="tiebreaks"><div align="right">1264</div></td><td>&nbsp;0943&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right">  6&nbsp;</div></td><td>Mikael Santiago Avdem Frankmo</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Frankmo%20Mikael%20Santiago%20Avdem&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 772</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Hvit mot Egil Flermoen." style="font-size:Small;"><tt><b>&nbsp;-01 </b></tt></td>
+<td title="Vant med Sort mot Thomas Elnes." style="font-size:Small;"><tt>&nbsp;+13 </tt></td>
+<td title="Vant med Hvit mot Jens W. Lindstad." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
+<td title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><tt>&nbsp;+04 </tt></td>
+<td title="Tapte  med Hvit mot Per Solbakken." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right">12.0</div></td><td class="tiebreaks"><div align="right">12.5</div></td><td class="tiebreaks"><div align="right">1278</div></td><td>&nbsp;0897&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right">  7&nbsp;</div></td><td>Jonas Solbakken</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Solbakken%20Jonas&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling">    </a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar">Hamar</a></td><td title="Tapte  med Hvit mot Christer Tungard." style="font-size:Small;"><tt><b>&nbsp;-04 </b></tt></td>
+<td title="Tapte  med Sort mot Pål Gjersvik." style="font-size:Small;"><tt>&nbsp;-09 </tt></td>
+<td title="Vant med Hvit mot Ane Elisabeth Jacobsen." style="font-size:Small;"><tt><b>&nbsp;+14 </b></tt></td>
+<td title="Vant med Hvit mot Tommy Eriksen." style="font-size:Small;"><tt><b>&nbsp;+10 </b></tt></td>
+<td title="Vant med Sort mot Geir Kristian Jacobsen." style="font-size:Small;"><tt>&nbsp;+08 </tt></td>
+<td><div align="right"><b>3.0 </b></div></td><td class="tiebreaks"><div align="right"> 9.0</div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">1135</div></td><td>&nbsp;0885&nbsp;(+885)</td></tr>
+<tr class="evenRow"> <td><div align="right">  8&nbsp;</div></td><td>Geir Kristian Jacobsen</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Jacobsen%20Geir%20Kristian&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 863</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar">Hamar</a></td><td title="Vant med Sort mot Thomas Elnes." style="font-size:Small;"><tt>&nbsp;+13 </tt></td>
+<td title="Vant med Hvit mot Jarne Lutnæs." style="font-size:Small;"><tt><b>&nbsp;+11 </b></tt></td>
+<td title="Tapte  med Hvit mot Egil Flermoen." style="font-size:Small;"><tt><b>&nbsp;-01 </b></tt></td>
+<td title="Tapte  med Sort mot Robin Ganre." style="font-size:Small;"><tt>&nbsp;-02 </tt></td>
+<td title="Tapte  med Hvit mot Jonas Solbakken." style="font-size:Small;"><tt><b>&nbsp;-07 </b></tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">13.0</div></td><td class="tiebreaks"><div align="right">13.5</div></td><td class="tiebreaks"><div align="right">1332</div></td><td>&nbsp;0759&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right">  9&nbsp;</div></td><td>Pål Gjersvik</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Gjersvik%20P%E5l&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 770</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Tapte  med Sort mot Tommy Eriksen." style="font-size:Small;"><tt>&nbsp;-10 </tt></td>
+<td title="Vant med Hvit mot Jonas Solbakken." style="font-size:Small;"><tt><b>&nbsp;+07 </b></tt></td>
+<td title="Tapte  med Sort mot Frank Kvernvolden." style="font-size:Small;"><tt>&nbsp;-05 </tt></td>
+<td title="Vant med Sort mot Jens W. Lindstad." style="font-size:Small;"><tt>&nbsp;+12 </tt></td>
+<td title="Tapte  med Hvit mot Christer Tungard." style="font-size:Small;"><tt><b>&nbsp;-04 </b></tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">12.5</div></td><td class="tiebreaks"><div align="right">1184</div></td><td>&nbsp;0797&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 10&nbsp;</div></td><td>Tommy Eriksen</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Eriksen%20Tommy&#39;, &#39;Hamar%20SS&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 863</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar%20SS">Hamar SS</a></td><td title="Vant med Hvit mot Pål Gjersvik." style="font-size:Small;"><tt><b>&nbsp;+09 </b></tt></td>
+<td title="Tapte  med Sort mot Robin Ganre." style="font-size:Small;"><tt>&nbsp;-02 </tt></td>
+<td title="Tapte  med Hvit mot Jarne Lutnæs." style="font-size:Small;"><tt><b>&nbsp;-11 </b></tt></td>
+<td title="Tapte  med Sort mot Jonas Solbakken." style="font-size:Small;"><tt>&nbsp;-07 </tt></td>
+<td title="Vant med Hvit mot Thomas Elnes." style="font-size:Small;"><tt><b>&nbsp;+13 </b></tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">1197</div></td><td>&nbsp;0727&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right"> 11&nbsp;</div></td><td>Jarne Lutnæs</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Lutn%E6s%20Jarne&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 788</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar">Hamar</a></td><td title="Vant med Hvit mot Jens W. Lindstad." style="font-size:Small;"><tt><b>&nbsp;+12 </b></tt></td>
+<td title="Tapte  med Sort mot Geir Kristian Jacobsen." style="font-size:Small;"><tt>&nbsp;-08 </tt></td>
+<td title="Vant med Sort mot Tommy Eriksen." style="font-size:Small;"><tt>&nbsp;+10 </tt></td>
+<td title="Tapte  med Hvit mot Per Solbakken." style="font-size:Small;"><tt><b>&nbsp;-03 </b></tt></td>
+<td title="Tapte  med Sort mot Frank Kvernvolden." style="font-size:Small;"><tt>&nbsp;-05 </tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">12.0</div></td><td class="tiebreaks"><div align="right">1199</div></td><td>&nbsp;0824&nbsp;( +0)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 12&nbsp;</div></td><td>Jens W. Lindstad</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Lindstad%20Jens%20W.&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 990</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar">Hamar</a></td><td title="Tapte  med Sort mot Jarne Lutnæs." style="font-size:Small;"><tt>&nbsp;-11 </tt></td>
+<td title="Vant med Hvit mot Per Solbakken." style="font-size:Small;"><tt><b>&nbsp;+03 </b></tt></td>
+<td title="Tapte  med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><tt>&nbsp;-06 </tt></td>
+<td title="Tapte  med Hvit mot Pål Gjersvik." style="font-size:Small;"><tt><b>&nbsp;-09 </b></tt></td>
+<td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<td><div align="right"><b>2.0 </b></div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">1270</div></td><td>&nbsp;0627&nbsp;( +0)</td></tr>
+<tr class="oddRow"> <td><div align="right"> 13&nbsp;</div></td><td>Thomas Elnes</td><td></td><td><div align="right"><a href="javascript:nsfChart(&#39;Elnes%20Thomas&#39;, &#39;&#39;)" title="Klikk for å  se nasjonal elo utvikling">    </a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club="></a></td><td title="Tapte  med Hvit mot Geir Kristian Jacobsen." style="font-size:Small;"><tt><b>&nbsp;-08 </b></tt></td>
+<td title="Tapte  med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><tt><b>&nbsp;-06 </b></tt></td>
+<td title="Tapte  med Sort mot Per Solbakken." style="font-size:Small;"><tt>&nbsp;-03 </tt></td>
+<td title="Vant på wo." style="font-size:Small;"><tt>&nbsp;+WO </tt></td>
+<td title="Tapte  med Sort mot Tommy Eriksen." style="font-size:Small;"><tt>&nbsp;-10 </tt></td>
+<td><div align="right"><b>1.0 </b></div></td><td class="tiebreaks"><div align="right">10.5</div></td><td class="tiebreaks"><div align="right">11.0</div></td><td class="tiebreaks"><div align="right">1195</div></td><td>&nbsp;0462&nbsp;(+462)</td></tr>
+<tr class="evenRow"> <td><div align="right"> 14&nbsp;</div></td><td>Ane Elisabeth Jacobsen</td><td>5</td><td><div align="right"><a href="javascript:nsfChart(&#39;Jacobsen%20Ane%20Elisabeth&#39;, &#39;Hamar&#39;)" title="Klikk for å  se nasjonal elo utvikling"> 777</a></div></td><td><a href="https://www.hamar.hosjakk.no/resultater/standings.aspx?TID=&amp;group=B&amp;club=Hamar">Hamar</a></td><td title="Remis med Sort mot Per Solbakken." style="font-size:Small;"><tt>&nbsp;=03 </tt></td>
+<td title="Tapte  med Hvit mot Frank Kvernvolden." style="font-size:Small;"><tt><b>&nbsp;-05 </b></tt></td>
+<td title="Tapte  med Sort mot Jonas Solbakken." style="font-size:Small;"><tt>&nbsp;-07 </tt></td>
+<td title="Ingen parti ." style="font-size:Small;"><tt>&nbsp;    </tt></td>
+<td title="Ingen parti ." style="font-size:Small;"><tt>&nbsp;    </tt></td>
+<td><div align="right"><b>0.5 </b></div></td><td class="tiebreaks"><div align="right">11.5</div></td><td class="tiebreaks"><div align="right">13.0</div></td><td class="tiebreaks"><div align="right">1275</div></td><td>&nbsp;0610&nbsp;( +0)</td></tr>
+</tbody></table>
+<table class="table tiebreaks"><tbody><tr><th colspan="3"><a href="http://tournamentservice.com/hjelp/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Buchholz-1:&nbsp;</td><td>FIDE Buchholz, dårligste strøket</td></tr>
+<tr><td>3&nbsp;</td><td>Buchholz:&nbsp;</td><td>FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)</td></tr>
+<tr><td>4&nbsp;</td><td>i-Snittm:&nbsp;</td><td>Gjennomsnittlig FIDE ratingmotstand</td></tr>
+</tbody></table>
+Hvite partier står med <b>fet skrift.</b><br>
+<table class="table tableFooter"><tbody><tr><td>14. jan kl.14:59:41&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://tournamentservice.com/">TurneringsService 6.6</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+
+</center></center></body></html>

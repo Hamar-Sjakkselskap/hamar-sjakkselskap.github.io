@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<TITLE>Resultatliste</TITLE>
+<META NAME="Author" CONTENT="Hamar Sjakkselskap">
+<META NAME="GENERATOR" CONTENT="TurneringsService 6.6">
+<script language="javascript" type="text/javascript">
+
+<!--
+function Game(Index, pgnfile)
+{
+
+// ***********************************************************************************************
+// I linjen nedenfor vil TS angi nettadressen til sidene dine, dvs den MAPPEN på serveren
+// der PGN og HTM-filene (resultatlistene) legges.
+// TS vil erstatte %BaseURL% med det du har angitt i TS for hver enkelt turnering.
+// ***********************************************************************************************
+var BaseURL = 'http://www.myserver.com/myfolder/results';
+
+
+// ***************************  PGNtoJS: *********************************************************
+// Hvis du velger PGNtoJS som viewer må du huske på følgende når du genererer
+// partifilene i PGNtoJS:
+// - Under "Convert"-"Settings"-"Layout" må du krysse av "For each game a new page"
+// - På "Name of project" må du beholde standardnavnet "game". Hvis du endrer navn må du
+//   også endre variabelen NameOfProject_In_PGNtoJS nedenfor
+// - Filene som PGNtoJS genererer må lagres på WEB-serveren i en egen folder med samme navn
+//   som turneringens htm-fil. Hvis f.eks turneringen heter nm2006.trx, så må PGNtoJS altså
+//   opprette filene nm2006\game.htm,  nm2006\game_game1.htm, nm2006\game_game2.htm osv osv.
+// - Hvis turneringen har flere grupper, må partifilene fra hver gruppe lagres i separate foldere.
+// ***********************************************************************************************
+var NameOfProject_In_PGNtoJS='game';
+
+
+// ***********************************************************************************************
+// De neste linjene trenger du normalt ikke endre:
+// ***********************************************************************************************
+var GameFolder=pgnfile.replace('.pgn','');
+var Base0Index=Index-1;
+var gameURLnorbase = 'http://norbase.sjakk.biz/gameview.php?inter=12&pgnfile='+BaseURL+'/'+pgnfile+'&gamenr='+Index;
+var gameURLpgntojs = BaseURL+'/'+GameFolder+'/'+NameOfProject_In_PGNtoJS+'.htm?'+Base0Index+'_0';
+
+
+// ***********************************************************************************************
+// Nedenfor velger du hvilken partiviewer som skal brukes,  ved å "kommentere bort"
+// riktig linje.  Kommentartegnet (to skråstreker) må være fjernet fra EN  og
+// bare EN av linjene nedenfor.
+// ***********************************************************************************************
+window.open(gameURLnorbase);      // For info, se http://norbase.sjakk.biz/
+//window.open(gameURLpgntojs);    // For info, se http://www.mailchess.de/pgntojse.html
+
+}
+
+// ***********************************************************************************************
+// Det følgende brukes ifm klikkbare linker fra resultatlistens elo-tall, til NSF's ELOstatistikk:
+// ***********************************************************************************************
+
+
+function nsfChart(navn, klubb)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  //theform.klubb1.value=klubb;
+  theform.submit()
+}
+
+function nsfChartName(navn)
+{
+var theform;
+  if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+	theform = document.NsfEloChart;
+	}
+  else {
+	theform = document.forms["NsfEloChart"];
+  }
+  theform.name1.value=navn;
+  theform.klubb1.value="";
+  theform.submit()
+}
+
+// -->
+</script>
+
+<form name="NsfEloChart" action="http://heim.ifi.uio.no/~runed/elo_hist.cgi" method="POST" target="_blank">
+ <input type="hidden" name="name1" value="">
+ <input type="hidden" name="klubb1" value="">
+</form>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1 ALIGN=CENTER>Hamar V&aring;rhurtig 2022<BR></H1>
+<H2 ALIGN=CENTER>
+Gruppe B<BR>
+Hamar Frivillighetssentral,  07.04.2022<BR>
+</H2>
+<H2 ALIGN=CENTER>
+Endelig resultatliste
+</H2>
+<CENTER>
+<TABLE class="table table-standings"><TBODY>
+<TR class="ts_top">
+<TH>Pl</TH><TH>Navn</TH><TH>n-Rtg</TH><TH>i-Rtg</TH><TH>Klubb</TH><TH>1</TH><TH>2</TH><TH>3</TH><TH>4</TH><TH>5</TH><TH  title="Poengsum (=Lagpoeng i lagturneringer)">Poeng</TH><TH class="tiebreaks" title="FIDE Buchholz, d&aring;rligste str&oslash;ket">Buchholz-1</TH><TH class="tiebreaks" title="FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)">Buchholz</TH><TH class="tiebreaks" title="Gjennomsnittlig FIDE ratingmotstand">i-Snittm</TH><TH title="Viser ratingprestasjon, og evt frem/tilbakegang i denne turneringen">n-Prestasjon</TH></TR>
+<TR class="oddRow"> <TD><DIV align="right">  1&nbsp;</DIV></TD><td>Per Solbakken</td><td><div align="right"><a href="javascript:nsfChart('Solbakken%20Per', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 973</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1519360" title="Klikk for &aring;  se FIDE-elo utvikling">1324</a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Vant med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;+4 </B></TT></TD>
+<TD title="Vant med Sort mot Marie Blystad." style="font-size:Small;"><TT>&nbsp;+8 </TT></TD>
+<TD title="Vant med Hvit mot Jens W. Lindstad." style="font-size:Small;"><TT><B>&nbsp;+2 </B></TT></TD>
+<TD title="Vant med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;+3 </TT></TD>
+<TD title="Vant med Sort mot Jarne Lutn&aelig;s." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD ><DIV align="right"><b>5.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">12.0</DIV></TD><TD class="tiebreaks"><DIV align="right">13.5</DIV></TD><TD class="tiebreaks"><DIV align="right">1118</DIV></TD><TD>&nbsp;1089&nbsp;(+25)</TD></TR>
+<TR class="evenRow"> <TD><DIV align="right">  2&nbsp;</DIV></TD><td>Jens W. Lindstad</td><td><div align="right"><a href="javascript:nsfChart('Lindstad%20Jens%20W.', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 937</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1570129" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Vant med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;+3 </B></TT></TD>
+<TD title="Vant med Hvit mot P&aring;l Gjersvik." style="font-size:Small;"><TT><B>&nbsp;+5 </B></TT></TD>
+<TD title="Tapte  med Sort mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;+4 </TT></TD>
+<TD title="Vant med Hvit mot Guro Helen Midtlund Nordby." style="font-size:Small;"><TT><B>&nbsp;+7 </B></TT></TD>
+<TD ><DIV align="right"><b>4.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">13.0</DIV></TD><TD class="tiebreaks"><DIV align="right">14.5</DIV></TD><TD class="tiebreaks"><DIV align="right">1170</DIV></TD><TD>&nbsp;0908&nbsp;( -1)</TD></TR>
+<TR class="oddRow"> <TD><DIV align="right">  3&nbsp;</DIV></TD><td>Christer Tungard</td><td><div align="right"><a href="javascript:nsfChart('Tungard%20Christer', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 641</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531360" title="Klikk for &aring;  se FIDE-elo utvikling">1164</a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Tapte  med Sort mot Jens W. Lindstad." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Vant med Hvit mot Sigrun Sophia Svendsen." style="font-size:Small;"><TT><B>&nbsp;+9 </B></TT></TD>
+<TD title="Vant med Sort mot Jarne Lutn&aelig;s." style="font-size:Small;"><TT>&nbsp;+6 </TT></TD>
+<TD title="Tapte  med Hvit mot Per Solbakken." style="font-size:Small;"><TT><B>&nbsp;-1 </B></TT></TD>
+<TD title="Vant med Sort mot P&aring;l Gjersvik." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">12.5</DIV></TD><TD class="tiebreaks"><DIV align="right">13.0</DIV></TD><TD class="tiebreaks"><DIV align="right">1277</DIV></TD><TD>&nbsp;0815&nbsp;(+37)</TD></TR>
+<TR class="evenRow"> <TD><DIV align="right">  4&nbsp;</DIV></TD><td>Mikael Santiago Avdem Frankmo</td><td><div align="right"><a href="javascript:nsfChart('Frankmo%20Mikael%20Santiago%20Avdem', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 588</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1561880" title="Klikk for &aring;  se FIDE-elo utvikling">1072</a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Tapte  med Sort mot Per Solbakken." style="font-size:Small;"><TT>&nbsp;-1 </TT></TD>
+<TD title="Vant med Hvit mot Guro Helen Midtlund Nordby." style="font-size:Small;"><TT><B>&nbsp;+7 </B></TT></TD>
+<TD title="Vant med Sort mot P&aring;l Gjersvik." style="font-size:Small;"><TT>&nbsp;+5 </TT></TD>
+<TD title="Tapte  med Hvit mot Jens W. Lindstad." style="font-size:Small;"><TT><B>&nbsp;-2 </B></TT></TD>
+<TD title="Vant med Hvit mot Sigrun Sophia Svendsen." style="font-size:Small;"><TT><B>&nbsp;+9 </B></TT></TD>
+<TD ><DIV align="right"><b>3.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">12.5</DIV></TD><TD class="tiebreaks"><DIV align="right">13.0</DIV></TD><TD class="tiebreaks"><DIV align="right">1205</DIV></TD><TD>&nbsp;0771&nbsp;(+37)</TD></TR>
+<TR class="oddRow"> <TD><DIV align="right">  5&nbsp;</DIV></TD><td>P&aring;l Gjersvik</td><td><div align="right"><a href="javascript:nsfChart('Gjersvik%20P%E5l', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 669</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1531263" title="Klikk for &aring;  se FIDE-elo utvikling">1231</a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Vant med Hvit mot Jarne Lutn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;+6 </B></TT></TD>
+<TD title="Tapte  med Sort mot Jens W. Lindstad." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD title="Tapte  med Hvit mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT><B>&nbsp;-4 </B></TT></TD>
+<TD title="Vant med Sort mot Guro Helen Midtlund Nordby." style="font-size:Small;"><TT>&nbsp;+7 </TT></TD>
+<TD title="Tapte  med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;-3 </B></TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">11.5</DIV></TD><TD class="tiebreaks"><DIV align="right">13.0</DIV></TD><TD class="tiebreaks"><DIV align="right">1099</DIV></TD><TD>&nbsp;0593&nbsp;(-5)</TD></TR>
+<TR class="evenRow"> <TD><DIV align="right">  6&nbsp;</DIV></TD><td>Jarne Lutn&aelig;s</td><td><div align="right"><a href="javascript:nsfChart('Lutn%E6s%20Jarne', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 688</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Tapte  med Sort mot P&aring;l Gjersvik." style="font-size:Small;"><TT>&nbsp;-5 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+W </TT></TD>
+<TD title="Tapte  med Hvit mot Christer Tungard." style="font-size:Small;"><TT><B>&nbsp;-3 </B></TT></TD>
+<TD title="Vant med Sort mot Sigrun Sophia Svendsen." style="font-size:Small;"><TT>&nbsp;+9 </TT></TD>
+<TD title="Tapte  med Hvit mot Per Solbakken." style="font-size:Small;"><TT><B>&nbsp;-1 </B></TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">11.5</DIV></TD><TD class="tiebreaks"><DIV align="right">12.0</DIV></TD><TD class="tiebreaks"><DIV align="right">1239</DIV></TD><TD>&nbsp;0489&nbsp;( +0)</TD></TR>
+<TR class="oddRow"> <TD><DIV align="right">  7&nbsp;</DIV></TD><td>Guro Helen Midtlund Nordby</td><td><div align="right"><a href="javascript:nsfChart('Nordby%20Guro%20Helen%20Midtlund', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 471</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=1553755" title="Klikk for &aring;  se FIDE-elo utvikling">1062</a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+W </TT></TD>
+<TD title="Tapte  med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD title="Vant med Hvit mot Marie Blystad." style="font-size:Small;"><TT><B>&nbsp;+8 </B></TT></TD>
+<TD title="Tapte  med Hvit mot P&aring;l Gjersvik." style="font-size:Small;"><TT><B>&nbsp;-5 </B></TT></TD>
+<TD title="Tapte  med Sort mot Jens W. Lindstad." style="font-size:Small;"><TT>&nbsp;-2 </TT></TD>
+<TD ><DIV align="right"><b>2.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">11.0</DIV></TD><TD class="tiebreaks"><DIV align="right">13.0</DIV></TD><TD class="tiebreaks"><DIV align="right">1151</DIV></TD><TD>&nbsp;0503&nbsp;( +1)</TD></TR>
+<TR class="evenRow"> <TD><DIV align="right">  8&nbsp;</DIV></TD><td>Marie Blystad</td><td><div align="right"><a href="javascript:nsfChart('Blystad%20Marie', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 593</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Vant med Sort mot Sigrun Sophia Svendsen." style="font-size:Small;"><TT>&nbsp;+9 </TT></TD>
+<TD title="Tapte  med Hvit mot Per Solbakken." style="font-size:Small;"><TT><B>&nbsp;-1 </B></TT></TD>
+<TD title="Tapte  med Sort mot Guro Helen Midtlund Nordby." style="font-size:Small;"><TT>&nbsp;-7 </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD title="Ingen parti ." style="font-size:Small;"><TT>&nbsp;   </TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right">11.0</DIV></TD><TD class="tiebreaks"><DIV align="right">11.5</DIV></TD><TD class="tiebreaks"><DIV align="right">1193</DIV></TD><TD>&nbsp;0505&nbsp;( -4)</TD></TR>
+<TR class="oddRow"> <TD><DIV align="right">  9&nbsp;</DIV></TD><td>Sigrun Sophia Svendsen</td><td><div align="right"><a href="javascript:nsfChart('Svendsen%20Sigrun%20Sophia', 'Hamar')" title="Klikk for å  se nasjonal elo utvikling"> 448</a></div></td><td><div align="right"><a href="http://ratings.fide.com/id.phtml?event=0" title="Klikk for &aring;  se FIDE-elo utvikling">    </a></div></td><TD ><a href="standings.aspx?TID=&group=B&club=Hamar">Hamar</a></TD><TD title="Tapte  med Hvit mot Marie Blystad." style="font-size:Small;"><TT><B>&nbsp;-8 </B></TT></TD>
+<TD title="Tapte  med Sort mot Christer Tungard." style="font-size:Small;"><TT>&nbsp;-3 </TT></TD>
+<TD title="Vant p&aring; wo." style="font-size:Small;"><TT>&nbsp;+W </TT></TD>
+<TD title="Tapte  med Hvit mot Jarne Lutn&aelig;s." style="font-size:Small;"><TT><B>&nbsp;-6 </B></TT></TD>
+<TD title="Tapte  med Sort mot Mikael Santiago Avdem Frankmo." style="font-size:Small;"><TT>&nbsp;-4 </TT></TD>
+<TD ><DIV align="right"><b>1.0 </b></DIV></TD><TD class="tiebreaks"><DIV align="right"> 9.5</DIV></TD><TD class="tiebreaks"><DIV align="right">10.5</DIV></TD><TD class="tiebreaks"><DIV align="right">1118</DIV></TD><TD>&nbsp;0227&nbsp;( +0)</TD></TR>
+</TBODY></TABLE>
+<TABLE class="table tiebreaks"><tbody><tr><th colspan="3"><a href="http://tournamentservice.com/hjelp/html/FIDE_Tie_Break_Regulations.htm">Rangering:</a></th></tr>
+<tr><td>1&nbsp;</td><td>Poeng:&nbsp;</td><td>Poengsum (=Lagpoeng i lagturneringer)</td></tr>
+<tr><td>2&nbsp;</td><td>Buchholz-1:&nbsp;</td><td>FIDE Buchholz, d&aring;rligste str&oslash;ket</td></tr>
+<tr><td>3&nbsp;</td><td>Buchholz:&nbsp;</td><td>FIDE Buchholz, ingen strykninger (=LP Buchholz i lagturneringer)</td></tr>
+<tr><td>4&nbsp;</td><td>i-Snittm:&nbsp;</td><td>Gjennomsnittlig FIDE ratingmotstand</td></tr>
+</tbody></table>
+Hvite partier st&aring;r med <B>fet skrift.</B><br>
+<TABLE class="table tableFooter"><tbody><tr><td>12. okt kl.16:28:04&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://tournamentservice.com/">TurneringsService 6.6</a></td><td align="right">Hamar Sjakkselskap</td></tr></tbody></table>
+</BODY></HTML>

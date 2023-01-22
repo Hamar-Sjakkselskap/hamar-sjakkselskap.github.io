@@ -6,6 +6,8 @@
 |[2022-11-10](resultater/Ly221110.htm)||28|Lars H&aring;vard S Dahl||
 |[2022-10-13](resultater/Ly221013.htm)||19|Leander Eriksen||
 |[2022-09-08](resultater/Ly220908.htm)||26|Lars H&aring;vard S Dahl||
+|[2022-04-28](resultater/Ly220428.htm)||19|Lars Havard Skuggerud Dahl||
+|[2022-03-24](resultater/Ly220324.htm)||20|Lars H&aring;vard S Dahl||
 |[2022-02-24](resultater/Ly220224.htm)||24|Ragnar Holm|Nicolai Fr&oslash;yshov (+106)|
 |[2021-11-25](resultater/Ly211125.htm)||26|Lars H&aring;vard S Dahl|Markus Flermoen (+88)|
 |[2020-02-27](resultater/Ly200227.htm)||24|Lom Madagov|Tor Hernan Floor (+94)|

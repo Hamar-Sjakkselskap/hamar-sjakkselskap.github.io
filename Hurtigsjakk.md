@@ -2,6 +2,7 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2023-01-05](resultater/Hu230105.htm)||32|Lars H�vard S Dahl||
 |[2022-12-08](resultater/Hu221208-A.htm)|Gruppe A|17|Lars H&aring;vard S Dahl||
 |[2022-12-08](resultater/Hu221208-B.htm)|Gruppe B|8|Mikael Santiago Avdem Frankmo||
 |[2022-11-24](resultater/Hu221124-A.htm)|Gruppe A|12|Tobias Frisvold Ruud||
@@ -12,6 +13,8 @@
 |[2022-09-22](resultater/Hu220922.htm)||22|Niklas Eriksen Bj&oslash;rnstad||
 |[2022-09-22](resultater/Hu220922-A.htm)|Gruppe A|12|Niklas Eriksen Bj&oslash;rnstad||
 |[2022-09-22](resultater/Hu220922-B.htm)|Gruppe B|10|Geir Kristian Jacobsen||
+|[2022-04-07](resultater/Hu220407-A.htm)|Gruppe A|12|Niklas Eriksen Bj&oslash;rnstad||
+|[2022-04-07](resultater/Hu220407-B.htm)|Gruppe B|9|Per Solbakken||
 |[2022-03-10](resultater/Hu220310.htm)||17|Niklas Eriksen Bj&oslash;rnstad|Georg Slettmoen Stokke (+329)|
 |[2022-03-10](resultater/Hu220310-A.htm)|Gruppe A|10|Niklas Eriksen Bj&oslash;rnstad|Odd N T&oslash;stibakken (+55)|
 |[2022-03-10](resultater/Hu220310-B.htm)|Gruppe B|7|Per Solbakken|Noah Dalsrud Pedersen (+57)|
