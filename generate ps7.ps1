@@ -10,6 +10,9 @@ Install-Module PowerHTML  -Scope CurrentUser
 $files = Get-ChildItem .\resultater
 
 $tournaments = @(
+    @{Name = "Klubbmesterskapet 2023"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=A"; Active = $true}
+    @{Name = "Klubbmesterskapet 2023"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=B"; Active = $true}
+
     @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A"; Active = $false}
     @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B"; Active = $false}
 
