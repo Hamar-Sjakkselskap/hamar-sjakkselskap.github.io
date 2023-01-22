@@ -2,8 +2,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A)|Gruppe A|18|Niklas Eriksen Bj&oslash;rnstad|
-|[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B)|Gruppe B|20|Elias Saeedi|
+|[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A)|Gruppe A|||
+|[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Klubbmesterskapet 2020](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2020-HamarSjakkselskap&group=A)|Gruppe A|||
