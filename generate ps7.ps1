@@ -10,8 +10,8 @@ Install-Module PowerHTML  -Scope CurrentUser
 $files = Get-ChildItem .\resultater
 
 $tournaments = @(
-    @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A"; Active = $true}
-    @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B"; Active = $true}
+    @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A"; Active = $false}
+    @{Name = "Klubbmesterskapet 2022"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B"; Active = $false}
 
     @{Name = "Hamarturneringen 2021"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A"; Active = $false}
     @{Name = "Hamarturneringen 2021"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=B"; Active = $false}
@@ -35,10 +35,18 @@ function Get-StatsFromContent([string]$content) {
         Title = $null
         BestRatingProgress = $null
     }
-
+    
+    # Read as html object
     $html = ConvertFrom-Html -Content $content
-    $tsTabell = $html.SelectNodes(".//*[contains(@class,'ts_tabell')]")
 
+    $tableStandings = $html.SelectNodes(".//*[contains(@class,'table-standings')]")
+    if($tableStandings) {
+        $tableRows = $tableStandings.SelectNodes(".//tr[not(contains(@class,'ts_top'))]")
+        $stats.Participants = $tableRows | Measure-Object | Select-Object -ExpandProperty Count
+        $stats.Winner = $tableRows[0].SelectNodes(".//td")[1].InnerText
+    } 
+
+    $tsTabell = $html.SelectNodes(".//*[contains(@class,'ts_tabell')]")
     if($tsTabell) {
         $stats.Participants = $tsTabell | Measure-Object | Select-Object -ExpandProperty Count
         $stats.Winner = ($tsTabell[0].ChildNodes | ? name -eq td | select -index 1).InnerText
@@ -106,25 +114,26 @@ function Get-StatsFromTurneringsservice([string]$uri) {
 
 # Parse all files into objects with statistics
 $objects = $files | ForEach-Object {
+    $file = $_
     $obj = @{
         Type = "Ukjent"
-        File = "resultater/$($_.Name)"
-        Date = [Datetime]::ParseExact(([Regex]::Matches($_.BaseName, "[0-9]{6}") | Select-Object -First 1 | Select-Object -exp Value),"yyMMdd", $null)
+        File = "resultater/$($file.Name)"
+        Date = [Datetime]::ParseExact(([Regex]::Matches($file.BaseName, "[0-9]{6}") | Select-Object -First 1 | Select-Object -exp Value),"yyMMdd", $null)
         Group = $null
         Stats = $null
     }
 
-    if($_.BaseName -like "*-*") {
-        $obj.Group = "Gruppe " + ($_.BaseName -split "-" | Select-Object -Last 1)
+    if($file.BaseName -like "*-*") {
+        $obj.Group = "Gruppe " + ($file.BaseName -split "-" | Select-Object -Last 1)
     }
 
-    if($_.Name -match "Hu[0-9]{6}(-[A-C1-9])?.htm") {
+    if($file.Name -match "Hu[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Hurtigsjakk"
         $obj.Stats = Get-StatsFromFile $obj.File
-    } elseif($_.Name -match "Ly[0-9]{6}(-[A-C1-9])?.htm") {
+    } elseif($file.Name -match "Ly[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Lynsjakk"
         $obj.Stats = Get-StatsFromFile $obj.File
-    } elseif($_.Name -match "Hc[0-9]{6}(-[A-C1-9])?.htm") {
+    } elseif($file.Name -match "Hc[0-9]{6}(-[A-C1-9])?.htm") {
         $obj.Type = "Hurtigsjakk med tidshandicap"
         $obj.Stats = Get-StatsFromFile $obj.File
     }
