@@ -3,8 +3,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=A)|Gruppe A|16|Lars H&aring;vard S Dahl|
-|[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=B)|Gruppe B|17|Tommy Eriksen|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A)|Gruppe A|14|Rostislavs Seleznovs|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B)|Gruppe B|12|Preben Gustu|
 |[Arkiv](turneringer.md)||||
 
 # Hurtigsjakk

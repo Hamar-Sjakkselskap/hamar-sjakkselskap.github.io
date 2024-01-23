@@ -2,8 +2,11 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=A)|Gruppe A|16|Lars H&aring;vard S Dahl|
-|[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=B)|Gruppe B|17|Tommy Eriksen|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A)|Gruppe A|14|Rostislavs Seleznovs|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B)|Gruppe B|12|Preben Gustu|
+|[Julelyn 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2023-HamarSjakkselskap)||||
+|[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=A)|Gruppe A|||
+|[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A)|Gruppe A|||
