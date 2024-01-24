@@ -7,6 +7,8 @@
 |[Julelyn 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2023-HamarSjakkselskap)||||
 |[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=B)|Gruppe B|||
+|[Hamarturneringen 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2023-HamarSjakkselskap&group=A)|Gruppe A|||
+|[Hamarturneringen 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2023-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Klubbmesterskapet 2022](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2022-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Hamarturneringen 2021](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2021-HamarSjakkselskap&group=A)|Gruppe A|||
