@@ -2,6 +2,18 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2024-05-23](resultater/Ly240523.htm)||22|Nicolai Fr&oslash;yshov||
+|[2024-04-18](resultater/Ly240418.htm)||31|Bendeguz Palotai||
+|[2024-03-21](resultater/Ly240321.htm)||33|Eirik Olsen Kirkevik||
+|[2024-02-15](resultater/Ly240215.htm)||37|Leander Eriksen||
+|[2024-01-25](resultater/Ly240125.htm)||38|Ole-Jakob Kristiansen||
+|[2023-12-14](resultater/Ly231214.htm)||28|Leander Eriksen||
+|[2023-11-23](resultater/Ly231123.htm)||22|Nicolai Fr&oslash;yshov||
+|[2023-10-26](resultater/Ly231026.htm)||21|Nicolai Fr&oslash;yshov||
+|[2023-04-27](resultater/Ly230427.htm)||24|Leander Eriksen||
+|[2023-03-23](resultater/Ly230323.htm)||17|Leander Eriksen||
+|[2023-02-23](resultater/Ly230223.htm)||31|Leander Eriksen||
+|[2023-01-26](resultater/Ly230126.htm)||33|Lars H&aring;vard S Dahl||
 |[2022-11-11](resultater/Ly221111.htm)||28|Lars H&aring;vard S Dahl||
 |[2022-11-10](resultater/Ly221110.htm)||28|Lars H&aring;vard S Dahl||
 |[2022-10-13](resultater/Ly221013.htm)||19|Leander Eriksen||

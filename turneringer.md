@@ -2,8 +2,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A)|Gruppe A|14|Rostislavs Seleznovs|
-|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B)|Gruppe B|12|Preben Gustu|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A)|Gruppe A|23|Ole Hoel|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B)|Gruppe B|22|Kenneth Sjonfjell|
 |[Julelyn 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2023-HamarSjakkselskap)||||
 |[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Klubbmesterskapet 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2023-HamarSjakkselskap&group=B)|Gruppe B|||

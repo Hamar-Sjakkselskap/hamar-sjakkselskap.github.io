@@ -3,30 +3,30 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A)|Gruppe A|14|Rostislavs Seleznovs|
-|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B)|Gruppe B|12|Preben Gustu|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A)|Gruppe A|23|Ole Hoel|
+|[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B)|Gruppe B|22|Kenneth Sjonfjell|
 |[Arkiv](turneringer.md)||||
 
 # Hurtigsjakk
 
 | Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
-|[2023-01-05](resultater/Hu230105.htm)||32|Lars H�vard S Dahl||
-|[2022-12-08](resultater/Hu221208-A.htm)|Gruppe A|17|Lars H&aring;vard S Dahl||
-|[2022-12-08](resultater/Hu221208-B.htm)|Gruppe B|8|Mikael Santiago Avdem Frankmo||
-|[2022-11-24](resultater/Hu221124-A.htm)|Gruppe A|12|Tobias Frisvold Ruud||
-|[2022-11-24](resultater/Hu221124-B.htm)|Gruppe B|8|Sivert Nikolai &Oslash;rsleie||
+|[2024-06-06](resultater/Hu240606-A.htm)|Gruppe A|19|Erik Lie||
+|[2024-06-06](resultater/Hu240606-B.htm)|Gruppe B|19|Georg Sletmoen Stokke||
+|[2024-05-30](resultater/Hu240530-A.htm)|Gruppe A|8|Vebj&oslash;rn Holm-Gjerde||
+|[2024-05-30](resultater/Hu240530-B.htm)|Gruppe B|16|J&oslash;rgen Edelsteen||
+|[2024-04-25](resultater/Hu240425-A.htm)|Gruppe A|11|Bendeguz Palotai||
 |[Alle](Hurtigsjakk.md)||||
 
 # Lynsjakk
 
 | Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
-|[2022-11-11](resultater/Ly221111.htm)||28|Lars H&aring;vard S Dahl||
-|[2022-11-10](resultater/Ly221110.htm)||28|Lars H&aring;vard S Dahl||
-|[2022-10-13](resultater/Ly221013.htm)||19|Leander Eriksen||
-|[2022-09-08](resultater/Ly220908.htm)||26|Lars H&aring;vard S Dahl||
-|[2022-04-28](resultater/Ly220428.htm)||19|Lars Havard Skuggerud Dahl||
+|[2024-05-23](resultater/Ly240523.htm)||22|Nicolai Fr&oslash;yshov||
+|[2024-04-18](resultater/Ly240418.htm)||31|Bendeguz Palotai||
+|[2024-03-21](resultater/Ly240321.htm)||33|Eirik Olsen Kirkevik||
+|[2024-02-15](resultater/Ly240215.htm)||37|Leander Eriksen||
+|[2024-01-25](resultater/Ly240125.htm)||38|Ole-Jakob Kristiansen||
 |[Alle](Lynsjakk.md)||||
 
 [Alle resultater](arkiv.md)

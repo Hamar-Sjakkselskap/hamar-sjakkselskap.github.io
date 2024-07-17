@@ -2,6 +2,47 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2024-06-06](resultater/Hu240606-A.htm)|Gruppe A|19|Erik Lie||
+|[2024-06-06](resultater/Hu240606-B.htm)|Gruppe B|19|Georg Sletmoen Stokke||
+|[2024-05-30](resultater/Hu240530-A.htm)|Gruppe A|8|Vebj&oslash;rn Holm-Gjerde||
+|[2024-05-30](resultater/Hu240530-B.htm)|Gruppe B|16|J&oslash;rgen Edelsteen||
+|[2024-04-25](resultater/Hu240425-A.htm)|Gruppe A|11|Bendeguz Palotai||
+|[2024-04-25](resultater/Hu240425-B.htm)|Gruppe B|16|Jens W. Lindstad||
+|[2024-04-04](resultater/HU240404-A.htm)|Gruppe A|18|Leander Eriksen||
+|[2024-04-04](resultater/HU240404-B.htm)|Gruppe B|16|Georg Sletmoen Stokke||
+|[2024-03-14](resultater/HU240314-A.htm)|Gruppe A|13|Bendeguz Palotai||
+|[2024-03-14](resultater/HU240314-B.htm)|Gruppe B|18|Preben Gustu||
+|[2024-02-22](resultater/Hu240222-A.htm)|Gruppe A|18|Eirik Olsen Kirkevik||
+|[2024-02-22](resultater/Hu240222-B.htm)|Gruppe B|15|Erlend Teum||
+|[2024-02-01](resultater/Hu240201-A.htm)|Gruppe A|15|Ole-Jakob Kristiansen||
+|[2024-02-01](resultater/Hu240201-B.htm)|Gruppe B|19|Preben Gustu||
+|[2024-01-11](resultater/Hu240111-A.htm)|Gruppe A|14|Vebj&oslash;rn Holm-Gjerde||
+|[2024-01-11](resultater/Hu240111-B.htm)|Gruppe B|14|Georg Sletmoen Stokke||
+|[2023-12-07](resultater/Hu231207-A.htm)|Gruppe A|12|Egil Flermoen||
+|[2023-12-07](resultater/Hu231207-B.htm)|Gruppe B|8|Georg Sletmoen Stokke||
+|[2023-11-16](resultater/Hu231116-A.htm)|Gruppe A|12|Leander Eriksen||
+|[2023-11-16](resultater/Hu231116-B.htm)|Gruppe B|15|Georg Sletmoen Stokke||
+|[2023-11-09](resultater/HU231109-A.htm)|Gruppe A|15|Ole-Jakob Kristiansen||
+|[2023-11-09](resultater/HU231109-B.htm)|Gruppe B|16|Georg Sletmoen Stokke||
+|[2023-10-12](resultater/Hu231012-A.htm)|Gruppe A|10|Geir Brobakken||
+|[2023-10-12](resultater/Hu231012-B.htm)|Gruppe B|6|Georg Sletmoen Stokke||
+|[2023-09-28](resultater/Hu230928-A.htm)|Gruppe A|7|Ledion Berisha||
+|[2023-09-28](resultater/Hu230928-B.htm)|Gruppe B|12|Amund H&oslash;nningstad||
+|[2023-09-14](resultater/Hu230914-A.htm)|Gruppe A|15|Marius Solbakken Mellum||
+|[2023-09-14](resultater/Hu230914-B.htm)|Gruppe B|9|Georg Sletmoen||
+|[2023-08-31](resultater/Hu230831-A.htm)|Gruppe A|13|Lars H&aring;vard S Dahl||
+|[2023-08-31](resultater/Hu230831-B.htm)|Gruppe B|16|Rostislavs Seleznovs||
+|[2023-05-25](resultater/Hu230525-A.htm)|Gruppe A|12|Tobias Frisvold Ruud||
+|[2023-05-25](resultater/Hu230525-B.htm)|Gruppe B|10|Per Solbakken||
+|[2023-05-11](resultater/Hu230511-A.htm)|Gruppe A|13|Erik Lie||
+|[2023-05-11](resultater/Hu230511-B.htm)|Gruppe B|12|Jonas Solbakken||
+|[2023-04-13](resultater/Hu230413-A.htm)|Gruppe A|16|Leander Eriksen||
+|[2023-04-13](resultater/Hu230413-B.htm)|Gruppe B|16|Per Solbakken||
+|[2023-03-23](resultater/Hu230323.htm)||11|Odd Steinar Orm&aring;sen||
+|[2023-03-09](resultater/Hu230309-A.htm)|Gruppe A|12|Lars H&aring;vard S Dahl||
+|[2023-03-09](resultater/Hu230309-B.htm)|Gruppe B|12|Frank Kvernvolden||
+|[2023-02-09](resultater/Hu230209-A.htm)|Gruppe A|17|Leander Eriksen||
+|[2023-02-09](resultater/Hu230209-B.htm)|Gruppe B|13|Per Solbakken||
 |[2023-01-05](resultater/Hu230105.htm)||32|Lars H�vard S Dahl||
 |[2022-12-08](resultater/Hu221208-A.htm)|Gruppe A|17|Lars H&aring;vard S Dahl||
 |[2022-12-08](resultater/Hu221208-B.htm)|Gruppe B|8|Mikael Santiago Avdem Frankmo||
