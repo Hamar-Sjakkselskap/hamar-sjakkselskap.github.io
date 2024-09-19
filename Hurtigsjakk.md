@@ -2,8 +2,6 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
-|[2024-08-29](resultater/Hu240829.htm)||35|J&oslash;rgen Edelsteen||
-|[2024-06-06](resultater/Hu240606-A.htm)|Gruppe A|19|Erik Lie||
 |[2024-06-06](resultater/Hu240606-B.htm)|Gruppe B|19|Georg Sletmoen Stokke||
 |[2024-05-30](resultater/Hu240530-A.htm)|Gruppe A|8|Vebj&oslash;rn Holm-Gjerde||
 |[2024-05-30](resultater/Hu240530-B.htm)|Gruppe B|16|J&oslash;rgen Edelsteen||
