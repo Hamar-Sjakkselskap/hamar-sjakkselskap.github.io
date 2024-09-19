@@ -2,6 +2,7 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2024-09-12](resultater/Ly240912.htm)||35|Bendeguz Palotai||
 |[2024-05-23](resultater/Ly240523.htm)||22|Nicolai Fr&oslash;yshov||
 |[2024-04-18](resultater/Ly240418.htm)||31|Bendeguz Palotai||
 |[2024-03-21](resultater/Ly240321.htm)||33|Eirik Olsen Kirkevik||

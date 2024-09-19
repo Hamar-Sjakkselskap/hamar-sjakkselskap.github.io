@@ -11,8 +11,11 @@ Install-Module PowerHTML  -Scope CurrentUser
 $files = Get-ChildItem .\resultater
 
 $tournaments = @(
-    @{Name = "Klubbmesterskapet 2024"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A"; Active = $true}
-    @{Name = "Klubbmesterskapet 2024"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B"; Active = $true} 
+    @{Name = "Hamarturneringen 2024"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=A"; Active = $true}
+    @{Name = "Hamarturneringen 2024"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=B"; Active = $true} 
+
+    @{Name = "Klubbmesterskapet 2024"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A"; Active = $false}
+    @{Name = "Klubbmesterskapet 2024"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B"; Active = $false} 
     
     @{Name = "Julelyn 2023"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2023-HamarSjakkselskap"; Active = $false}
 
