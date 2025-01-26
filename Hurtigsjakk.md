@@ -2,6 +2,18 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2025-01-09](resultater/Hu250109-A.htm)|Gruppe A|16|Bendeguz Palotai||
+|[2025-01-09](resultater/Hu250109-B.htm)|Gruppe B|24|Amund H&oslash;nningstad||
+|[2024-12-12](resultater/Hu241212-A.htm)|Gruppe A|14|Bendeguz Palotai||
+|[2024-12-12](resultater/Hu241212-B.htm)|Gruppe B|12|Erlend Teum||
+|[2024-11-21](resultater/HU241121-A.htm)|Gruppe A|15|Stefan William Rudebjer||
+|[2024-11-21](resultater/HU241121-B.htm)|Gruppe B|16|Erlend Teum||
+|[2024-10-31](resultater/Hu241031-A.htm)|Gruppe A|17|Bendeguz Dr. Palotai||
+|[2024-10-31](resultater/Hu241031-B.htm)|Gruppe B|15|Trym Leirhol-Midtmoen||
+|[2024-10-10](resultater/Hu241010-A.htm)|Gruppe A|12|Bendeguz Palotai||
+|[2024-10-10](resultater/Hu241010-B.htm)|Gruppe B|12|Jonas Solbakken||
+|[2024-09-26](resultater/Hu240926-A.htm)|Gruppe A|15|Niklas Eriksen Bj&oslash;rnstad||
+|[2024-09-26](resultater/Hu240926-B.htm)|Gruppe B|20|Jonathan Fr&oslash;yshov||
 |[2024-08-29](resultater/Hu240829.htm)||35|J&oslash;rgen Edelsteen||
 |[2024-06-06](resultater/Hu240606-A.htm)|Gruppe A|19|Erik Lie||
 |[2024-06-06](resultater/Hu240606-B.htm)|Gruppe B|19|Georg Sletmoen Stokke||
