@@ -2,8 +2,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=A)|Gruppe A|||
-|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=B)|Gruppe B|||
+|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=A)|Gruppe A|12|Frode Storli|
+|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=B)|Gruppe B|19|Sindre Wolden|
 |[Julelyn 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2024-HamarSjakkselskap)||||
 |[Hamarturneringen 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Hamarturneringen 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=B)|Gruppe B|||
