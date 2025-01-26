@@ -2,6 +2,9 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2024-11-21](resultater/HU241121-B (1).htm)|Gruppe B (1)||||
+|[2024-10-24](resultater/FI241024.htm)|||||
+|[2024-10-03](resultater/Cu241003.htm)|||||
 |[2024-05-16](resultater/Ha240516.htm)|||||
 |[2024-02-29](resultater/Fi240229-A.htm)|Gruppe A||||
 |[2024-02-29](resultater/Fi240229-B.htm)|Gruppe B||||

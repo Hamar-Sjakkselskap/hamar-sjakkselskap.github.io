@@ -2,8 +2,11 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Hamarturneringen 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=A)|Gruppe A|14|Georg Sletmoen Stokke|
-|[Hamarturneringen 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=B)|Gruppe B|13|Lars Magne S Hansen|
+|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=A)|Gruppe A|||
+|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=B)|Gruppe B|||
+|[Julelyn 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2024-HamarSjakkselskap)||||
+|[Hamarturneringen 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=A)|Gruppe A|||
+|[Hamarturneringen 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Hamarturneringen2024-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Klubbmesterskapet 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2024-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Julelyn 2023](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2023-HamarSjakkselskap)||||
