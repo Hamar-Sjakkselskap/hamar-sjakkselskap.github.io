@@ -11,11 +11,11 @@
 
 | Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2025-01-30](resultater/Hu250130-A.htm)|Gruppe A|14|J&oslash;rgen Edelsteen||
+|[2025-01-30](resultater/Hu250130-B.htm)|Gruppe B|19|Jens W. Lindstad||
 |[2025-01-09](resultater/Hu250109-A.htm)|Gruppe A|16|Bendeguz Palotai||
 |[2025-01-09](resultater/Hu250109-B.htm)|Gruppe B|24|Amund H&oslash;nningstad||
 |[2024-12-12](resultater/Hu241212-A.htm)|Gruppe A|14|Bendeguz Palotai||
-|[2024-12-12](resultater/Hu241212-B.htm)|Gruppe B|12|Erlend Teum||
-|[2024-11-21](resultater/HU241121-A.htm)|Gruppe A|15|Stefan William Rudebjer||
 |[Alle](Hurtigsjakk.md)||||
 
 # Lynsjakk
