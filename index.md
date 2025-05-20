@@ -3,8 +3,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=A)|Gruppe A|12|Frode Storli|
-|[Hamarturneringen 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=B)|Gruppe B|19|Sindre Wolden|
+|[Klubbmesterskapet 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=A)|Gruppe A|13|Stefan William Rudebjer|
+|[Klubbmesterskapet 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=B)|Gruppe B|32|Sindre Wolden|
 |[Arkiv](turneringer.md)||||
 
 # Hurtigsjakk
