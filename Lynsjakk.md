@@ -2,6 +2,13 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2025-09-04](resultater/Ly250904.htm)||30|J&oslash;rgen Edelsteen||
+|[2025-06-12](resultater/Ly250612.htm)||27|J&oslash;rgen Edelsteen||
+|[2025-05-22](resultater/Ly250522-A.htm)|Gruppe A|10|Bendeguz Palotai||
+|[2025-05-22](resultater/Ly250522-B.htm)|Gruppe B|22|Magnus Brenden||
+|[2025-04-03](resultater/Ly250403.htm)||29|Leander Eriksen||
+|[2025-02-06](resultater/Ly250206.htm)||28|Bendeguz Palotai||
+|[2025-01-23](resultater/Ly250123.htm)||36|Bendeguz Palotai||
 |[2024-12-05](resultater/Ly241205.htm)||29|Nicolai Fr&oslash;yshov||
 |[2024-11-14](resultater/Ly241114.htm)||33|Leander Eriksen||
 |[2024-09-12](resultater/Ly240912.htm)||35|Bendeguz Palotai||
