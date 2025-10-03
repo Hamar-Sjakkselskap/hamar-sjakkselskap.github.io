@@ -2,6 +2,18 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2025-08-28](resultater/Hu250828-A.htm)|Gruppe A|11|Leander Eriksen||
+|[2025-08-28](resultater/Hu250828-B.htm)|Gruppe B|18|Oscar Sollid||
+|[2025-06-05](resultater/Hu250605-A.htm)|Gruppe A|8|Geir Brobakken||
+|[2025-06-05](resultater/Hu250605-B.htm)|Gruppe B|25|Aurora Fr&oslash;yshov||
+|[2025-05-15](resultater/Hu250515-A.htm)|Gruppe A|10|Stefan William Rudebjer||
+|[2025-05-15](resultater/Hu250515-B.htm)|Gruppe B|19|Sindre Wolden||
+|[2025-04-24](resultater/Hu250424-A.htm)|Gruppe A|9|Nicolai Fr&oslash;yshov||
+|[2025-04-24](resultater/Hu250424-B.htm)|Gruppe B|17|Christer Tungard||
+|[2025-03-20](resultater/Hu250320-A.htm)|Gruppe A|14|Ole Hoel||
+|[2025-03-20](resultater/Hu250320-B.htm)|Gruppe B|18|Hogne Orm&aring;sen||
+|[2025-02-27](resultater/Hu250227-A.htm)|Gruppe A|8|Steinar Orm&aring;sen||
+|[2025-02-27](resultater/Hu250227-B.htm)|Gruppe B|12|Georg Sletmoen Stokke||
 |[2025-01-30](resultater/Hu250130-A.htm)|Gruppe A|14|J&oslash;rgen Edelsteen||
 |[2025-01-30](resultater/Hu250130-B.htm)|Gruppe B|19|Jens W. Lindstad||
 |[2025-01-09](resultater/Hu250109-A.htm)|Gruppe A|16|Bendeguz Palotai||
