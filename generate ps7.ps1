@@ -6,8 +6,6 @@ $Error.Clear()
 Push-Location $PSScriptRoot
 Install-Module PowerHTML  -Scope CurrentUser -Force -Confirm:$false
 
-# git pull | Out-Null
-
 $files = Get-ChildItem .\resultater
 
 $tournaments = @(
