@@ -2,6 +2,8 @@
 
 | Dato | Gruppe | Deltakere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2026-01-08](resultater/Hu260108-A.htm)|Gruppe A|19|Nicolai Fr&oslash;yshov||
+|[2026-01-08](resultater/Hu260108-B.htm)|Gruppe B|18|Trond Nydal||
 |[2025-08-28](resultater/Hu250828-A.htm)|Gruppe A|11|Leander Eriksen||
 |[2025-08-28](resultater/Hu250828-B.htm)|Gruppe B|18|Oscar Sollid||
 |[2025-06-05](resultater/Hu250605-A.htm)|Gruppe A|8|Geir Brobakken||

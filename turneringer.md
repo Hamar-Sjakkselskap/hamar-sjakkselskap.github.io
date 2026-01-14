@@ -3,7 +3,7 @@
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
 |[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=A)|Gruppe A|14|Marius Solbakken Mellum|
-|[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=B)|Gruppe B|34|Halvor Dompidal|
+|[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=B)|Gruppe B|37|Halvor Dompidal|
 |[Klubbmesterskapet 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=A)|Gruppe A|||
 |[Klubbmesterskapet 2025](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=B)|Gruppe B|||
 |[Julelyn 2024](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Julelynsjakk2024-HamarSjakkselskap)||||

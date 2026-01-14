@@ -4,18 +4,18 @@
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
 |[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=A)|Gruppe A|14|Marius Solbakken Mellum|
-|[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=B)|Gruppe B|34|Halvor Dompidal|
+|[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=B)|Gruppe B|37|Halvor Dompidal|
 |[Arkiv](turneringer.md)||||
 
 # Hurtigsjakk
 
 | Dato | Gruppe | Deltagere | Vinner | Beste ratingfremgang |
 |-|-|-|-|-|
+|[2026-01-08](resultater/Hu260108-A.htm)|Gruppe A|19|Nicolai Fr&oslash;yshov||
+|[2026-01-08](resultater/Hu260108-B.htm)|Gruppe B|18|Trond Nydal||
 |[2025-08-28](resultater/Hu250828-A.htm)|Gruppe A|11|Leander Eriksen||
 |[2025-08-28](resultater/Hu250828-B.htm)|Gruppe B|18|Oscar Sollid||
 |[2025-06-05](resultater/Hu250605-A.htm)|Gruppe A|8|Geir Brobakken||
-|[2025-06-05](resultater/Hu250605-B.htm)|Gruppe B|25|Aurora Fr&oslash;yshov||
-|[2025-05-15](resultater/Hu250515-A.htm)|Gruppe A|10|Stefan William Rudebjer||
 |[Alle](Hurtigsjakk.md)||||
 
 # Lynsjakk
