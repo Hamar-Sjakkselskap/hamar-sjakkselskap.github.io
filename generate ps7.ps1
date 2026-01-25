@@ -9,8 +9,11 @@ Install-Module PowerHTML  -Scope CurrentUser -Force -Confirm:$false
 $files = Get-ChildItem .\resultater
 
 $tournaments = @(
-    @{Name = "Hamarturneringen 2025"; Group = "Gruppe A"; Url = "https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=A"; Active = $true}
-    @{Name = "Hamarturneringen 2025"; Group = "Gruppe B"; Url = "https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=B"; Active = $true} 
+    @{Name = "Klubbmesterskapet 2026"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2026-HamarSjakkselskap&group=A"; Active = $true}
+    @{Name = "Klubbmesterskapet 2026"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2026-HamarSjakkselskap&group=B"; Active = $true}
+    
+    @{Name = "Hamarturneringen 2025"; Group = "Gruppe A"; Url = "https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=A"; Active = $false}
+    @{Name = "Hamarturneringen 2025"; Group = "Gruppe B"; Url = "https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=B"; Active = $false} 
 
     @{Name = "Klubbmesterskapet 2025"; Group = "Gruppe A"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=A"; Active = $false}
     @{Name = "Klubbmesterskapet 2025"; Group = "Gruppe B"; Url = "http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2025-HamarSjakkselskap&group=B"; Active = $false} 
