@@ -3,8 +3,8 @@
 
 | Navn | Gruppe | Deltagere | Leder |
 |-|-|-|-|
-|[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=A)|Gruppe A|14|Marius Solbakken Mellum|
-|[Hamarturneringen 2025](https://tournamentservice.com/standings.aspx?TID=Hamarturneringen2025-HamarSjakkselskap&group=B)|Gruppe B|37|Halvor Dompidal|
+|[Klubbmesterskapet 2026](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2026-HamarSjakkselskap&group=A)|Gruppe A|18|Ole Hoel|
+|[Klubbmesterskapet 2026](http://turneringsservice.sjakklubb.no/standings.aspx?TID=Klubbmesterskapet2026-HamarSjakkselskap&group=B)|Gruppe B|20|Jens W. Lindstad|
 |[Arkiv](turneringer.md)||||
 
 # Hurtigsjakk
